@@ -1,0 +1,10 @@
+README.md
+setup.py
+gym_myhunting/__init__.py
+gym_myhunting.egg-info/PKG-INFO
+gym_myhunting.egg-info/SOURCES.txt
+gym_myhunting.egg-info/dependency_links.txt
+gym_myhunting.egg-info/requires.txt
+gym_myhunting.egg-info/top_level.txt
+gym_myhunting/envs/__init__.py
+gym_myhunting/envs/mychase_env.py
