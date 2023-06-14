@@ -1,77 +1,18 @@
 ---
-title: "STAT353 HW2 GLM"
+title: "Generalized Linear Models"
 author: "Shuo Han"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
-## Handwork
+## Introduction
 
-*My policy on handwork is that it is required for Statistics PhD students and MS in Statistics students. It is encouraged (but not required) for MS in Applied Statistics and all other students. (If you are the latter, you will not get penalized if you get these wrong ... )*
-
-Exercises from the book: 14.1, 14.3, 14.6, 15.2, 15.4.
-
-### 14.1
-
-```{r}
-PI <- c(.001, .01, .05, .1, .3, .5, .7, .9, .95, .99, .999)
-Variance <- round(PI*(1-PI), digits= 4)
-df <- data.frame(cbind(PI, Variance))
-df
-```
-
-PI Variance
-
-0.001 0.000999
-
-0.01 0.0099
-
-0.05 0.0475
-
-0.1 0.09
-
-0.3 0.21
-
-0.5 0.25
-
-0.7 0.21
-
-0.95 0.0475
-
-0.99 0.0099
-
-0.999 0.000999
-
-The problem arises when there's extreme value of $\pi$. Then the variance get very small and hence the inverse of variance blows up.
-
-### 14.3
-
-<img src="14.3.png" alt="drawing" width="800"/>
-
-### 14.6
-
-<img src="14.6.png" alt="drawing" width="800"/>
-
-### 15.2
-
-a)  
-
-<img src="15.2a.png" alt="drawing" width="800"/>
-
-b)  
-
-<img src="15.2b.png" alt="drawing" width="800"/>
-
-c)  
-
-<img src="15.2c.png" alt="drawing" width="800"/>
-
-### 15.4
-
-<img src="15.4.png" alt="drawing" width="800"/>
+GLM stands for Generalized Linear Models, which is a flexible generalization of ordinary linear regression that allows for response variables that have error distribution models other than a normal distribution. The GLM generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value.
 
 ## Data analysis
 
-### **1. Exercise D14.1 (Dichotomous)**
+### **Logistic Model and Probit Model**
 
 For this question, we will use the `Chile.txt` dataset, which has a polytomous outcome: voting intention (yes, no, abstain, undecided). For this problem, focus only on the subset of the data with outcomes of either 'yes' or 'no'.
 
@@ -168,7 +109,7 @@ summary(probit)
 
 Although both are fine here, I think the logit model is better than the probit model. Because the AIC score of logit model is smaller than that of in the probit model. Also, the coefficients of logit model are easier to interprate.
 
-### **2. Exercise D14.2 (Polytomous outcome)**
+### **Multinomial Logistic Regression and Ordinal logistic regression**
 
 Proceed as in Exercise D14.1, but now include all of the data and the four possible outcome values.
 
@@ -195,9 +136,9 @@ I used a multinomial logit model and a proportional odds logit model. I think th
 As we can see from the above summaries, first we can find that both AIC and deviances for the multinomial logit model is lower than that for the proportional odds logit model. Besides, to do the poTest, we assume that H0 There’s a parallel regression assumption, Since the p-value for the overall test is less than 2e-16, we reject H0, which indicates that the proportional odds logit model is not appropriate. Also, since in this case our data is not nested, thus the logit models fit to a set of nested dichotomies doesn’t work well. 
 
 
-### **3. Exercise D15.3 (GLM Diagnostics)**
+### **GLM Diagnostics**
 
-Return to the logit (and probit) model that you fit in Exercise D14.1.
+Return to the logit (and probit) model that you fit.
 
 (a) Use the diagnostic methods for generalized linear models described in this chapter to check the adequacy of the final model that you fit to the data.
 
@@ -272,7 +213,7 @@ deviance(model_probit)
 
 It seems that the cauchit link and cloglog link does really bad job in fitting the data. And after comparing, I think the logit still works best here.
 
-### **4. Exercise D15.1 (Count data)**
+### **poisson regression, quasi-Poisson and negative-binomial model**
 
 Long (1990, 1997) investigates factors affecting the research productivity of doctoral students in biochemistry. Long's data (on 915 biochemists) are in the file `Long.txt`. The response variable in this investigation, `art`, is the number of articles published by the student during the last three years of his or her PhD programme.
 
