@@ -1,12 +1,5 @@
-# Homework 4: Explainability
-In this homework, we will consider several methods for explaining the outputs of predictive models. We will focus on attribution methods, which try to weight the relitive importance of inputs with respect to making a prediction. It is important to note there are many methods for considering the interactions between variables. This assignment will not consider those methods, because they get complicated quickly. Instead, we will focus on attribution methods such as LIME, Shapley Values, and SmoothGrad. 
-
-
-
 
 ## Dataset
-
-For this assignment, we will be working with two datasets.
 
 **1. Pima Indians Diabetes Database:** This tabular database has several health diagnostic measures such as blood pressure, and the goal is to predict if a patient has diabetes. 
 
@@ -49,6 +42,3 @@ We now turn our attention to the animal classification dataset.
 11. Using the starter code [here](https://github.com/bstadie/Stat_415_Spring_2023/blob/main/homework-4/smooth_grad.py), run SmoothGrad on one your convolutional model from step 10. Produce a graphic similar to those in Lecture 10, which shows a heatmap of the gradient on the image demonstrating what pixels SmoothGrad is selecting on. See for example [here](https://www.semanticscholar.org/paper/SmoothGrad%3A-removing-noise-by-adding-noise-Smilkov-Thorat/f538dca4def5167a32fbc12107b69a05f0c9d832/figure/2).
 
 12. Similarly, use LIME on images to generate an explanation of what features your convolutional net from step 10 is selecting on. See for example [here](https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/images.png). Starter code is [here](https://github.com/bstadie/Stat_415_Spring_2023/blob/main/homework-4/LIME.py). Compare the features selected on by LIME and SmoothGrad. Are there any common features for certain animals? 
-
-That's it! You're done with the HW for this class. 
-
