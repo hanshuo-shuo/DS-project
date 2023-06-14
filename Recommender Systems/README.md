@@ -1,88 +1,204 @@
-
-
+# Introduction
 
 ## Dataset
 
-'RestaurantReviews.xlsx' , that contains two two sheets. First, `Restaurants.' This sheet cotains information describing each of the restaurants in the dataset. For example, average cost and type of cusine. There is also a natural language description of each restaurant. The second sheet, 'Reviews,'  contains user review scores for the restaurants. These reviews contain review text, dates of the review, and demographic data of the reviewer. This demographic data includes birth year, marital status, and vegetarian preferences. The outcome variable of interest for this assignemnt is the rating, which is a score from 1-5 of the restaurant. 
+We have two data sets in this homework. One is a review data set with people's review features in it. The other is a restaurant data set with all restaurants' information in it.
 
-### EDA
+The primary goal of the assignment is to gain insight into different systems of recommendation. And in the end we will try to build a model to predict the rating score of a restaurant. 
 
-1. Import and examine the data. Are there missing values? Do you care? 
+# Data cleaning and preprocessing
 
-2. Make some histograms to try and better understand the data distribution. For example, you might consider making histograms for 'has children', 'vegetarian', 'weight', 'prefered mode of transport', 'average amount spent', and 'Northwestern student'. Also consider making histograms for the 'cusine' in Restaurants.csv. Is the dataset properly balanced? 
+## Dealing with missing values and outliers
 
-Note that you do not need to include all the histograms in your final report, only the interesting ones. 
+First I check whether there are some outliers in Weight, Height and Birth year and find out no obvious outliers. Afterwards, I check whether there are missing values and find out in Review data set:
 
-3. Perform clustering on the user demographic data, using a clustering algorithm of your choice. You will need to transform the categorical variables into one-hot encodings. Are there any distinct clusters of users? 
+| Variable | Number of Missing| Variable | Number of Missing|
+| --------------|--------| --------------|--------|
+|Review Text|550|Birth Year|2|
+|Marital Status|35|Has Children?|38|
+|Vegetarian?|1350|Weight (lb)|97|
+|Height (in)|54|Average Amount Spent|2|
+|Preferred Mode of Transport|7|Northwestern Student?|  1|
 
-4. For every cluster, compute the average review score across the entire cluster. Are there any trends? Note, the answer to this question might be 'No. there are no trends,' depending on what clustering algorithm you choose and what hyper-parameters you select. The point of this exercise is to practice clustering real data. 
+And Restaurant data set has no missing values.
 
-### Popularity matching 
+Since 'Average Amount Spent', "Northwestern Student?" and "Birth Year" has very small number of missing values(Only 1 or 2), I just drop them. And I fill in the null value in 'Review text' with a space, the null value in 'Marital Status','Preferred Mode of Transport','Vegetarian' and 'Has Children' with a new category 'Unknown'. 
 
-5. What is the most highly rated restaurant? What is the average review score? What is the median review score? Plot a histogram of review scores. 
-
-6. What restaurant has received the largest quantitiy of reviews? What is the median number of reviews received?
-
-7. Write a simple reccomendation engine wherein a user can input a cusine type and receive a reccommendation based on popularity score. Use this to give reccommendations for Spanish food, Chinese food, Mexican food, and Coffee. 
-
-8. Implement a shrinkage estimator that shrinks reviews back towards the mean score, scaled by the number of reviews a restaurant has received. See the lecture slides for more details. What restaurant benefits the most from this shrinkage estimation? What restaurant is hurt the most by it? Make a plot that demonstrates changes in review scores due to shrinkage estimation. For example, plot the top k-positive and negative changes in a bar chart. Feel free to make an alterative plot if you want, or to present your results as a table instead.
-
-
-### Content based filtering 
-9. Using the data in the restaurants.csv table, compute the euclidean distance between every restaurant. Note that you will need to compute a numeric embedding of the categocial variables. Use one-hot encodings. 
-
-10. Repete the previous step, using cosine distance this time. 
-
-11. Write a script that takes a user and returns a reccommendation using content based filtering. This script should take a user, find restaurants the user liked, and then find similar restaurants using euclidean or cosine distance. For one user and one selected restaurant, plot the top reccommendations by the system. Alternatively, you may show a simple table of the top reccommendations. The point is the show your system's output in some way. I don't care how you do it. 
+And to deal with 'Weight' and 'Height'(There are a lot of missing.), since there are strong relationship with these two variables by life experience, I first fit a linear model 'Weight ~ Height', and use the model to fit the missing 'weight' with no missing 'height'. Then I fit a 'Height ~ Weight' model and use this model to fit the missing 'height' with no missing 'weight'. Afterwards, I use the mean value to fill in the people who has both missing 'weight' and 'height'. 
 
 
-### Natural language analysis 
+## Abnormal Value and some typo Erroe
 
-12. Consider the 'brief description' column of the Restaurants dataset. Augement this description by attaching the restaurant's cusine type to the end of the description.  For example, with Tapas Barcelona the description is: 'Festive, warm space known for Spanish small plates is adorned with colorful modern art & posters.' The Cusine is 'Spanish.' The augemented description would thus be: 'Festive, warm space known for Spanish small plates is adorned with colorful modern art & posters. Spanish' Name this variable "Augmented Description." 
-
-
-13. Compute the Jaccard matrix using the elements of Augemented Description. In the Jaccard matrix, entry d_ij should be the Jaccard distance between restuarant i's augmented description and restaurant j's augmented descirpiton.
-
-
-15. Write code that takes as input a word. The code should take this word and compute the TF-IDF score for each restaurant's Augmented Description. Using this function, which restaurant has the highest TF-IDF score for the word 'cozy?' What about for the word 'Chinese?' 
-
-15. Make a list of the 100 most popular words in the Augmented Description column. Write two nested for loops. First, loop over each of the restaurant descriptions. For each of the restaurant descriptions, also loop over every word in the 100 most popular words list. Compute the TF-IDF score for that word. The result should be 64 TF-IDF vectors of length 100, one for each restaurant. 
-
-16. Similar to step 13, compute the TF-IDF distance matrix. In this matrix, d_ij is the distance between the TF-IDF vectors for restaurants i and j. 
-
-17. Using BERT or Word2Vec, embed the restaurant descriptions into a vectorized representation. Similar to steps 13 and 16, compute an Embedding-Distance matrix, where d_ij is the distance between embedding vectors of restaurants i and j. 
-
-18. Come up with a methd of comparing the reccommendations made by Jaccard distance, TF-IDF distance, and BERT/Word2Vec distance. Expalin why this method makes sense. What distance metric does the best under your proposed compairson method? Be sure to visualize your results or present a table as evidence. 
-
-### Collaborative Filtering 
-19. Using the demographic data in Reviews.csv, form a user feature vector. This vector should include numeric representations of traits such as 'has children', 'vegetarian', 'weight', 'prefered mode of transport', 'average amount spent', and 'Northwestern student.' You can use a one-hot encoding of each attraibute to form this vector. Form this vector for every reviewer. Watch out for double counting. Many reviewers have reviewed multiple restaurants. We only want unique reviewers. 
-
-20. Using the vectors from the previous step, write a function that takes a user and computes the distance from that user to every other user. Use this function to create a reccommendation algorithm that takes a user and outputs a reccommendation made by a similar user. Demonstrate this system by taking one user and producing K reccommendations. Include the user and the suggested reccommendations in your write-up. What is the distance between the user and the user that you used to make reccommendations? 
-
-21. Rather than finding users that are similar in terms of demographics, we want to find users that gave similar reviews. Select a user j who has given at least 4 reviews. To find users that have given the most similar reviews, you will want to form a 64 dimensioanl vector where entry i is the user's review of restaurant i. This vector will have many blank entries. What should you use to fill in these blanks? Hint: probably not 0. 
-
-22. Using step 21, compute the 64-dimensional review vector for every user. Now, write code that takes a user and finds other users with similar review vectors. 
-
-23. Compare the average quality of reccommendations made by steps 22 and 20. 
-
-### Predictive modeling 
-
-24. Write a linear model that takes demographic data, along with the cusine type for a restaurant, and tries to predict the restaurant score. 
-
-25. Evaluate your linear model using a train/test split. What is the error of your model? Take one review from the test set. Use your model to take user demographics for this review and cusine type and predict a score. Is this prediction accurate? 
-
-26. Add an L1 penalty to your lienar regression model. Compare the test-set results with a standard lienar model. What features are selected on by this L1 model? In other words, when are the weights of the linear model large? When are they small or negative? Are certain demographics more predictive of review score?
-
-27. Consider the column 'Review Text.' Embed the review text into a vector with one of Word2Vec, BERT, or TF-IDF. Using this embedding vector, try to predict the review score with a linear model. 
-
-28. Repete step 24, only this time include the vector for the embedded review text from step 27. Does including the embdeed review text improve the predictive power of the model? Explicitly compare your resutls at this step to the results from step 24. 
-
-29. Finally, we want to know what demographic features are useful for predicting coffee scores. There are 3 coffee shops in the dataset. For these three restaurants only, write a linear model that takes demographic data and predicts the score. 
-
-30. Examine the weights produced by the linear model in step 29. What demographic features are selected on? In other words, when are the weights of the linear model large? When are they small or negative? Do certain groups of people like or dislike coffee? 
+Then I check the typo error in the data set. I find out a restaurant name has is not correct. I change it form "Clare's Korner" to "Claire's Korner". Also, the Marital Status has one mistake and I change it from "SIngle" to "Single". 
 
 
 
+# Analysis
+
+## Simple Visulization Analysis
+
+I make some histograms to try and better understand the data distribution. What I find most interesting is the distribution of **Northwestern Student**.
+
+![Cuisine by Reviews](pic/0.png){#id .class width="50%" height="50%"}
+
+As we can see, only about 9.6% reviewers are northwestern students. This is such a low proportion then I expected. Maybe students eat more at their school cafeteria. 
+
+Then I try to understand the distribution of cuisine type from 3 demensions:
+
+![Cuisine by Reviews](pic/1.png){#id .class width="100%" height="50%"}
+![Cuisine by Stores Number](pic/2.png){#id .class width="100%" height="50%"}
+
+![Cuisine by Stores Number](pic/1.3.png){#id .class width="100%" height="50%"}
+
+If we just look at the specific cuisine in Evanston, American cuisine has the biggest proportion and there is only one French restaurant, one BBQ and one sea food etc. Together with the cuisine type by review counts, a bigger store numbers in Evanston also seems to show a bigger review number in that cuisine type, which is a good sign. When I try to identify the average rating of specific type of cuisine, I realized most cuisine have the average at around 3-4. French has the highest rating, probably due to only one French restaurant in Evanston and very few reviews as well. And Thai and Burgers seems to have the lowest average rating. 
+
+
+## Clustering
+
+After choosing 'Birth Year', 'Weight', 'Height', 'Northwestern Student?' etc as my demographic features and scaling the featured data, I apply the ELBOW method and find out the best cluster number for K-means should be 5 here. 
+
+|Cluster|Rating Mean|Birth year Mean|Weight Mean|Height Mean|
+|------|-----------|-------------|-----------|----------|
+|1  |  3.806202| 1957.14|208.42|158.98|
+|2  |  3.903030|1992.95|200.09|184.25|
+|3  |  3.501992|1970.16|274.73|179.22|
+|4   | 3.991150|1993.97|177.11|159.20|
+|5  |  3.461832|1969.24|170.96|180.15|
+
+And I realize people in cluster 3 and cluster 5 tend to give lower rating compared with people in other clusters. People in cluster 3 and 5 have the average birth year at around 1970 and height at around 180.0. People in cluster 3 have the highest average weight while people in cluster 5 have the lowest average weight.
+
+## Popularity matching
+
+![Review Score](pic/3.png){#id .class width="50%" height="50%"}
+
+We can see from the histogram that there are more good rating(4 or 5) counts compared with bad rating(1 0r 2) counts. The average review score is 3.76 and the median review score is 4.0. Restaurant: LeTour, Evanston Games & Cafe, World Market, La Principal and Fonda Cantina have the highest average score of 5.0. And Campagnola and Chipotle	are the top 2 who has received the largest quantitiy of reviews. 
+
+I also build a simple engine to recommend a restaurant if we give it a cuisine type based on the rating:
+
+|Input Cuisine|Recommend Restaurant|
+|---------------|----------------------|
+|Spanish|Tapas Barcelona|
+|Chinese|Peppercorns Kitchen|
+|Mexican|Chipotle|
+|Coffee|Pâtisserie Coralie|
+
+However, when doing recommandation, the review count is also an important feature. So I use shrinkage estimators to combine these two features together. Recall from the slice, I need to calculate following: $\alpha = min(\frac{N_{p}}{N_{\mu}}, 1)$, and the estimator: $(1 - \alpha)\mu_s + \alpha \mu_p$. $N_p$ is the total number of reviews of a particular restaurant in Evanston. In this formula, $N_{\mu}$ is the mean value of reviews, $\mu_p$ is the mean rating for a particular restaurant based on people's reviews and $\mu_s$ is the average rating in the entire data set. In real life, shrinkage estimator is used a lot in recommandation. After applying the shrinkage estimator method on Rating, some restaurants' Rating have changed a lot:
+
+![](pic/4.png){#id .class width="100%" height="50%"}
+
+![](pic/5.png){#id .class width="100%" height="50%"}
+
+While some restaurants benefit from it, some get hurt by it. According to the results, restaurants with low rating and low review counts trend to benefit from this, while restaurants with high rating and low review counts trend to get hurt from this. 
+
+Overall, to regularize a recommendation system's ratings, we can apply "shrinkage" that shrinks the ratings of less popular items towards the overall mean. This helps to prevent the system from being biased towards popular items, which could lead to inaccurate recommendations.
+
+
+## Content based filtering
+
+After applying one hot encoding to the data in the restaurants table, I also did feature scaling, since both euclidean distance and cosine distance are sensitive to the scale in features. Then I use the data to compute the euclidean distance and cosine distance between every restaurant. 
+
+Then I write a script that takes a user, first it finds out the user's favorite restaurant based on his previous rating, and then find out similar restaurants using euclidean or cosine distance. To compare these two distances, I try to play with the script with different distances settings. Here I choose the user Aaron Hall, who likes to eat Elephant & Vine the most. Based on this result, we will recommend:
+
+|               **User: Aaron Hall**              	|         **Favorite:Elephant & Vine**         	|
+|:-----------------------------------------------:	|:--------------------------------------------:	|
+| **Top 5 Recommandation by euclidean distance** 	| **Top 5 Recommandation by cosine distance** 	|
+|                    Oceanique                    	|                   Oceanique                  	|
+|                 Barn Steakhouse                 	|                    LeTour                    	|
+|                      LeTour                     	|                Barn Steakhouse               	|
+|                      Alcove                     	|                    Alcove                    	|
+|                    Campagnola                   	|                  Campagnola                  	|
+
+As we can see, both matrices offer similar recommendations.
+
+## Natural language analysis
+
+In this section, I first build a Jaccard matrix where the element $D_{ij}$ refers to the Jaccard distance between restaurant i's augmented description and restaurant j's augmented description. 
+
+Then I compute the TF-IDF score for each restaurant's Augmented Description. And when given the word 'cozy', the system I write tells me the restaurant **Taste of Nepal**. When given the word 'Chinese', it tells me **Lao Sze Chuan**. Then I check the description in the table and find out **Taste of Nepal** has description: South Asian eatery known for momo dumplings. Cozy food. And **Lao Sze Chuan** has description: Modern Chinese mainstay, known for an extensive selection of classic entrees in a stylish airy interior making it a festive space. We can see 'cozy' appears in the description of **Taste of Nepal**  and 'Chinese' also appears in the description of **Lao Sze Chuan**. 
+
+I also make a list of the 100 most popular words in the Augmented Description column and use that list to compute the TF-IDF distance matrix. And finally I use BERT to compute the Embedding-Distance matrix. 
+
+In terms of which distance metric does the best under this proposed comparison method, it is hard to say without testing the method on the specific data set. To test the performance of these three matrix, I play with it for a little bit. I choose a random restaurant, and let it recommend three other restaurants for me using different matrices. For example when I choose the Chinese restaurant **Lao Sze Chuan**, the output goes like:
+
+| **Recommendation by Jaccard matrix** | **Recommendation by TF-IDF matrix** | **Recommendation by Embedding matrix** |
+|------------------------------------|-------------------------------------|-----------------------------------------|
+|              Kabul House             | Kabul House                         | Peppercorns Kitchen                     |
+|               Oceanique              | Peppercorns Kitchen                 | Shangri-La Evanston                     |
+|            Joy Yee Noodle            | Joy Yee Noodle                      | Joy Yee Noodle                          |                   	|
+
+And when I choose the coffee store **Philz Coffee**, it goes like:
+
+| **Recommendation by Jaccard matrix** | **Recommendation by TF-IDF matrix** | **Recommendation by Embedding matrix** |
+|:------------------------------------:|-------------------------------------|-----------------------------------------|
+|                Le Peep               | 5411 Empanadas                      | Evanston Games & Cafe                   |
+|            5411 Empanadas            | Pâtisserie Coralie                  | Pâtisserie Coralie                      |
+|              Jimmy Johns             | Evanston Games & Cafe               | Brothers K Coffeehouse                  |                        |
+
+From the table above, it seem that the Embedding matrix is the most accurate one. Because **Lao Sze Chuan** makes SzeChuan Chinese food, and the recommendation it gives also contains restaurants with similar kinds of food. 
+And the recommandation it gives for **Philz Coffee** are also all coffee places. But Jaccard matrix and TF-IDF matrix are not that accurate. I also did other experiment to examine this and find out that in this situation: Embedding matrix is the best while Jaccard matrix is the worst. And this is just a rough conclusion, more examinations is needed.
+
+
+## Collaborative Filtering
+
+In this section, our aim is to develop a user-based collaborative filtering recommendation system. The system will identify users with similar demographic information and reviews, and provide recommendations based on their similarities. And I'm considering two methods to compute this similarities. First, I will use the demographic feature to form a matrix. After removing duplicated reviewers, I did one-hot encode together with the feature scaling. Then I use this vector and cosine distance to compute the similarity matrix. With this matrix, I come up with my first simple recommendation system. When given an input name, it will tell me 5 other similar people with similar demographic feature. 
+
+For example, when I input **Karissa Corley**, it tells me the other 5 people are **Fonda Wright**, **James Gutierrez**, **Bonnie Willis**, **Kerry Gastelum** and  **Tammie Rowe**. I'm using cosine distance here, and they all have very small distance to **Karissa Corley**. I use the data set to check these people's common feature, I find out they are all not Northwestern student, married without children, and they are all car owners. This shows like this system works well and can gather people with similar feature. 
+
+| **Name**        | **Restaurant**  | **Rating** | **Child?** | **Marital** | **Spent ** | **Transport** | **Student** |
+|----------------------|--------------|------------|------------|-------------|------------|---------------|-------------|
+| Bonnie Willis   | Jimmy Johns     | 5          | No         | Married     | Medium     | Car Owner     | No          |
+| Tammie Rowe     | Fridas          | 4          | No         | Married     | Medium     | Car Owner     | No          |
+| Karissa Corley  | 5411 Empanadas  | 5          | No         | Married     | Medium     | Car Owner     | No          |
+| James Gutierrez | Union Pizzeria  | 2          | No         | Married     | Low        | Car Owner     | No          |
+| Kerry Gastelum  | Kuni's Japanese | 4          | No         | Married     | Medium     | Car Owner     | No          |
+| Fred Wright     | Burger King     | 2          | No         | Married     | Low        | Car Owner     | No          |
+
+However, In this example, although they share a lot of features in common, their preference towards restaurants and rating are a lot different. So I use the other matrix to generate recommendation based on their reviews on specific restaurant. 
+
+To create a reliable vector representation of the review history, we must filter out reviewers with less than four reviews. This will ensure that the data used to create the vectors is meaningful and representative. And based on this vector, I form a matrix with its $d_{ij}$ element represents the i's user rating on the j's restaurant. Noticed a lot of blank space in the matrix, I plan to use Singular Value Decomposition (SVD) method to predict the blank with minimize RMSE. SVD has a great property that it has the minimal reconstruction Sum of Square Error (SSE) and also RMSE and SSE are monotonically related.
+
+![](pic/svd.png){#id .class width="100%" height="50%"}
+
+In this context, the matrix X represents the sparse matrix I form, U is a left singular matrix that captures the relationship between reviewers and latent factors. The diagonal matrix S denotes the strength of each latent factor, and V transpose is a right singular matrix that represents the similarity between restaurants and latent factors. And using the SVD in **Scipy**, we get to predict the unseen Rating for a reviewer.
 
 
 
+In the end of this part, to compare these two matrices. I put in the user name 
+**Karissa Corley** to the recommendation system formed by the review-user matrix, I find out completely different group of people: Karen Hindle	,Kelly Douglas, Thomas Stoney, Jacquelyn Rigatti, etc... And these people all have many similar rating habits(Either have some close ratings to the same group of restaurants or tend to rate similar scores.) to the user I put. 
+
+So I think in this situation, review-user matrix might do a better job at recommending similar users compared to the demographic matrix. This is also intuitive, because the system should care more about what the user likes to eat rather than what the user's demographic information similarities. 
+
+## Predictive modeling
+
+Since Rating score is of significant importance when it comes to recommendation system. If we can find out some way to predict the Rating score, that would be nice. In the linear model that takes demographic data, along with the cuisine type for a restaurant to do the prediction : After spiting the data set with the training and test set of (8:2), it has an MSE of 2.05 and R2 score of  0.13 on the test data set. Both number indicating that this model does not fit well. 
+
+To improve this, I then try add an L1 penalty to the linear regression model.
+
+![L1 penalty](pic/6.png){#id .class width="60%" height="50%"}
+
+However, form the graph we can see the model is better without L1 penalty.
+
+Additionally, recall from previous part that BERT embeddings seems work well. I utilized BERT embeddings to encode the review descriptions provided by the consumers. Since here, the missing review descriptions contains no information, I decided to drop the missing values and split the dataset. As a result, I achieved an MSE of 1.73 on the test set, and the R2 score is 0.2, which is much better than fitting the model with demographic characteristics and L1-penalty. 
+
+After performing linear regression on both demographic and natural language information, the resulting mean squared error is 1.92. Adding the natural language information will improve the modeling but the best thing here is to predict Rating just based on language information without any demographic feature. 
+
+I use the best linear model(Rating just based on language information) so far to do visualization on test data set: 
+
+![Test result of the best model here](pic/9.png){#id .class width="60%" height="50%"}
+
+We can see even the best model here doesn't perform well since the scatter points are not centered around the gray line, but they should be cloes to the gray line when in good fitting model.
+
+In the end, I want to know what demographic features are useful for predicting coffee scores. And to build the regression model, I only use data from four coffee shops, namely 'Brothers K Coffeehouse', 'Philz Coffee', 'Pâtisserie Coralie', and 'Evanston Games & Cafe'. According to the coefficient of this model, 'Has Children?_No: 0.420034' and 'Northwestern Student?_Yes: 0.402113' seem to have the biggest two positive weights. While 'Has Children?_Yes' seems to be the biggest negative factor. Showing that people without children and Northwestern students tend to give coffee store higher rating. 
+
+
+## Interesting Things
+
+- Unusual Users: A person called **Melody Smith**. All his Ratings are 1. Apart from that, he also gives the bad review text to the store **Evanston Chicken Shack**. It is weird that since he doesn't like that store, why does he go to that place for 15 times within a month and keep giving bad comments all the time? This might happen if this comment is given by people another fried chicken restaurant who wants to bring shame on **Evanston Chicken Shack**. As far as I know, this is a really good one and I go there frequently. Another user called **Karissa Corley** who gives 36 reviews in total. And 35 of them are Rating 5 while one of them is rating 1 on **Cross Rhodes**.
+
+- Northwestern Students tend to give slightly higher rating than Non Northwestern Students. The former has average rating of 3.914 while the latter has average of 3.73. And they have larger proportion of going to restaurants on foot, Single and has no children. Also, according to the weight, Northwestern students have lower mean weight(191.9) compared to the non Northwestern (205.4), indicating rate of obesity might be lower in students group.
+
+# Summary
+
+In this assignment, we explored different systems of recommendation and built a model to predict the rating score of a restaurant. Through this process, we gained valuable insights into the workings of recommendation systems and their potential applications in various domains. 
+
+It seems that the prediction doesn't look quite good so far, so in the future, there are two ways to improve on this. First, we can try to collection more data. Here we only have about 1450 reviews, but in real life, we are facing millions of reviews. Second, we can perform more advanced machine learning algorithms for building recommendation system, such as deep learning models. It may be useful to explore ensemble methods or hybrid models that combine multiple algorithms or techniques for better performance. 
