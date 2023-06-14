@@ -8,6 +8,11 @@
 
 
 ## After Training
+
+### Reward shaping 1
 ![After1](result/after.gif)
+
+### Reward shaping 2
+
 ![After2](result/after-2.gif)
 
