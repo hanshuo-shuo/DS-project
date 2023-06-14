@@ -1,0 +1,1 @@
+from .mymaze_env import mymaze
