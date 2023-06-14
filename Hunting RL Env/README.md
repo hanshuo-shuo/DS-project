@@ -1,4 +1,4 @@
-# RL Env
+# Hunting RL Env
 - Prey is the Black Square
 - Predator is the red Triangle
 
@@ -14,5 +14,5 @@
 
 ### Reward shaping 2
 
-![After2](result/after-2.gif)
+![After2](result/after—2.gif)
 
