@@ -1,24 +1,10 @@
-# Homework 1: Credit Card Fraud Data Wrangling and EDA
-
-This repository contains materials and instructions for Homework 1, in which you will be working with a dataset of credit card transactions to perform exploratory data analysis and data cleaning.
-
-The primary goal of the assignment is to gain insights into the predictors of credit card fraud, which is an important problem in the financial industry. While this assignment focuses on data preparation and analysis, it's worth noting that the insights gained from this work can be used to build predictive models for credit card fraud detection. As such, throughout this assignment, we will be treating the fraud status as our outcome variable, with the understanding that it would serve as the target variable in a predictive model built at a later stage.
+# Credit Card Fraud Data Wrangling and EDA
 
 ## Dataset
 
-To access the dataset for this assignment, go to **Files > Homework Data** on the Canvas course page and download the `CreditCardFraud.csv` file. The dataset simulates credit card transaction info resembling that of a financial institution's customers. Check out the [Dataset Description](#dataset-description) section below for more details on the variables in the dataset.
+[Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/isaikumar/creditcardfraud)
 
-Please note that while the dataset looks similar to real transaction data, all its contents are entirely fictional. No identities of people, places, or things were affected while creating this dataset.
-
-## Analysis Instructions
-
-Your analysis should be presented in a clear, visually appealing PDF document, with appropriate visualizations that are properly labeled and annotated to aid in interpretation. You may use any Python libraries or tools that you find helpful, but your document should not include any code. Focus on presenting your findings in a clear, concise, and understandable way.
-
-Please note that the questions provided in the homework assignment are meant to guide your analysis and help you explore the dataset. It is essential to address all of these questions in your analysis. However, you are not limited to answering these questions alone. Feel free to explore any other aspects of the data that you find interesting or relevant, and include any additional insights or findings in your analysis.
-
-In addition to the PDF document, please also submit a code file that includes all the code you used in your analysis.
-
-Here are the data wrangling and EDA questions we'd like you to address as part of this assignment:
+## Analysis
 
 1. Perform preliminary data quality checks, such as identifying duplicated columns and columns with entirely missing data. Determine how to manage these issues and justify your approach for handling them. 
 
@@ -45,38 +31,3 @@ Here are the data wrangling and EDA questions we'd like you to address as part o
 12. Examine the class imbalance in the `isFraud` outcome variable and discuss the potential implications of these patterns for the development of a predictive model for credit card fraud detection. Note that at this stage, we are not building or training a predictive model. Instead, our objective is to gain a deeper understanding of the class imbalance issue in the data and explore ways to address it.
 
 13. Implement a method of your choice to mitigate class imbalance in the isFraud outcome variable. Describe the method you used and report its effects on the class distribution. How might addressing class imbalance impact the effectiveness and performance of a predictive model for credit card fraud detection?
-
-## Dataset Description
-
-The following variables are included in the dataset:
-
-- `accountNumber`: a unique identifier for the customer account associated with the transaction
-- `customerId`: a unique identifier for the customer associated with the transaction
-- `creditLimit`: the maximum amount of credit available to the customer on their account
-- `availableMoney`: the amount of credit available to the customer at the time of the transaction
-- `transactionDateTime`: the date and time of the transaction
-- `transactionAmount`: the amount of the transaction
-- `merchantName`: the name of the merchant where the transaction took place
-- `acqCountry`: the country where the acquiring bank is located
-- `merchantCountryCode`: the country where the merchant is located
-- `posEntryMode`: the method used by the customer to enter their payment card information during the transaction
-- `posConditionCode`: the condition of the point-of-sale terminal at the time of the transaction
-- `merchantCategoryCode`: the category of the merchant where the transaction took place
-- `currentExpDate`: the expiration date of the customer's payment card
-- `accountOpenDate`: the date the customer's account was opened
-- `dateOfLastAddressChange`: the date the customer's address was last updated
-- `cardCVV`: the three-digit CVV code on the back of the customer's payment card
-- `enteredCVV`: the CVV code entered by the customer during the transaction
-- `cardLast4Digits`: the last four digits of the customer's payment card
-- `transactionType`: the type of transaction
-- `echoBuffer`: an internal variable used by the financial institution
-- `currentBalance`: the current balance on the customer's account
-- `merchantCity`: the city where the merchant is located
-- `merchantState`: the state where the merchant is located
-- `merchantZip`: the ZIP code where the merchant is located
-- `cardPresent`: whether or not the customer's payment card was present at the time of the transaction
-- `posOnPremises`: whether or not the transaction took place on the merchant's premises
-- `recurringAuthInd`: whether or not the transaction was a recurring payment
-- `expirationDateKeyInMatch`: whether or not the expiration date of the payment card was entered correctly during the transaction
-- `isFraud`: whether or not the transaction was fraudulent
-
