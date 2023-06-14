@@ -14,6 +14,16 @@ to make some changes like give such group of students more benefice such as free
 there is enough funding. Then we might encourage more students who suffer from poverty to have
 better performance at school.
 
+# Assumptions
+
+We are assuming SUTVA, Consistency, and Conditional exchangeability here. As for Consistency:
+we assume that the effect of students’ lunch types on test performance is consistent for all students.
+It assumes that if a student had a different lunch type, their test performance would change
+accordingly, regardless of other factors. And as for SUTVA, we assume that there is no interference
+between students and each student can be seen as an independent individual. Finally, as for
+Conditional exchangeability, we assume that there is no difference between individuals who receive
+treatments when given the confounders.
+
 # ref
 
 - Amit Sharma, Emre Kiciman. DoWhy: An End-to-End Library for Causal Inference. 2020. https://arxiv.org/abs/2011.04216
