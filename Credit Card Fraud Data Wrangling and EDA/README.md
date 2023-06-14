@@ -128,4 +128,4 @@ In this project, I performed the cleaning and analysis process before modeling. 
 
 # Working with others and reference
 
-I share some of my idea on Multi-transaction and imbalance problem with Hejia Liu. And I used [**Plotly Document**](https://plotly.com/python/getting-started/#:~:text=Plotly%20is%20a%20free%20and,to%20some%20Basic%20Charts%20tutorials.), [**Pandas Document**](https://pandas.pydata.org/docs/), [**seaborn**](https://seaborn.pydata.org/). And my plot codes are modified based on their examples.
+I used [**Plotly Document**](https://plotly.com/python/getting-started/#:~:text=Plotly%20is%20a%20free%20and,to%20some%20Basic%20Charts%20tutorials.), [**Pandas Document**](https://pandas.pydata.org/docs/), [**seaborn**](https://seaborn.pydata.org/). And my plot codes are modified based on their examples.
