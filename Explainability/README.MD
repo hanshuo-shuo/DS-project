@@ -1,44 +1,146 @@
 
+# Introduction
+
 ## Dataset
 
-**1. Pima Indians Diabetes Database:** This tabular database has several health diagnostic measures such as blood pressure, and the goal is to predict if a patient has diabetes. 
+We have two data sets here:
 
-**2. Animal-10N Image Classification Dataset:** The ANIMAL-10N dataset consists of ten classes of animals, comprising 50,000 training images and 5,000 testing images. Your task is to develop a model capable of accurately classifying the animal depicted in a given image. 
+- **Pima Indians Diabetes Database:** The objective of this tabular database is to predict the likelihood of a patient having diabetes based on various health diagnostic measures, including blood pressure.
 
-## Analysis Instructions
+- **Animal-10N Image Classification Dataset:** The ANIMAL-10N dataset is a collection of images belonging to ten different classes of animals. The dataset consists of 50,000 training images and 5,000 testing images.
 
-### Tabular Data
-
-Starting with the Pima Indians Diabetes Database. This dataset can be downloaded [here](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
-
-1. Investigate the balance of the dataset with respect to the outcome variable. Is the outcome variable of the patient being diabetic undersampled? More specifically, what percentage of the total outcomes have the patient as diabetic? You always want to check this with medical data. 
-
-2. Run a linear or logistic model on this dataset with an L1 penalty. What features does the model select on? 
-
-3. Run a random forest on the dataset using SciKitLearn. After training, this classifier will have a field named `feature_importances_' that you can access. For example, if your trained random forest is called 'rfc' then you can call 'rfc.feature_importances_' to access feature importance. You can also call 'rfc.feature_names_in_' to get feature names. Doing this, what features does the random forest select on? 
-
-4. Use LIME on this dataset to explain the importance of each feature. You may wish to reference this [starter code](https://www.kaggle.com/code/prashant111/explain-your-model-predictions-with-lime). Note -- LIME explains one datapoint at a time! So you will need to give LIME a particular datapoint and LIME will explain that datapoint only. You can report results for this question on only one datapoint. 
-
-5. Is LIME stable across different datapoints? If you ask for explainability across two different datapoints, does LIME select on different features? 
-
-6. How do LIME, Forest importance, and linear model weighting compare? Do they select similar features? For this problem, you may consider LIMEs feature selection on a single example datapoint. 
+In this assignment, my primary focus will be on exploring different techniques for interpreting the outputs of different predictive models. 
 
 
-### Predictive Modeling on Animal Images
+# Tabular Data
 
-We now turn our attention to the animal classification dataset. 
+## Balance of the dataset
 
-7. First, let's start by loading the data. Here's some [starter code](https://github.com/bstadie/Stat_415_Spring_2023/blob/main/homework-4/data_loader.py) for data loading is provided. You need to fill in the missing parts of the code to correctly load the data. Then, visualize an example image from each class in the training dataset.
+This is a medical data set with the outcome value of 0 indicates there is no diabetes, and the outcome value of 1 indicates diabetes. I first check the balance of this data set,  and I find out the percentage of patients labeled as diabetic is 34.90%. So I think this data set is a relatively balanced one and we don't need to use the resampling method.
 
-8. Train a linear model on the animal clasification dataset. Note that you will need to use PyTorch to train this model, since there is no way you'll be able to do the matrix inversion required to run OLS. Here is some [starter code](https://github.com/yunjey/pytorch-tutorial/blob/master/tutorials/01-basics/linear_regression/main.py). A linear model corresponds to a single linear layer from the input to the output.
+## Features selected by logistic model
 
-9. Train a vanilla deep convolutional network on the animal classifcaiton dataset. You should reference the starter code [here](https://github.com/bstadie/Stat_415_Spring_2023/blob/main/homework-4/nn_models.py#L50). 
+First,I run a logistic model on this data set with an L1 penalty to check the features, with C score of 0.02. And the selected Features here are:
 
-10. Tune your neural network by adding batchnorm, more layers, better activations, improved learning rates, etc. Compare the accuracy of the linear model, the simple conv net, and the tuned conv net. Do this by making learning curves, which show the training epoch on the X-axis and the cross entropy loss on the Y-axis. Note that your overall graph will have 3 total curves: the linear model cross entropy loss vs epoch, the vanialla conv net cross entropy loss vs epoch, and the tuned convolutional model cross entropy loss vs epoch. Make a similar curve that shows the training epoch on the X-axis and the model test accuracy on the Y-axis for all three models. What hyper-parameters are important for learning?
+| **Feature**     	| **Importance** 	|
+|-----------------	|----------------	|
+| **Glucose**     	| **0.607049**   	|
+| **BMI**         	| **0.158866**   	|
+| **Age**         	| **0.078722**   	|
+| **Pregnancies** 	| **0.057310**   	|
+
+And the top3 important features are **Glucose**,
+**BMI** and **Age**.
+
+## Features selected by Random Forest
+
+Also, I train this model with Random Forest model and use the field `feature_importances_' to access the importance of features. And the selected features now are :
+
+| **Feature ** 	| **Importance** 	|
+|--------------	|----------------	|
+| **Glucose**  	| **0.2491**    	|
+| **BMI**      	| **0.1717**    	|
+| **Age**      	| **0.1518**     	|
+
+And we can see that it shares 3 common features with previous model.
+
+## LIME
+
+LIME generates explanations by approximating the underlying model with an interpretable model. And I use LIME to explain the random forest model. Since it can only consider one data point at a time, I pick the 9th point from this dataset at random and let LIME explain this datapoint for me: 
+
+![](pic/5.png){#id .class width="100%" height="50%"}
+As shown from the graph, LIME provides us with the prediction probabilities of outcomes(0,1). And it shows 0.45 probability of no diabetes (0) and a 0.55 probability of having diabetes (1). The results from the middle part are the  coefficients of each variable. For example, we can explain it as when the patient’s Glucose is larger than 139.0, the Glucose will have an importance of 0.32 on predicting the outcome 1. And when the age is bigger than 40, then the feature Age will have an importance of 0.12 on predicting outcome 1 also. Finally, according to the right result of this graph, we can tell that the three most import features are **Glucose**,  **Age** and **BMI** for this data point. 
+
+And LIME is unstable across different datapoints. Because when I try other datapoints, the selected feature might be different:
+
+![](pic/6.png){#id .class width="100%" height="50%"}
 
 
-### Feature Atribution on Animal Images
+Although the results are different across different datapoint, I try many different data points and conclude that the top 3 features selected by LIME are more likely to be **Glucose**,
+**BMI** and
+**Age**. Also,  LIME is a really good method to provide local explanation on a specific data point. 
 
-11. Using the starter code [here](https://github.com/bstadie/Stat_415_Spring_2023/blob/main/homework-4/smooth_grad.py), run SmoothGrad on one your convolutional model from step 10. Produce a graphic similar to those in Lecture 10, which shows a heatmap of the gradient on the image demonstrating what pixels SmoothGrad is selecting on. See for example [here](https://www.semanticscholar.org/paper/SmoothGrad%3A-removing-noise-by-adding-noise-Smilkov-Thorat/f538dca4def5167a32fbc12107b69a05f0c9d832/figure/2).
+## Compare Feature selected by three models
 
-12. Similarly, use LIME on images to generate an explanation of what features your convolutional net from step 10 is selecting on. See for example [here](https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/images.png). Starter code is [here](https://github.com/bstadie/Stat_415_Spring_2023/blob/main/homework-4/LIME.py). Compare the features selected on by LIME and SmoothGrad. Are there any common features for certain animals? 
+Here is a table of all outcomes: (Only consider the 9th point by LIME)
+
+| Feature                  	| Importance - Logistic  	| Importance - RF 	|Importance - LIME 	|
+|--------------------------	|---------------------	|---------------	|-------------------	|
+| Glucose                  	| 0.607049            	| 0.2491        	| 0.32              	|
+| BMI                      	| 0.158866            	| 0.1717        	| 0.09              	|
+| Age                      	| 0.078722            	| 0.1518        	| 0.12              	|
+| Pregnancies              	| 0.057310            	| 0.0777        	| 0.01              	|
+| SkinThickness            	| 0                   	| 0.0657        	| 0.00              	|
+| Insulin                  	| 0                   	| 0.0753        	| 0.00              	|
+| DiabetesPedigreeFunction 	| 0                   	| 0.1229        	| 0.06              	|
+| BloodPressure            	| 0                   	| 0.0859        	| 0.01              	|
+
+
+As we can see from the results, they all selected Glucose, BMI, Age as the top 3 important features. And Glucose seems to be the most important feature selected by all methods.
+
+# Predictive Modeling on Animal Images
+
+## load data
+
+I first load the data, and visualize an example image from each class in the training dataset, and we can see from this example that this data contains noise data (In below label 8).
+
+![](pic/2.png){#id .class width="100%" height="50%"}
+
+
+## linear model
+
+I then train a linear model on the animal classification dataset for 50 epochs. And as for this model, I use a learning rate of 0.001 and a batchsize of 256. As for the optimizer, I'm using Adam with weight_dacay of 3e-4. Although linear model is fast to train, the results doesn't look good. I can only achieve about 25% accuracy on the test data. And the validation loss is about 2.728. This bad result is under my expectation, because images contain features that can't be captured simply by a linear model. Then I plan to train 2 more CNN models and I will show the graphs together later.
+
+## First Vanilla deep convolutional network
+
+My first CNN has 2 convolution layers and 2 fully connected layers. And I use the ReLU activation function as my activation function. I also apply dropout regularization with a probability of 0.5 to the output of the first max pooling layer. I also train the first CNN model on the animal classification dataset  for 50 epochs. This time, the training takes much longer time to train on my device, and finally I get to achieve about 56% accuracy on the test data and the final validation loss is around 1.338. 
+
+## Tune this CNN
+
+To tune this network, I use the following methods: Adding more Convolution Layers, adding Batch Normalization Layers to normalize the activation of the corresponding convolutional layers across the batch dimension. And I also apply some more Dropout Layers helping to prevent overfitting. This network is a really big one, so I use kaggle's accelerator to train this. After 50 epochs of training, I get to achieve about 70% accuracy on the test data and the final validation loss is around 0.883242. 
+
+## Compare these models
+
+![](pic/3.png){#id .class width="50%" height="50%"}![](pic/4.png){#id .class width="50%" height="50%"}
+As we can see from the result, my improved CNN is the best model. It can achieve the lowest validation loss and the highest validation accuracy. And the linear model is the worst. 
+
+During training, I find many hyper-parameters are important for learning, for example:
+
+- learning_rate is important, it can't be too big or too small. 
+
+- The Number of Epochs is also important because all models need enough training.
+
+- The Batch norm layer is important because it do the normalization and improve training speed.  
+
+- Dropout layer is also important since it prevents overfitting, after applying dropout layers, the result is greatly improved. 
+
+- Network Architecture is also important, bigger network is able to learn better although bigger network means more computational expensive.
+
+And also,  optimizer, Kernel size, activation function are important to our training. 
+
+
+# Feature Atribution on Animal Images
+
+## SmoothGrad
+
+Then, I run SmoothGrad on my final convolution model to produce a series of heat map of the gradient on the image showing what pixels SmoothGrad is selecting on. And here I show my results.
+
+![](pic/2.1.png){#id .class width="100%" height="50%"}
+
+Here, I choose a wolf(labeled as 2) to show my result. Under small level of noise, the heat map of the gradient on the two image will show the feature selection result. And mainly the facial part and part of the body part are selected by this method. But as noise level goes higher, the feature will have more uncertainty and it is then harder for me to tell the result. 
+
+## LIME
+
+I also try to use LIME to select the feature on the same picture of wolf. As we can see from the result showing below, LIME also select features from the face and body part of wolf. As we can see from the picture on the right, the green area represent the part that will increase the probability of predicting this specific label while the red part will decrease the probability. And the entire face and body of this wolf is in the green area.
+
+
+![](pic/2.2.png){#id .class width="50%" height="50%"}
+![](pic/2.3.png){#id .class width="50%" height="50%"}
+
+
+
+
+
+## Common features
+
+Although I only show 1 example, I actually play around it on other animals also. I further find out LIME and SmoothGrad seem to focus on facial features of cats and seem to focus more on the body and head of jaguars and coyates also. Therefore, we have the reason to believe that the facial part and the body part of wolf, coyote, cat and jaguars are the common features been selected by SmoothGrad and LIME. 
