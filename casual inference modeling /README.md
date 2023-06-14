@@ -1,3 +1,19 @@
+# Intro
+
+The problem that we want to study is the effects of lunch types (free/reduced and standard) on
+how the students perform the exam. Our rationale behind this question is as follows: This variable
+is a direct correlation to the income of parents and whether the students take enough food after
+class in the US. First ,the requirement for applying is that your parents income is below a certain
+level. The income of the parents also affects the development of the students. Also, the free or
+reduced lunch might not be as good as the standard one, and this variable also shows the students’
+eating style outside of campus (Since students who can afford lunch are more likely to eat better
+at home dinner and during weekends while the students who have free lunch might not eat enough
+after school), which may affect the physical conditions of the students, like brain development. If
+we can find out the effect does exist, we can give some concrete evidence to relevant policy makers
+to make some changes like give such group of students more benefice such as free dinner when
+there is enough funding. Then we might encourage more students who suffer from poverty to have
+better performance at school.
+
 # ref
 
 - Amit Sharma, Emre Kiciman. DoWhy: An End-to-End Library for Causal Inference. 2020. https://arxiv.org/abs/2011.04216
