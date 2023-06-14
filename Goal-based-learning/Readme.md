@@ -1,8 +1,8 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
+
+# All result
+
+<img src="Pic/result.png" alt="drawing" width="1000"/>
+
 ## Experiment 1
 No corruption zone, and the goal is set every where. Train the game with SAC. 
 ```episodic_length = 300```, ```global_step = 500000```
@@ -50,10 +50,6 @@ The agent is getting better at reaching the goal in the cor zone when training w
 is not as good as that of reaching the goal in normal area.
 
 
-> Compare ex2 and ex5 :  
-> 
-
-> Compare ex4 and ex5 :
 
 
 
