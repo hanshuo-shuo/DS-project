@@ -279,8 +279,3 @@ Increasing N will make the histogram more closely resemble a normal distribution
 In this project, I calculated the 95% credible interval for each distinct log(odds ratio) from the simulated values, for each of the two priors. I then check if 0 is in each credible interval by trying n=10,000, 100,000, and 1,000,000 simulations. Also, I plot the density histogram of the simulated ln(odds ratio) along with the Frequentist normal approximation. And under both priors, I can observe that 0 is not included in all of the 95% confidence intervals of log odds ratios. This indicates that the rows and columns of the table are not independent and we should conclude that there is relationship between delinquency and birth order.
 
 
-# Appendix
-
- Code chunk1:
- ````{r ref.label="plot1",eval=FALSE}
- ```
