@@ -1,0 +1,1526 @@
+vote age men economic.cond.national economic.cond.household Blair Hague Kennedy Europe political.knowledge
+1   "Liberal Democrat"    43  0   3   3   4   1   4    2  2
+2   Labour                36  1   4   4   4   4   4    5  2
+3   Labour                35  1   4   4   5   2   3    3  2
+4   Labour                24  0   4   2   2   1   3    4  0
+5   Labour                41  1   2   2   1   1   4    6  2
+6   Labour                47  1   3   4   4   4   2    4  2
+7   "Liberal Democrat"    57  1   2   2   4   4   2   11  2
+8   Labour                77  1   3   4   4   1   4    1  0
+9   Labour                39  0   3   3   4   4   4   11  0
+10  Labour                70  1   3   2   5   1   1   11  2
+11  Labour                39  0   3   3   1   2   1    7  0
+12  Labour                66  1   4   3   4   4   4    9  2
+13  Labour                59  0   4   4   4   1   4   10  2
+14  Labour                66  0   3   3   2   5   4    8  0
+15  Labour                77  0   2   3   2   1   4   11  2
+16  Labour                51  1   4   4   4   4   4    5  0
+17  Labour                43  0   2   4   1   4   3    8  0
+18  Labour                41  0   4   4   5   4   2    7  2
+19  Labour                79  1   3   3   4   2   4    1  0
+20  Labour                37  0   3   1   1   1   4    5  2
+21  Labour                38  1   3   3   4   4   2    7  0
+22  "Liberal Democrat"    53  1   2   1   2   4   4    5  2
+23  Labour                59  1   3   3   4   2   2    1  2
+24  Conservative          44  1   2   4   4   4   4    9  2
+25  Conservative          60  0   3   2   4   4   4    2  2
+26  Labour                51  0   3   3   4   3   3    6  0
+27  Conservative          56  0   2   2   2   4   4    9  2
+28  Labour                51  0   3   2   4   2   4    2  2
+29  Labour                44  1   3   3   4   2   4    1  2
+30  Labour                61  1   4   3   5   1   2    1  2
+31  Labour                55  0   3   3   4   4   2    6  2
+32  Labour                66  1   3   2   2   2   2    6  0
+33  Labour                59  0   3   3   2   2   2    1  2
+34  Labour                62  1   4   3   4   2   2    1  2
+35  Conservative          76  0   3   4   4   4   4    3  2
+36  Labour                41  0   3   1   4   4   3    6  3
+37  Labour                27  0   2   2   2   2   3    7  0
+38  Labour                52  1   4   3   4   4   4    3  2
+39  Labour                48  0   3   3   4   4   3   11  0
+40  Conservative          72  0   1   3   2   2   2   11  2
+41  Labour                42  0   4   4   4   2   2    6  0
+42  Labour                48  0   3   2   4   2   2    4  0
+43  Labour                66  0   1   1   4   2   4    8  0
+44  Labour                52  0   3   3   4   1   3    1  2
+45  Labour                37  1   4   3   4   2   4    4  2
+46  Conservative          52  0   2   2   4   4   1    6  3
+47  "Liberal Democrat"    54  0   2   3   4   2   2    7  2
+48  Conservative          50  1   2   2   1   4   3   10  2
+49  Labour                46  1   4   3   4   4   1    4  3
+50  Labour                62  1   5   3   5   1   5    1  2
+51  Labour                61  1   3   3   4   4   4    4  2
+52  Labour                33  1   2   3   4   4   2    9  0
+53  Labour                51  1   4   3   5   4   2    1  2
+54  Labour                59  0   4   4   4   5   2   11  0
+55  Labour                58  0   4   4   5   1   4    1  0
+56  Labour                64  1   4   3   4   4   3    4  0
+57  "Liberal Democrat"    42  1   3   4   4   1   4    4  3
+58  Labour                32  1   1   2   1   4   1    1  2
+59  Conservative          62  1   5   3   4   5   3    9  0
+60  Labour                71  0   2   3   5   2   2    6  2
+61  Labour                37  0   3   3   4   2   2    8  0
+62  Labour                61  1   5   4   4   1   4   11  2
+63  Labour                28  0   4   1   4   2   2    6  2
+64  Labour                41  0   3   3   4   4   4    7  0
+65  Labour                77  1   3   3   4   3   3    6  2
+66  Labour                34  0   3   4   4   4   3    8  0
+67  Labour                72  0   4   4   4   4   4   11  2
+68  Labour                35  1   4   4   5   2   4    3  2
+69  Labour                68  0   4   4   4   2   4   11  0
+70  "Liberal Democrat"    67  1   4   3   2   1   4    6  2
+71  Labour                64  0   4   4   4   2   4    2  3
+72  Labour                39  1   4   3   4   2   2    5  0
+73  Conservative          88  0   3   3   4   4   4   11  0
+74  "Liberal Democrat"    40  1   4   4   4   1   4    4  3
+75  Labour                43  1   4   3   4   2   4    6  2
+76  "Liberal Democrat"    53  1   4   4   4   2   4    5  3
+77  "Liberal Democrat"    42  0   4   3   4   2   4    4  2
+78  "Liberal Democrat"    38  1   3   3   4   4   4    4  2
+79  Labour                66  0   2   1   4   2   3    6  0
+80  Labour                76  0   4   3   4   2   4    3  2
+81  Labour                44  0   2   2   4   2   3    8  0
+82  Labour                43  0   2   4   2   4   2    5  0
+83  Conservative          78  0   3   3   4   4   4   11  0
+84  Labour                47  0   3   4   4   4   4    3  0
+85  Labour                65  0   2   2   4   2   4    5  2
+86  "Liberal Democrat"    74  1   4   3   4   2   4    3  2
+87  Conservative          53  0   3   4   2   2   3    6  0
+88  "Liberal Democrat"    28  0   2   3   4   4   4   11  2
+89  Labour                56  0   2   2   4   1   3    4  2
+90  "Liberal Democrat"    82  1   4   4   4   1   5    5  3
+91  Labour                55  1   3   3   4   1   4    4  2
+92  Conservative          49  0   1   1   2   4   3    8  3
+93  Conservative          77  1   3   4   4   4   4    8  3
+94  Labour                84  1   5   5   5   2   4    1  0
+95  Labour                65  0   3   3   4   2   2    6  0
+96  Labour                81  0   4   4   5   1   4    5  3
+97  Labour                41  0   3   3   4   4   3    5  2
+98  Labour                45  1   3   2   2   2   3   10  0
+99  "Liberal Democrat"    74  1   3   4   2   4   4    1  0
+100 Labour                67  1   3   4   5   1   4   11  0
+101 Labour                40  1   4   4   4   2   4    6  0
+102 Labour                71  1   3   4   4   2   4    3  2
+103 Labour                49  0   3   3   4   2   4    6  2
+104 Conservative          70  0   2   3   2   4   4    8  2
+105 "Liberal Democrat"    61  1   2   2   4   2   3    7  2
+106 Labour                60  0   1   3   1   4   1    8  0
+107 Labour                67  1   4   3   4   2   2    4  0
+108 Labour                76  1   3   3   5   1   5    1  2
+109 "Liberal Democrat"    69  0   3   2   4   4   2    9  0
+110 Labour                31  1   1   1   2   4   4   11  0
+111 Labour                47  1   3   3   4   1   2    4  2
+112 Labour                62  1   3   3   2   2   2    3  0
+113 Labour                56  0   3   3   4   4   3    8  0
+114 Conservative          66  0   3   2   2   3   3    2  0
+115 Labour                62  0   3   3   4   2   3    5  2
+116 Labour                63  0   4   4   5   4   2   11  3
+117 Labour                48  1   4   3   4   2   2    6  0
+118 "Liberal Democrat"    64  0   4   4   4   2   4    8  2
+119 Labour                89  0   4   3   4   4   3    4  2
+120 Labour                68  0   4   3   4   2   2   11  0
+121 Conservative          81  1   2   4   2   1   4    8  0
+122 Labour                74  1   3   2   4   2   4    1  2
+123 Labour                83  0   4   2   5   1   2    5  0
+124 Labour                57  0   4   4   4   2   4   11  2
+125 Labour                70  1   4   3   4   2   4    6  2
+126 Conservative          79  0   3   3   2   2   3    9  2
+127 Labour                46  1   4   3   4   4   2    2  2
+128 Labour                41  1   4   4   4   2   2    3  2
+129 Labour                53  0   4   3   4   4   4    7  0
+130 Labour                29  0   3   4   2   4   4    4  0
+131 Labour                44  0   3   2   4   4   3    7  3
+132 Conservative          92  0   3   3   4   4   3    8  2
+133 Conservative          73  0   2   2   4   4   2    7  2
+134 Conservative          58  1   2   3   2   4   3    5  2
+135 "Liberal Democrat"    60  1   4   3   2   3   4    6  2
+136 Conservative          73  1   3   3   2   4   2    6  0
+137 Conservative          76  0   4   3   4   5   3    3  0
+138 Labour                55  0   4   4   4   4   2    6  2
+139 Conservative          49  1   3   3   2   5   1   10  3
+140 Labour                66  0   3   3   2   4   2    1  0
+141 Labour                35  1   4   3   4   2   4    4  3
+142 Labour                62  0   4   3   5   2   4    1  2
+143 Labour                61  1   4   2   4   3   3    3  0
+144 Labour                34  0   2   4   4   1   3    6  0
+145 "Liberal Democrat"    79  0   3   3   2   2   4    1  2
+146 Labour                39  0   4   2   4   4   3    6  0
+147 Labour                69  0   3   2   4   2   2    8  2
+148 Labour                61  0   4   4   4   2   2    6  0
+149 Labour                50  1   3   3   5   2   4    6  0
+150 Labour                33  0   2   3   4   4   4    3  2
+151 Labour                33  0   3   3   4   2   3    6  2
+152 Conservative          65  0   4   2   1   4   4   11  2
+153 Labour                49  0   3   3   2   2   3    6  2
+154 Labour                72  1   4   4   4   2   2    8  2
+155 Labour                70  0   3   4   5   2   4    1  2
+156 Labour                75  0   3   3   5   3   3    4  2
+157 Labour                24  1   3   5   4   1   2    4  0
+158 Labour                39  0   4   3   5   1   1   11  0
+159 "Liberal Democrat"    55  1   4   4   2   2   4    4  0
+160 Labour                67  0   1   3   2   4   2   11  0
+161 Labour                37  0   4   4   4   4   2    6  0
+162 Labour                51  1   3   3   4   1   4    6  2
+163 Conservative          79  0   2   3   2   4   2    5  0
+164 Labour                65  0   4   4   4   2   4    4  2
+165 Labour                70  0   3   2   4   2   1    3  2
+166 Conservative          53  1   1   3   1   4   4    6  2
+167 Labour                68  0   3   4   4   4   4    4  2
+168 Labour                83  1   3   4   4   4   3    3  2
+169 "Liberal Democrat"    35  0   3   3   1   2   5    5  3
+170 "Liberal Democrat"    31  0   3   3   4   1   5    3  0
+171 Labour                33  0   4   3   4   1   1    5  2
+172 Labour                60  0   4   3   4   1   4    3  2
+173 "Liberal Democrat"    26  0   4   4   4   2   4    5  2
+174 Labour                51  1   4   4   4   2   4    2  3
+175 "Liberal Democrat"    42  1   4   3   2   1   4    3  3
+176 Labour                55  0   4   4   4   1   4    2  2
+177 "Liberal Democrat"    41  1   4   3   4   4   4    1  2
+178 Conservative          40  0   3   2   2   2   2    6  2
+179 Conservative          43  0   3   2   2   4   2    8  3
+180 "Liberal Democrat"    50  1   2   2   4   2   2    4  3
+181 Labour                47  1   4   4   5   1   2    2  3
+182 Conservative          90  0   4   4   2   4   4   11  3
+183 Conservative          76  1   4   3   1   4   2   11  3
+184 "Liberal Democrat"    73  0   3   2   4   4   3    3  0
+185 Conservative          52  0   3   3   2   4   2   11  2
+186 Labour                46  0   4   4   2   4   5    5  0
+187 Conservative          70  0   5   2   2   5   4   11  2
+188 Conservative          66  0   3   3   2   2   1   11  2
+189 "Liberal Democrat"    54  0   3   4   2   2   3   10  0
+190 Conservative          75  1   3   5   4   4   2    8  3
+191 Labour                41  0   3   2   4   2   4    5  0
+192 "Liberal Democrat"    62  0   2   3   2   2   2   11  0
+193 "Liberal Democrat"    33  1   3   4   2   2   4   11  2
+194 Conservative          59  0   3   2   4   2   4    8  2
+195 Conservative          73  1   3   3   2   4   1   11  2
+196 "Liberal Democrat"    46  0   3   3   2   4   4    3  2
+197 Conservative          54  0   3   5   2   4   2   11  2
+198 "Liberal Democrat"    40  0   4   2   2   2   5    7  2
+199 "Liberal Democrat"    57  0   4   3   2   1   4    2  3
+200 Conservative          43  1   2   3   1   4   2    8  2
+201 "Liberal Democrat"    46  1   4   4   4   1   3    8  0
+202 "Liberal Democrat"    51  1   2   2   4   4   4    4  2
+203 "Liberal Democrat"    67  1   3   4   4   4   3    7  0
+204 Conservative          65  0   3   3   2   2   4    6  2
+205 "Liberal Democrat"    42  0   2   3   2   2   2    6  0
+206 Conservative          45  1   4   4   4   2   4   11  3
+207 Conservative          34  1   4   3   1   4   1    5  3
+208 "Liberal Democrat"    55  0   3   3   4   2   4    5  0
+209 "Liberal Democrat"    56  1   4   4   2   2   4    5  3
+210 Conservative          39  0   2   2   4   1   5    4  0
+211 "Liberal Democrat"    35  0   3   2   4   2   4    6  2
+212 "Liberal Democrat"    45  0   3   3   2   2   4    2  1
+213 Labour                28  0   4   4   4   4   2    7  1
+214 Conservative          49  1   3   3   4   2   4    2  2
+215 Labour                60  1   2   2   4   2   1    7  0
+216 Conservative          34  1   1   1   1   4   1   11  3
+217 "Liberal Democrat"    56  1   2   3   4   1   4    3  3
+218 Labour                72  0   3   4   2   2   4    3  0
+219 Labour                59  1   3   3   2   2   2    4  2
+220 Labour                33  1   4   4   4   2   4    5  2
+221 Labour                65  0   2   2   4   3   3    9  2
+222 "Liberal Democrat"    24  0   4   2   4   2   4    4  0
+223 Labour                67  0   5   3   5   1   4    6  0
+224 Conservative          25  0   2   3   1   4   4    7  2
+225 Labour                44  0   4   3   4   2   1    8  2
+226 "Liberal Democrat"    64  1   3   3   2   1   3    6  2
+227 Labour                58  0   3   2   2   4   1    8  1
+228 Labour                33  0   3   3   4   4   4    5  2
+229 Labour                53  0   3   2   4   2   2    6  0
+230 Labour                68  0   2   3   5   2   4    8  0
+231 Labour                67  0   4   4   5   4   4   10  0
+232 Labour                44  1   4   2   4   2   2    4  3
+233 Labour                77  0   3   3   4   2   3    6  1
+234 Labour                35  0   3   3   2   1   2    1  2
+235 Labour                49  1   4   3   4   2   2    6  0
+236 Labour                36  0   4   4   4   2   2    7  2
+237 Labour                31  0   3   3   2   3   3    6  0
+238 Labour                52  1   3   3   4   1   4    5  0
+239 Labour                29  0   4   4   4   4   3    6  2
+240 Labour                74  0   4   4   5   1   2    9  0
+241 Labour                36  0   3   3   5   2   3    3  2
+242 Labour                47  0   3   1   2   1   4    4  0
+243 Labour                68  1   3   3   2   1   1    8  0
+244 Labour                40  0   3   2   2   4   4    1  3
+245 Labour                59  0   4   3   4   2   4    6  2
+246 Labour                54  0   3   3   5   4   3    1  0
+247 Conservative          65  0   3   3   2   4   4   11  0
+248 "Liberal Democrat"    54  0   3   3   2   2   5    5  0
+249 "Liberal Democrat"    24  1   4   3   4   1   4    2  3
+250 Conservative          28  0   3   2   2   4   2    6  0
+251 Labour                79  1   3   3   5   1   5   11  2
+252 Labour                80  0   4   5   4   2   4    1  0
+253 Labour                32  0   3   2   5   1   5    6  2
+254 Labour                32  0   3   2   5   1   4    3  2
+255 Labour                34  1   3   3   2   1   1    2  2
+256 Labour                36  0   3   3   4   2   4    4  0
+257 Labour                53  0   3   4   2   1   3    9  0
+258 Labour                63  0   4   3   4   2   2    9  0
+259 Labour                27  0   3   3   4   4   4    7  0
+260 "Liberal Democrat"    45  0   3   3   2   2   4    1  0
+261 "Liberal Democrat"    77  0   4   3   4   4   2    4  2
+262 Labour                57  1   4   3   4   2   2    3  2
+263 "Liberal Democrat"    75  0   4   2   4   4   5   11  0
+264 Labour                36  0   4   4   2   2   2   11  2
+265 Labour                69  0   3   3   4   1   4    1  2
+266 "Liberal Democrat"    58  1   3   3   4   3   3   10  0
+267 "Liberal Democrat"    71  1   5   2   4   3   3    3  3
+268 "Liberal Democrat"    55  1   4   4   4   4   5    9  2
+269 Labour                38  0   2   4   4   2   2    1  3
+270 "Liberal Democrat"    37  0   4   4   4   2   4   11  0
+271 "Liberal Democrat"    44  0   2   3   4   4   4    6  0
+272 Conservative          64  0   3   3   4   4   4   10  2
+273 "Liberal Democrat"    37  0   2   3   2   2   4    5  0
+274 Conservative          52  1   3   2   2   4   2   11  2
+275 "Liberal Democrat"    71  0   2   3   4   2   5   11  0
+276 Conservative          49  0   3   3   2   2   4    8  0
+277 Labour                88  0   3   3   4   1   2    6  0
+278 Conservative          63  0   2   4   2   4   2   10  3
+279 "Liberal Democrat"    74  0   4   3   4   2   5    8  0
+280 "Liberal Democrat"    29  0   3   5   4   4   4    6  0
+281 "Liberal Democrat"    66  0   3   3   4   2   4    6  0
+282 "Liberal Democrat"    43  1   3   4   1   1   1    8  3
+283 Labour                71  0   2   2   2   1   4   11  0
+284 "Liberal Democrat"    42  1   3   3   2   2   4    9  0
+285 "Liberal Democrat"    79  1   2   2   2   2   4    9  3
+286 Labour                61  0   3   3   1   1   2    6  2
+287 Conservative          74  0   4   4   4   2   4    7  2
+288 "Liberal Democrat"    54  0   2   3   2   4   4   11  0
+289 Labour                81  0   4   4   4   1   4    1  2
+290 Conservative          47  1   4   3   2   4   1    3  3
+291 Conservative          75  0   2   3   4   4   2    8  2
+292 Conservative          60  0   1   2   2   5   1   11  2
+293 "Liberal Democrat"    51  0   3   3   4   2   4    6  1
+294 Conservative          47  0   4   1   4   2   4    8  3
+295 Conservative          70  0   3   2   4   4   2   11  0
+296 Labour                61  1   2   3   4   2   2    2  3
+297 Labour                62  1   4   2   4   4   3    6  2
+298 Labour                69  1   5   5   4   2   3   11  0
+299 "Liberal Democrat"    74  0   3   2   4   2   4   11  0
+300 Labour                30  1   4   3   4   1   2    2  2
+301 "Liberal Democrat"    70  1   4   4   4   2   3    4  2
+302 Conservative          75  1   3   4   2   2   5   11  0
+303 Labour                75  0   4   3   4   2   4    9  0
+304 Labour                30  0   4   4   1   2   4   11  0
+305 "Liberal Democrat"    77  0   2   2   2   2   2   11  2
+306 Conservative          66  1   2   3   4   4   4   10  2
+307 Conservative          70  1   2   2   4   2   2   10  3
+308 Labour                38  1   4   4   4   2   2    4  2
+309 Labour                49  1   4   4   4   4   2    2  2
+310 Labour                40  0   4   5   4   1   3    1  0
+311 "Liberal Democrat"    82  1   4   4   5   2   3    6  2
+312 "Liberal Democrat"    48  1   3   2   4   2   4    6  2
+313 Conservative          58  1   2   2   1   1   1   11  2
+314 "Liberal Democrat"    29  0   3   2   2   4   4    9  2
+315 Conservative          65  1   2   3   2   2   1    4  1
+316 Conservative          33  1   3   1   2   4   2    9  2
+317 Conservative          55  1   3   3   4   4   2   11  3
+318 Labour                56  1   4   5   4   1   5   11  2
+319 Labour                45  0   3   4   5   2   3    7  2
+320 Conservative          50  0   3   5   1   5   1   10  1
+321 Labour                80  0   3   3   5   1   2    4  2
+322 "Liberal Democrat"    51  0   3   4   4   1   2    6  2
+323 "Liberal Democrat"    55  0   2   3   1   4   4    1  0
+324 Labour                55  0   4   4   4   2   2    6  0
+325 "Liberal Democrat"    61  0   4   3   4   1   4    6  0
+326 Labour                39  0   3   3   4   2   3    9  0
+327 "Liberal Democrat"    49  1   3   3   2   1   5   11  0
+328 Conservative          77  1   3   3   2   4   2    9  2
+329 "Liberal Democrat"    43  0   3   3   4   1   4    7  2
+330 "Liberal Democrat"    34  1   3   3   4   2   4    3  2
+331 Labour                72  0   5   5   5   4   4   11  0
+332 Conservative          60  1   4   4   2   4   3   10  2
+333 "Liberal Democrat"    39  0   3   3   1   3   3   11  0
+334 "Liberal Democrat"    38  1   2   4   2   2   4    4  3
+335 "Liberal Democrat"    35  1   3   5   4   2   4    5  2
+336 Labour                44  0   4   4   2   2   4   10  0
+337 Labour                31  1   4   4   4   1   4    6  3
+338 "Liberal Democrat"    33  1   3   3   2   4   4    6  3
+339 Conservative          66  1   2   3   1   5   1   11  3
+340 "Liberal Democrat"    63  1   3   2   4   2   4    2  3
+341 Labour                47  1   4   4   4   4   4    7  0
+342 Conservative          38  1   3   2   2   4   2   11  2
+343 Labour                67  0   4   3   5   4   5    6  2
+344 Conservative          37  0   1   4   1   5   1   11  2
+345 Labour                27  0   2   4   2   4   4   10  0
+346 Labour                50  1   3   3   5   5   5    1  3
+347 Labour                77  1   3   3   5   4   2    2  0
+348 "Liberal Democrat"    71  1   3   4   1   4   3   11  2
+349 Labour                53  0   3   3   4   2   4    6  2
+350 Labour                56  0   4   2   5   2   2    1  2
+351 Conservative          32  0   3   4   2   2   3    9  3
+352 Conservative          83  0   2   4   2   4   3   10  2
+353 Labour                52  0   4   3   4   2   2    5  3
+354 Conservative          74  0   4   2   2   5   3   11  2
+355 Conservative          92  0   3   3   2   4   2    6  0
+356 Conservative          34  1   4   4   2   4   3   10  2
+357 "Liberal Democrat"    80  0   2   3   4   4   4    3  3
+358 Conservative          39  0   3   5   4   4   3   11  3
+359 "Liberal Democrat"    80  0   3   5   4   1   4   10  2
+360 "Liberal Democrat"    66  1   3   3   4   2   2    5  2
+361 Conservative          71  0   3   3   2   3   3   11  3
+362 "Liberal Democrat"    46  0   3   2   4   2   4   11  2
+363 Conservative          54  1   3   3   4   4   4   11  1
+364 Conservative          55  0   4   4   4   4   4    9  2
+365 Conservative          69  1   2   2   1   5   1   11  0
+366 Labour                74  1   4   4   4   2   4    5  2
+367 "Liberal Democrat"    56  1   4   4   5   1   4    2  3
+368 Conservative          74  0   2   3   4   4   3    9  0
+369 Conservative          37  0   4   4   2   4   1   11  2
+370 "Liberal Democrat"    43  1   3   2   4   2   4    8  3
+371 Conservative          50  0   2   3   4   4   5   10  2
+372 Labour                57  1   4   4   4   4   2    5  2
+373 "Liberal Democrat"    42  1   3   4   4   2   4    4  3
+374 Conservative          42  1   2   3   1   2   2    8  2
+375 Labour                36  1   4   5   5   2   4    4  0
+376 "Liberal Democrat"    55  1   4   4   4   4   2    9  0
+377 Conservative          73  0   2   1   2   2   1   11  2
+378 Conservative          29  1   4   5   4   4   1    8  2
+379 Labour                56  0   4   4   5   2   4    5  2
+380 Conservative          67  0   2   3   4   4   4    9  2
+381 "Liberal Democrat"    47  0   4   3   4   2   3    7  1
+382 Conservative          38  1   2   2   4   4   4   10  2
+383 Labour                35  0   3   3   5   1   2    4  3
+384 Labour                83  0   4   4   4   4   3    1  0
+385 Conservative          32  1   4   4   4   2   1    9  2
+386 Conservative          68  0   1   1   2   4   1   10  2
+387 Conservative          76  1   4   3   4   5   4   11  2
+388 Conservative          63  1   2   2   4   4   2    5  3
+389 "Liberal Democrat"    86  1   3   3   4   2   4   11  0
+390 Labour                35  1   4   1   4   2   2   11  0
+391 Labour                39  1   3   4   4   2   4    5  2
+392 "Liberal Democrat"    65  1   2   2   4   2   4   11  2
+393 Labour                32  1   3   3   4   2   4    2  3
+394 Labour                81  0   4   4   4   4   4   10  2
+395 Conservative          83  0   1   2   2   4   3    6  0
+396 "Liberal Democrat"    33  1   4   2   4   2   4    7  0
+397 "Liberal Democrat"    37  0   2   3   4   4   4    5  2
+398 "Liberal Democrat"    48  1   4   4   4   4   3    3  3
+399 "Liberal Democrat"    61  0   4   2   4   2   2    6  2
+400 Labour                66  0   3   3   5   1   1   11  0
+401 "Liberal Democrat"    38  1   2   1   2   2   4    9  2
+402 "Liberal Democrat"    79  1   4   3   5   4   4   11  0
+403 "Liberal Democrat"    58  0   4   3   4   4   4    5  2
+404 Conservative          56  1   2   5   1   4   1    4  0
+405 Conservative          61  0   4   3   2   4   4   10  2
+406 "Liberal Democrat"    58  0   3   3   4   2   2    3  3
+407 "Liberal Democrat"    57  0   3   3   1   1   4    6  2
+408 Conservative          35  0   4   5   4   5   4   11  2
+409 "Liberal Democrat"    59  1   3   3   4   4   4    1  3
+410 "Liberal Democrat"    84  0   3   4   1   2   3    9  3
+411 "Liberal Democrat"    65  0   3   3   4   1   2   10  2
+412 Labour                24  0   4   4   4   2   2    4  2
+413 Labour                35  1   4   3   4   4   2   11  2
+414 "Liberal Democrat"    50  1   2   2   4   4   3    2  2
+415 "Liberal Democrat"    42  0   3   2   2   4   2   11  3
+416 Conservative          55  1   4   4   4   4   4   11  2
+417 Labour                35  1   4   3   2   1   1    7  2
+418 "Liberal Democrat"    53  1   4   3   2   2   4    6  3
+419 Conservative          46  1   2   2   2   2   2   11  2
+420 Conservative          55  0   4   4   4   2   4    7  2
+421 "Liberal Democrat"    42  1   3   3   5   1   4    2  3
+422 Conservative          59  0   3   3   2   4   4    8  2
+423 Labour                56  1   3   3   4   2   5    1  2
+424 "Liberal Democrat"    48  1   4   3   4   1   4    3  2
+425 Conservative          52  1   4   2   1   4   1    9  0
+426 "Liberal Democrat"    35  0   3   4   5   4   4    9  2
+427 "Liberal Democrat"    36  1   4   4   4   2   4    2  2
+428 "Liberal Democrat"    77  0   4   4   4   1   3   11  2
+429 "Liberal Democrat"    51  0   3   3   4   2   4    6  2
+430 Conservative          76  1   2   2   2   4   2   11  2
+431 Conservative          39  0   3   4   2   4   4   11  2
+432 "Liberal Democrat"    38  1   3   2   4   2   3   11  1
+433 Labour                65  0   4   3   4   4   4    1  3
+434 Conservative          48  0   3   3   2   4   3   11  2
+435 Labour                31  1   3   4   4   2   4    8  3
+436 "Liberal Democrat"    49  1   1   1   2   2   4    6  0
+437 Conservative          37  1   4   1   1   4   1    8  2
+438 Conservative          60  1   4   4   4   2   2    6  2
+439 Labour                58  1   4   4   5   1   4    5  3
+440 Labour                65  1   4   2   4   1   2    6  2
+441 Labour                51  0   3   3   4   4   4   11  0
+442 Labour                78  0   1   1   4   4   3    1  0
+443 Conservative          58  1   2   4   4   4   2    3  0
+444 Labour                61  1   4   2   4   2   3    7  2
+445 Labour                88  0   4   4   5   1   2   10  0
+446 Labour                33  1   4   3   4   1   4    3  2
+447 Conservative          66  1   1   1   2   4   2    9  2
+448 Labour                40  1   4   4   4   4   2    1  0
+449 "Liberal Democrat"    49  0   2   3   4   4   2    3  2
+450 Labour                48  1   1   1   4   4   4   11  2
+451 Labour                41  0   3   4   4   4   2   11  0
+452 "Liberal Democrat"    42  1   4   3   4   4   3   11  2
+453 Labour                72  0   3   4   4   2   4    8  2
+454 Labour                76  0   4   4   4   1   2   11  0
+455 Labour                37  0   4   4   5   4   4   11  3
+456 Labour                70  0   5   4   4   2   4    6  3
+457 Labour                63  1   3   4   5   1   1    1  3
+458 Labour                27  0   3   3   4   2   3   11  0
+459 "Liberal Democrat"    57  1   3   3   4   3   3    5  3
+460 "Liberal Democrat"    66  1   4   4   4   2   4   11  0
+461 Conservative          57  1   3   2   2   4   4    3  0
+462 Labour                72  0   5   4   4   2   1    2  2
+463 "Liberal Democrat"    69  1   3   4   2   2   2    6  0
+464 Labour                46  0   3   4   4   1   4    6  2
+465 "Liberal Democrat"    75  0   2   1   1   2   4   10  2
+466 Conservative          73  0   3   1   4   4   3   11  2
+467 Labour                82  1   3   4   5   4   4   11  2
+468 "Liberal Democrat"    28  1   4   3   4   4   4    2  2
+469 Conservative          66  1   4   3   4   2   2    5  0
+470 Conservative          67  1   3   2   2   4   2   11  2
+471 Conservative          51  1   3   3   2   4   2   10  3
+472 Conservative          43  1   3   3   4   2   2    7  2
+473 Labour                30  1   3   4   4   2   2    8  0
+474 Conservative          47  0   2   3   4   4   3    4  2
+475 Conservative          27  1   3   3   2   4   2    8  2
+476 Labour                32  0   3   4   4   2   2    3  3
+477 Conservative          61  0   3   3   2   4   3   11  2
+478 Conservative          52  1   4   4   2   4   4    9  2
+479 Labour                34  1   4   4   4   2   2    1  2
+480 "Liberal Democrat"    71  0   5   3   5   2   3    2  2
+481 Conservative          54  0   3   3   1   4   4   11  2
+482 "Liberal Democrat"    28  1   3   3   2   2   4    3  3
+483 Conservative          70  1   4   3   4   2   2    3  3
+484 "Liberal Democrat"    43  1   2   3   4   2   4    2  3
+485 "Liberal Democrat"    70  1   2   3   4   1   3    6  2
+486 Conservative          63  0   2   2   4   4   2   10  2
+487 "Liberal Democrat"    62  0   2   3   2   4   4    3  0
+488 "Liberal Democrat"    62  1   4   3   4   1   4    3  3
+489 Conservative          47  1   2   2   2   4   2    9  2
+490 "Liberal Democrat"    57  1   2   3   4   1   4    3  3
+491 Conservative          26  0   3   5   4   4   4    6  0
+492 Labour                41  1   4   3   4   2   4    5  3
+493 Labour                72  0   4   4   2   1   2    6  0
+494 Labour                53  0   1   1   1   4   3    7  2
+495 "Liberal Democrat"    68  0   3   3   4   4   4    7  2
+496 Labour                79  0   3   3   5   3   4    6  0
+497 "Liberal Democrat"    26  1   3   3   4   2   4    8  2
+498 "Liberal Democrat"    54  1   2   2   1   2   2   11  2
+499 Conservative          60  1   3   4   2   4   2   11  0
+500 Labour                74  1   3   4   4   2   2    1  2
+501 Labour                30  1   2   4   4   2   2    3  2
+502 "Liberal Democrat"    41  1   4   5   4   2   2    7  2
+503 Conservative          68  0   3   3   1   4   4    5  2
+504 Conservative          33  0   3   5   4   4   2    7  2
+505 "Liberal Democrat"    71  0   3   3   2   2   4    8  2
+506 Conservative          69  1   3   4   2   4   2    9  2
+507 Conservative          72  0   4   3   4   4   2    6  2
+508 Labour                40  1   3   4   4   2   4    7  3
+509 Conservative          29  0   1   2   1   4   3   11  2
+510 Conservative          63  1   2   2   1   5   4   11  2
+511 Conservative          53  0   1   2   1   2   1   10  2
+512 Conservative          46  0   3   3   2   4   4    7  2
+513 "Liberal Democrat"    39  1   3   4   4   1   4    8  0
+514 Conservative          80  1   2   2   2   4   3    7  2
+515 Conservative          40  1   4   4   2   2   5    7  3
+516 Conservative          44  1   4   3   4   3   3    4  2
+517 Labour                58  1   3   3   5   4   5   11  0
+518 Conservative          35  1   4   4   4   4   2    8  2
+519 Conservative          39  1   2   3   4   2   2   11  3
+520 "Liberal Democrat"    53  1   3   3   2   4   4   11  2
+521 Labour                40  0   3   4   2   2   2    8  0
+522 Labour                51  1   4   3   4   1   4    2  2
+523 Conservative          51  0   3   2   2   2   4    3  2
+524 Conservative          50  0   3   4   2   2   1    7  2
+525 Conservative          68  0   3   3   2   4   4    5  2
+526 Labour                32  0   4   4   4   4   4    2  2
+527 "Liberal Democrat"    66  0   4   4   4   2   4    3  2
+528 Conservative          62  0   3   2   2   4   2   11  2
+529 Labour                79  0   3   2   4   4   4    5  2
+530 "Liberal Democrat"    70  0   4   3   2   4   4   10  2
+531 Labour                75  1   3   4   4   4   2    8  0
+532 "Liberal Democrat"    78  0   4   4   2   2   3    6  2
+533 Conservative          78  1   2   3   4   5   2   11  1
+534 "Liberal Democrat"    71  0   3   3   4   2   4   11  0
+535 Labour                73  1   4   5   4   1   4    3  2
+536 "Liberal Democrat"    52  1   4   2   4   2   4    4  3
+537 "Liberal Democrat"    66  1   4   3   5   1   4    4  3
+538 Conservative          38  1   2   3   4   4   2   11  2
+539 Labour                44  1   5   3   4   2   4    8  0
+540 "Liberal Democrat"    83  0   3   4   4   2   3    4  2
+541 Labour                34  1   3   3   4   1   4    1  3
+542 Conservative          75  1   1   5   2   4   4   11  2
+543 Conservative          66  1   3   3   2   4   3    5  0
+544 Labour                74  0   3   4   2   2   4    6  2
+545 Labour                46  0   4   4   4   1   1   11  2
+546 "Liberal Democrat"    76  1   4   2   2   2   2    3  3
+547 Conservative          53  0   2   1   2   5   4    4  2
+548 "Liberal Democrat"    46  0   2   2   2   4   3    8  0
+549 Conservative          43  1   4   3   4   2   1   11  3
+550 "Liberal Democrat"    29  0   4   3   4   2   4    4  2
+551 Labour                53  0   4   4   4   1   4   10  2
+552 Conservative          31  0   2   2   2   4   2    6  2
+553 Conservative          54  1   4   3   2   4   3   11  2
+554 Conservative          54  0   3   4   2   4   3    9  2
+555 Conservative          38  1   2   5   2   4   2   10  2
+556 Labour                54  0   5   3   5   2   3    6  2
+557 Labour                41  0   3   2   4   2   2    8  0
+558 Labour                77  1   5   2   4   2   4    4  2
+559 Conservative          39  1   2   4   1   2   2   11  3
+560 Conservative          53  0   3   3   2   2   4    5  2
+561 "Liberal Democrat"    42  1   4   4   4   2   4   11  0
+562 "Liberal Democrat"    46  1   3   4   4   1   4    2  0
+563 Labour                37  1   4   2   4   2   5    8  1
+564 Labour                41  1   4   3   4   4   4    8  2
+565 Labour                40  0   3   3   2   4   2    6  2
+566 Labour                84  1   5   4   5   1   2    1  2
+567 "Liberal Democrat"    43  1   3   3   4   1   2    4  3
+568 "Liberal Democrat"    81  0   4   3   1   2   4   11  2
+569 Labour                41  0   3   4   4   4   3    4  2
+570 Labour                46  0   4   2   2   2   2    5  2
+571 Conservative          64  1   3   3   1   2   2    3  2
+572 "Liberal Democrat"    67  0   4   4   4   4   5   10  3
+573 Conservative          71  1   1   4   2   4   2    8  0
+574 Conservative          89  1   2   2   1   4   4    1  0
+575 Conservative          76  0   3   4   4   4   2   10  3
+576 Conservative          50  1   4   3   2   4   4    9  2
+577 Conservative          53  0   3   2   2   4   2   11  2
+578 Conservative          74  0   4   3   2   4   2    8  2
+579 "Liberal Democrat"    76  1   4   3   4   4   4    8  0
+580 "Liberal Democrat"    84  1   4   3   4   2   5    1  3
+581 Labour                68  0   5   4   5   4   4   11  0
+582 "Liberal Democrat"    46  0   3   3   2   4   4    6  0
+583 Conservative          39  0   3   3   1   4   1   11  2
+584 Conservative          64  0   2   3   2   4   4   10  2
+585 Labour                43  0   4   2   5   1   3    6  0
+586 Conservative          59  1   4   3   3   5   3    9  3
+587 Labour                58  1   4   3   5   2   3    3  2
+588 Labour                70  0   4   2   2   1   1   11  2
+589 Conservative          35  0   3   4   2   4   3   11  2
+590 Labour                36  1   5   5   4   2   4    1  3
+591 Conservative          77  1   3   3   4   4   2    9  3
+592 Labour                52  1   4   4   4   2   4    4  2
+593 "Liberal Democrat"    65  1   3   1   4   2   2   11  2
+594 Conservative          60  0   3   2   2   4   4   11  2
+595 Conservative          48  0   3   3   2   5   3   10  2
+596 Labour                38  1   4   3   5   5   4    3  2
+597 Conservative          70  0   3   3   2   4   3    7  2
+598 Conservative          50  1   3   2   2   2   2    3  2
+599 "Liberal Democrat"    47  0   4   4   2   2   1    5  3
+600 Conservative          62  0   3   3   4   3   3   11  2
+601 "Liberal Democrat"    64  1   5   3   4   2   1    1  3
+602 Conservative          62  1   3   3   2   4   2    4  0
+603 Labour                57  0   3   4   4   2   4    6  0
+604 Labour                65  0   3   3   4   2   4   11  0
+605 Conservative          55  1   4   4   4   2   4    8  2
+606 Conservative          64  0   4   1   4   4   2    9  0
+607 Conservative          32  0   2   3   2   4   2   11  2
+608 Conservative          72  0   3   3   1   2   1   11  2
+609 "Liberal Democrat"    65  1   3   3   4   2   2    5  2
+610 "Liberal Democrat"    84  0   4   2   4   1   4    4  3
+611 Conservative          49  1   3   4   2   4   2   11  2
+612 "Liberal Democrat"    55  0   3   3   4   2   4   11  2
+613 "Liberal Democrat"    48  1   4   3   4   4   5   10  2
+614 Conservative          30  1   2   3   4   4   5    7  3
+615 Conservative          40  0   3   4   2   2   2    9  2
+616 Conservative          35  1   2   2   1   4   3   11  2
+617 Labour                51  1   4   4   2   2   4    5  3
+618 Conservative          75  1   5   3   2   4   2   11  2
+619 Labour                54  1   4   4   2   2   4    3  2
+620 Labour                32  0   4   5   2   4   2    7  2
+621 Conservative          64  1   3   3   4   4   3    6  0
+622 "Liberal Democrat"    54  0   3   3   4   4   5    6  3
+623 Labour                76  1   3   3   4   2   2   11  2
+624 "Liberal Democrat"    47  0   3   2   2   2   2    6  2
+625 Conservative          33  0   2   4   2   2   3   11  3
+626 Conservative          88  0   4   2   4   4   4    2  0
+627 "Liberal Democrat"    39  1   3   4   4   2   4    5  2
+628 Conservative          66  1   3   3   2   5   2   11  2
+629 Conservative          37  0   2   3   2   4   2   10  2
+630 Labour                81  0   1   3   4   2   4   11  1
+631 "Liberal Democrat"    64  0   4   4   4   4   5    5  2
+632 Labour                37  0   4   3   4   2   4    4  2
+633 "Liberal Democrat"    48  0   2   2   2   4   1    9  2
+634 Conservative          42  1   2   2   2   4   4   11  3
+635 "Liberal Democrat"    53  0   3   1   2   4   4    6  3
+636 Conservative          57  0   2   3   2   2   4    4  0
+637 Labour                39  1   2   2   4   1   4   10  2
+638 Conservative          56  0   3   3   2   4   1    3  2
+639 Labour                41  1   4   4   4   2   2    5  2
+640 Conservative          45  0   4   3   4   4   4   10  2
+641 Conservative          85  0   4   3   2   4   4   11  2
+642 Labour                57  0   3   3   4   2   4    4  2
+643 Labour                37  1   4   4   4   4   2    3  2
+644 Labour                53  0   4   2   1   4   4   11  2
+645 Labour                35  0   3   4   4   4   3   10  0
+646 Labour                41  0   4   4   4   1   4    4  0
+647 Conservative          37  0   2   4   2   5   2    9  2
+648 "Liberal Democrat"    32  0   4   3   2   2   4    6  2
+649 Conservative          30  1   3   1   2   4   5   11  2
+650 Conservative          61  0   4   3   4   4   2    7  2
+651 Labour                36  0   4   4   4   4   4    1  0
+652 Labour                59  0   5   3   2   4   1   11  0
+653 Conservative          72  1   5   1   4   1   4   11  2
+654 Conservative          55  0   3   4   4   5   3    8  3
+655 Labour                48  0   3   2   2   3   3   11  0
+656 Labour                57  0   4   4   4   2   4   11  0
+657 Conservative          68  0   3   3   4   3   3   11  2
+658 Conservative          78  1   2   3   1   4   1   11  3
+659 Conservative          68  0   2   4   4   2   4    6  0
+660 Conservative          67  1   3   3   5   5   5    7  2
+661 Conservative          35  0   3   2   4   4   4    7  2
+662 Labour                36  0   4   3   2   2   3    8  2
+663 Labour                30  0   4   2   4   2   4   11  2
+664 "Liberal Democrat"    37  1   4   3   4   4   4   10  2
+665 Conservative          43  1   3   2   2   4   3    9  2
+666 "Liberal Democrat"    80  1   5   3   2   5   4    9  0
+667 Conservative          35  0   2   4   2   2   2    7  2
+668 Conservative          36  0   2   2   4   2   4   11  3
+669 Conservative          81  0   4   5   2   4   2   11  2
+670 "Liberal Democrat"    40  0   4   4   4   2   2    3  2
+671 "Liberal Democrat"    69  0   4   2   2   4   4   10  0
+672 "Liberal Democrat"    47  0   2   2   4   2   4   10  2
+673 "Liberal Democrat"    31  1   3   2   4   4   3    4  2
+674 Labour                79  1   5   4   4   2   4    6  2
+675 "Liberal Democrat"    43  1   4   1   2   4   3    6  2
+676 Conservative          72  0   3   3   2   4   3   11  2
+677 Conservative          36  1   2   3   2   4   3   10  2
+678 Labour                47  1   3   3   4   2   4   11  0
+679 Conservative          66  1   4   5   2   5   2   11  2
+680 Conservative          36  1   3   4   4   4   3    6  2
+681 Conservative          46  1   3   3   2   2   2   11  2
+682 Conservative          47  0   2   2   1   5   2   11  3
+683 Conservative          75  0   3   4   4   4   2   11  2
+684 Conservative          74  0   4   3   4   4   4   10  2
+685 Conservative          54  0   2   4   2   2   1   11  2
+686 Conservative          79  0   3   3   4   4   2   11  2
+687 Labour                75  0   3   4   5   2   2    3  0
+688 Conservative          71  0   3   3   2   4   2    5  2
+689 Conservative          50  0   2   4   2   5   4   11  2
+690 "Liberal Democrat"    56  0   3   3   2   3   3    6  3
+691 Conservative          52  0   4   3   2   4   2    7  2
+692 Labour                33  1   4   4   4   2   4    6  2
+693 Labour                72  0   5   3   4   1   4   11  2
+694 Labour                47  0   4   3   4   4   4    5  2
+695 Labour                35  1   4   4   2   1   2   11  0
+696 Labour                68  1   3   5   4   4   4   11  2
+697 Labour                78  0   5   4   4   2   4    1  2
+698 Labour                47  0   4   3   2   4   2    2  0
+699 Labour                52  1   3   3   2   1   4    1  2
+700 Labour                72  1   4   4   5   4   4    2  2
+701 Labour                47  0   3   3   4   2   4    4  0
+702 Labour                50  1   4   3   2   2   3   10  0
+703 Labour                59  1   3   4   4   2   4    2  3
+704 Conservative          37  1   4   4   2   2   2    8  2
+705 Labour                72  1   4   4   4   2   4    3  2
+706 Labour                35  1   3   4   4   4   4    3  3
+707 Conservative          48  1   2   2   4   2   4    8  0
+708 Labour                64  1   5   4   4   4   4   11  0
+709 "Liberal Democrat"    57  0   4   5   4   1   4    3  2
+710 Labour                42  1   4   3   4   2   4    3  2
+711 "Liberal Democrat"    39  1   5   3   4   2   4    5  3
+712 Conservative          75  0   2   2   4   4   2    6  0
+713 "Liberal Democrat"    43  1   3   4   4   4   4    6  2
+714 Labour                43  1   4   4   4   2   4    1  1
+715 Labour                37  0   3   2   4   4   5    5  2
+716 Labour                67  1   4   3   5   2   2    2  2
+717 Labour                59  0   4   1   4   1   3   11  1
+718 Labour                52  0   3   3   4   1   2    6  2
+719 Labour                45  1   5   4   4   2   3    9  0
+720 Conservative          55  1   3   2   2   4   2   10  3
+721 Labour                70  1   2   2   2   5   2   11  0
+722 Conservative          64  1   3   3   2   4   1   11  2
+723 "Liberal Democrat"    35  0   4   4   4   2   4    6  2
+724 "Liberal Democrat"    38  1   3   3   4   1   2    7  3
+725 "Liberal Democrat"    31  0   3   2   2   2   4    7  2
+726 "Liberal Democrat"    38  1   3   3   4   1   4    5  3
+727 Labour                43  0   2   2   4   2   2    9  0
+728 Labour                46  0   4   5   1   1   4    6  0
+729 "Liberal Democrat"    42  0   4   4   2   2   2    6  2
+730 Labour                44  0   5   1   5   1   3    4  3
+731 Labour                40  0   5   3   4   2   4    4  2
+732 Labour                37  0   4   4   4   1   3    1  2
+733 Labour                47  1   4   3   4   3   3    5  3
+734 Labour                44  0   5   3   4   1   2    3  3
+735 Labour                29  1   4   3   4   2   4    4  2
+736 Labour                37  1   4   4   4   2   4    2  3
+737 "Liberal Democrat"    46  1   3   3   4   2   4    8  2
+738 Labour                62  1   3   3   4   1   3    6  3
+739 Labour                46  1   5   4   5   2   2    9  0
+740 Labour                79  0   4   5   5   3   3    7  1
+741 Labour                38  1   4   4   4   2   2    2  3
+742 Conservative          29  0   3   3   2   2   2    7  0
+743 Labour                56  0   3   2   2   2   2    4  0
+744 "Liberal Democrat"    45  1   2   2   4   2   4    6  2
+745 Labour                53  1   4   3   4   4   4    5  0
+746 Conservative          70  0   2   2   4   2   2   10  2
+747 Conservative          44  1   3   2   2   4   2   11  2
+748 "Liberal Democrat"    51  0   4   4   4   2   4   11  2
+749 Conservative          69  0   1   1   4   2   4   11  0
+750 Conservative          43  1   2   2   2   4   3    6  0
+751 Conservative          56  0   4   3   4   4   4    3  0
+752 Labour                45  1   4   4   4   2   4    5  3
+753 Labour                45  0   5   3   4   4   4    3  1
+754 Conservative          49  1   2   2   4   4   4   10  2
+755 Conservative          32  0   2   3   2   5   2    1  0
+756 Conservative          58  0   2   3   2   2   3    7  2
+757 "Liberal Democrat"    49  0   4   4   4   2   4    8  0
+758 Labour                75  1   3   4   4   3   3    1  2
+759 Conservative          36  1   2   2   2   2   1    9  3
+760 "Liberal Democrat"    61  0   3   3   4   4   4    8  2
+761 Conservative          76  1   3   3   4   4   3   10  2
+762 Labour                36  1   3   4   4   4   3    9  0
+763 Labour                37  0   3   3   2   1   1    9  0
+764 Conservative          77  0   2   2   1   4   3    8  3
+765 Labour                25  1   4   4   4   2   4    6  2
+766 Conservative          49  0   3   5   4   4   4    8  2
+767 "Liberal Democrat"    59  0   2   2   2   2   4   11  0
+768 Conservative          31  1   2   2   2   4   1    5  2
+769 Conservative          35  1   2   2   2   4   1   11  3
+770 Labour                36  1   3   2   4   2   2    9  0
+771 Labour                30  0   2   1   4   4   3    2  3
+772 Labour                61  1   4   3   5   2   1    9  0
+773 Conservative          52  0   2   3   2   5   2   11  2
+774 Conservative          56  0   4   3   2   4   4   10  2
+775 Labour                53  0   4   4   4   4   3    8  2
+776 "Liberal Democrat"    46  0   3   4   4   2   5    3  3
+777 Conservative          27  0   3   4   2   2   2    9  2
+778 Labour                60  1   5   4   4   2   4    2  2
+779 Conservative          75  1   4   3   4   4   1   11  2
+780 "Liberal Democrat"    80  1   5   5   4   4   2    4  0
+781 Labour                61  0   5   4   4   1   4    1  2
+782 Conservative          55  1   2   2   1   4   4    7  2
+783 "Liberal Democrat"    35  1   4   4   5   2   2    6  2
+784 "Liberal Democrat"    49  0   2   4   2   2   3    5  2
+785 "Liberal Democrat"    45  1   2   3   4   2   4    2  3
+786 Labour                52  0   4   2   4   1   4    5  2
+787 Labour                75  0   5   2   5   1   4    1  2
+788 "Liberal Democrat"    85  0   4   2   4   1   4    1  3
+789 Labour                38  1   4   4   4   1   4    5  2
+790 Labour                34  0   4   5   4   4   2    8  0
+791 "Liberal Democrat"    61  0   3   3   2   1   2    7  2
+792 Labour                54  1   2   3   2   1   2    5  3
+793 "Liberal Democrat"    58  0   3   3   4   4   5    4  3
+794 "Liberal Democrat"    54  1   4   4   4   2   4   10  0
+795 Labour                50  1   3   5   5   1   4    3  2
+796 Labour                29  0   4   4   4   2   2   10  0
+797 Labour                51  0   4   3   4   2   1    6  2
+798 Labour                72  1   4   4   5   1   4    2  2
+799 "Liberal Democrat"    50  0   2   2   2   2   4    6  2
+800 Labour                85  0   2   3   4   3   4    6  2
+801 Conservative          42  0   2   2   1   4   4    7  2
+802 "Liberal Democrat"    34  1   4   3   4   1   2    5  2
+803 Conservative          70  0   3   3   2   2   2    4  2
+804 Labour                36  1   4   5   5   4   4    6  0
+805 Conservative          35  1   3   5   4   4   2    8  3
+806 Conservative          38  1   4   2   4   5   3   10  2
+807 "Liberal Democrat"    53  0   2   3   2   2   2    5  3
+808 Labour                77  1   4   4   5   2   4    5  2
+809 Labour                37  1   2   4   4   1   4    5  3
+810 Labour                75  1   2   2   2   4   3    3  3
+811 Labour                45  0   4   5   5   4   4   10  3
+812 Conservative          82  1   3   3   4   4   3   11  2
+813 Labour                48  1   3   3   4   2   4    8  3
+814 Labour                68  1   3   3   4   1   1    6  2
+815 "Liberal Democrat"    48  0   3   3   4   1   5    2  3
+816 Labour                87  1   4   4   4   2   4    3  2
+817 Labour                52  0   4   4   4   3   3    4  3
+818 Conservative          53  1   4   3   4   5   4   10  2
+819 Conservative          66  0   1   2   1   4   2   11  3
+820 "Liberal Democrat"    85  0   3   4   4   4   4    5  2
+821 Labour                47  1   4   3   4   4   2    4  0
+822 "Liberal Democrat"    51  0   3   4   4   2   2   11  2
+823 Labour                41  0   4   4   4   4   3    5  2
+824 "Liberal Democrat"    54  0   4   2   4   4   4    2  2
+825 Labour                76  1   4   3   5   4   4   10  2
+826 Conservative          72  1   3   3   2   4   2    6  2
+827 "Liberal Democrat"    31  0   3   2   4   2   3    6  0
+828 Conservative          27  0   3   3   2   4   4    5  2
+829 Conservative          79  0   3   3   2   4   2    1  0
+830 "Liberal Democrat"    46  1   2   3   4   4   3    1  2
+831 Conservative          31  1   3   3   4   5   4    9  2
+832 "Liberal Democrat"    66  0   4   3   4   2   4    5  3
+833 Labour                42  1   4   4   4   2   2    4  2
+834 "Liberal Democrat"    51  1   3   4   4   2   4    4  2
+835 "Liberal Democrat"    75  0   4   4   4   1   5    3  3
+836 Labour                44  0   3   3   4   2   4   11  0
+837 Labour                63  0   3   3   4   3   3   11  2
+838 Conservative          77  0   2   3   2   2   2   10  2
+839 Conservative          75  0   1   3   2   2   4   11  2
+840 Labour                50  1   4   3   4   1   3    9  0
+841 Labour                67  1   3   3   4   2   4    8  2
+842 Conservative          64  0   3   1   2   4   4   11  0
+843 Conservative          24  0   3   2   4   2   2   10  2
+844 "Liberal Democrat"    44  1   3   1   4   2   4    6  2
+845 Conservative          39  0   4   4   2   4   4    8  0
+846 Conservative          70  0   3   1   4   4   4    7  2
+847 Conservative          35  0   3   4   2   1   1   11  2
+848 Conservative          33  0   3   4   2   4   2    6  2
+849 Labour                36  0   2   2   4   1   2   10  0
+850 Conservative          45  0   3   4   1   5   4   11  0
+851 Labour                57  0   3   1   4   3   3   11  1
+852 Labour                63  0   3   1   4   1   4    9  2
+853 Conservative          64  0   2   4   1   4   3   10  2
+854 "Liberal Democrat"    49  0   2   4   2   4   2    5  1
+855 Labour                52  1   5   3   4   2   3   11  3
+856 Labour                66  0   3   2   4   2   4    9  2
+857 Labour                75  0   3   4   4   4   3    1  2
+858 Labour                45  1   2   4   4   2   5    6  2
+859 "Liberal Democrat"    39  1   3   3   4   2   4    8  0
+860 "Liberal Democrat"    40  0   3   3   4   2   4    5  2
+861 Conservative          43  1   3   4   2   4   1   11  2
+862 Conservative          74  0   3   3   2   2   2    9  2
+863 Conservative          70  1   3   3   4   2   2    5  2
+864 Conservative          27  0   3   2   4   2   2    8  2
+865 Conservative          57  0   4   3   2   4   1    9  2
+866 Conservative          45  1   4   4   4   4   2    3  0
+867 "Liberal Democrat"    49  0   2   3   4   1   4    6  2
+868 Conservative          80  0   2   4   4   4   4   11  2
+869 Conservative          51  0   3   3   2   4   4    9  2
+870 Labour                33  0   4   4   4   1   4    9  0
+871 "Liberal Democrat"    38  1   2   4   2   2   1    4  3
+872 Conservative          48  0   2   3   1   4   2   11  2
+873 Conservative          45  1   4   4   2   4   1   11  2
+874 Conservative          42  0   2   2   2   4   1   11  3
+875 Labour                50  1   3   4   4   4   4    8  2
+876 Labour                49  0   4   4   4   2   4    9  0
+877 Conservative          44  0   3   3   4   4   5   11  2
+878 Labour                85  1   5   5   5   1   4    1  2
+879 "Liberal Democrat"    86  0   3   4   1   4   4   11  2
+880 Conservative          69  1   2   3   2   4   2   11  0
+881 "Liberal Democrat"    32  1   2   5   4   2   4    4  3
+882 "Liberal Democrat"    51  0   2   4   4   1   4    6  3
+883 Conservative          69  0   3   3   2   2   2   11  2
+884 Labour                81  1   5   3   5   2   4    8  2
+885 "Liberal Democrat"    75  1   2   3   4   2   3    6  2
+886 Conservative          70  0   4   3   4   4   3    6  0
+887 Conservative          58  0   4   2   2   4   3   11  0
+888 Labour                61  1   4   2   5   1   4    2  3
+889 Conservative          57  0   2   3   4   4   2    6  0
+890 Conservative          35  1   3   4   2   4   4   11  0
+891 Conservative          37  0   2   3   2   2   4   10  0
+892 Conservative          46  1   3   3   2   2   2    9  3
+893 "Liberal Democrat"    66  0   4   3   2   1   4    6  3
+894 Labour                51  0   4   3   4   2   4    2  2
+895 Conservative          73  0   3   3   2   4   2   11  3
+896 Labour                32  1   3   3   4   1   4    3  3
+897 "Liberal Democrat"    30  0   3   3   2   4   4    6  2
+898 Labour                38  0   4   2   4   2   1    6  2
+899 Conservative          39  1   5   4   2   2   1   11  2
+900 Conservative          49  1   3   4   4   5   4    9  0
+901 Conservative          82  1   3   3   2   4   4   11  2
+902 Labour                42  1   3   3   4   4   4    7  2
+903 Labour                37  0   5   5   4   1   2    6  2
+904 Conservative          58  0   3   2   4   4   3    7  0
+905 "Liberal Democrat"    29  0   3   3   4   2   2    8  2
+906 "Liberal Democrat"    27  1   5   5   2   1   4    4  3
+907 Labour                57  1   5   5   5   2   4    9  0
+908 Conservative          30  0   3   3   2   4   4    8  0
+909 Conservative          43  0   3   4   2   2   4    9  2
+910 Labour                62  1   5   4   4   1   4    2  3
+911 "Liberal Democrat"    42  1   3   4   4   2   4    3  3
+912 Labour                67  0   5   3   4   1   2    1  3
+913 Labour                36  0   2   3   4   2   4    5  0
+914 Labour                74  1   3   4   4   2   3    2  3
+915 Labour                41  0   4   4   4   2   2    4  0
+916 "Liberal Democrat"    27  0   3   4   4   4   4    5  3
+917 Labour                29  0   4   4   4   2   4    2  2
+918 Labour                38  0   3   3   4   2   2    6  2
+919 "Liberal Democrat"    74  0   4   3   4   2   4    7  1
+920 "Liberal Democrat"    38  1   3   2   4   4   4    2  2
+921 "Liberal Democrat"    61  0   3   3   4   2   4    1  2
+922 "Liberal Democrat"    65  1   4   4   4   2   1    3  0
+923 Labour                36  1   3   3   4   4   2    5  0
+924 "Liberal Democrat"    48  1   3   4   4   2   2    5  2
+925 "Liberal Democrat"    39  0   2   4   2   4   4    8  0
+926 Labour                48  0   3   3   4   1   1    6  2
+927 Conservative          50  1   3   3   2   5   2    7  3
+928 Conservative          71  0   2   2   4   5   2   11  2
+929 "Liberal Democrat"    42  0   2   2   1   2   2    7  2
+930 Labour                56  0   4   3   4   2   4    3  2
+931 "Liberal Democrat"    64  0   1   3   2   1   3    3  0
+932 "Liberal Democrat"    80  1   3   4   4   1   4    1  0
+933 Conservative          56  0   4   3   4   4   4    5  0
+934 Conservative          60  0   2   2   2   3   3   10  2
+935 Conservative          39  1   2   2   1   4   4    9  2
+936 Labour                43  1   2   1   4   2   4    8  2
+937 Labour                35  1   3   2   4   2   4    3  2
+938 Labour                66  0   5   3   5   1   2    3  2
+939 Conservative          59  1   1   4   2   4   4   11  0
+940 Labour                37  1   2   4   2   4   4    7  0
+941 Labour                37  0   3   4   4   4   4    5  3
+942 Labour                61  1   5   5   4   4   4    6  0
+943 Labour                38  1   4   5   4   4   3    6  0
+944 Labour                66  1   4   3   5   1   3    1  2
+945 "Liberal Democrat"    41  1   3   3   2   4   3   11  0
+946 Conservative          65  0   2   4   2   5   3   11  2
+947 Labour                57  1   3   2   2   2   5    2  2
+948 Conservative          62  1   2   1   1   4   1   11  2
+949 Labour                31  1   4   5   4   2   2    4  3
+950 Conservative          40  1   2   3   1   4   1    8  3
+951 "Liberal Democrat"    49  0   3   3   2   1   4    9  2
+952 Conservative          65  1   2   5   4   2   2   11  2
+953 Labour                35  0   5   3   2   2   3   10  0
+954 Labour                76  1   4   5   5   2   4    2  3
+955 Conservative          74  0   2   2   2   4   3   10  2
+956 Conservative          53  0   3   3   2   4   3    1  0
+957 Labour                49  0   1   2   4   2   2   11  0
+958 "Liberal Democrat"    37  1   3   2   4   2   4    7  2
+959 Conservative          54  1   2   2   2   2   4    9  2
+960 "Liberal Democrat"    75  1   4   4   1   1   5    1  3
+961 Labour                76  1   4   3   5   2   5    9  3
+962 Labour                58  0   3   3   4   2   4    2  2
+963 Conservative          35  0   2   3   4   4   4   10  3
+964 Conservative          66  0   3   3   2   3   2   11  1
+965 Conservative          80  1   2   3   4   4   3    6  2
+966 Conservative          53  1   4   3   4   2   4    5  2
+967 Labour                64  1   3   2   5   2   1   11  2
+968 Labour                71  0   3   4   4   1   2    4  0
+969 Labour                40  0   4   2   4   1   4    4  0
+970 Labour                62  0   4   3   4   4   3    2  2
+971 Conservative          89  0   2   2   4   4   4   11  0
+972 Labour                40  1   2   4   4   2   2    8  2
+973 Labour                38  0   3   4   4   2   4    3  2
+974 Labour                38  0   3   3   2   2   3   11  0
+975 Labour                37  1   4   4   4   2   4   10  0
+976 Labour                50  0   3   2   4   2   3   11  0
+977 Conservative          53  1   2   5   1   4   4   11  2
+978 Conservative          78  0   2   3   2   4   2   11  1
+979 Labour                73  1   2   2   4   2   2   10  2
+980 Labour                64  1   4   4   2   5   3   11  2
+981 Labour                56  1   2   2   4   1   3    6  2
+982 Conservative          73  0   4   3   2   2   4   11  2
+983 Conservative          51  1   3   2   2   2   4    9  2
+984 Conservative          74  0   4   3   2   4   5    8  2
+985 Labour                39  0   4   5   5   4   3    6  2
+986 Conservative          56  1   4   2   5   5   2    8  2
+987 Conservative          80  0   4   2   4   5   3   11  2
+988 Conservative          67  1   3   2   2   4   3   11  1
+989 "Liberal Democrat"    61  1   2   2   4   4   4    9  0
+990 Conservative          81  0   3   3   4   4   4   10  2
+991 "Liberal Democrat"    35  0   2   3   4   2   4    3  3
+992 Conservative          34  0   2   4   1   4   3   11  2
+993 Conservative          49  1   1   2   2   4   4   11  3
+994 "Liberal Democrat"    41  0   3   4   4   2   4   10  0
+995 "Liberal Democrat"    58  1   5   3   4   1   4    5  2
+996 Labour                37  1   4   3   4   2   2    5  0
+997 Labour                38  1   4   2   5   4   4    1  0
+998 Labour                47  1   4   4   4   1   4    4  3
+999 Labour                75  0   4   5   4   4   3   11  2
+1000    Labour                72  0   4   3   2   2   4   11  2
+1001    "Liberal Democrat"    75  1   4   3   4   2   4   11  0
+1002    Conservative          68  1   3   1   2   2   4   11  2
+1003    Labour                70  1   5   4   2   5   5   11  0
+1004    Conservative          72  0   2   2   4   4   4    4  0
+1005    Labour                39  0   3   2   4   2   1    7  0
+1006    Labour                47  0   4   3   4   2   3    5  2
+1007    Labour                42  0   4   3   5   4   5    4  2
+1008    Labour                75  1   4   4   4   1   3   11  0
+1009    Conservative          75  0   2   2   2   4   2    8  3
+1010    Labour                32  0   4   3   4   2   2    4  1
+1011    Labour                76  0   4   4   5   2   4   11  0
+1012    Labour                34  0   4   4   4   2   4    3  2
+1013    Conservative          67  0   3   4   4   4   3    4  1
+1014    "Liberal Democrat"    44  0   2   2   2   4   4   11  2
+1015    Labour                42  1   3   5   2   1   2    9  0
+1016    Conservative          40  0   2   3   4   4   2   11  2
+1017    Labour                57  1   4   3   4   2   4    6  2
+1018    Conservative          65  1   2   4   4   4   4    5  2
+1019    Conservative          42  0   1   1   1   4   3    6  2
+1020    Labour                77  1   4   5   4   2   4    1  0
+1021    Labour                49  1   3   5   5   2   2    5  3
+1022    "Liberal Democrat"    50  1   4   3   2   1   2   11  1
+1023    Labour                76  1   4   4   5   4   4    3  2
+1024    "Liberal Democrat"    72  1   3   3   2   2   4   11  2
+1025    Labour                47  1   4   3   4   2   2    4  2
+1026    Labour                52  0   4   4   4   2   4    4  2
+1027    Conservative          68  0   2   3   1   4   3   11  2
+1028    Labour                61  1   4   5   4   2   4   10  2
+1029    Conservative          72  1   3   3   2   4   1   11  3
+1030    Conservative          72  0   4   4   2   2   3    9  2
+1031    Labour                45  0   3   3   4   2   4   11  0
+1032    Conservative          47  0   2   3   2   4   3    8  2
+1033    Conservative          35  1   2   3   2   3   3   10  2
+1034    Labour                34  0   4   4   4   2   2    7  0
+1035    Labour                39  0   4   3   4   2   2    3  2
+1036    "Liberal Democrat"    53  1   2   4   1   4   4    2  0
+1037    "Liberal Democrat"    27  0   3   5   2   4   4    6  2
+1038    Labour                40  1   4   3   4   2   4    2  2
+1039    Labour                29  0   4   3   4   4   2    6  3
+1040    Conservative          43  0   5   5   2   4   2    4  2
+1041    Conservative          59  0   3   3   2   4   2    4  3
+1042    Conservative          78  0   4   4   2   2   4   10  0
+1043    Labour                26  1   4   4   4   2   3    5  0
+1044    Labour                34  1   4   5   4   2   2    5  2
+1045    Labour                42  1   3   3   4   2   2    3  0
+1046    "Liberal Democrat"    37  0   1   2   4   4   4   11  0
+1047    Labour                50  0   1   1   4   4   2    6  0
+1048    Labour                61  1   4   3   4   4   4   10  0
+1049    Labour                58  1   4   3   2   2   4   11  0
+1050    Labour                78  0   4   4   4   2   3   11  0
+1051    Labour                52  0   3   4   2   1   4    6  0
+1052    "Liberal Democrat"    34  0   3   2   2   2   2    9  0
+1053    Labour                69  1   4   3   5   2   2    3  0
+1054    Conservative          69  1   4   4   1   5   1   11  1
+1055    Labour                54  1   5   4   4   2   5    6  2
+1056    Labour                79  1   4   3   5   1   2    3  0
+1057    Labour                30  0   5   5   4   5   5    9  0
+1058    Labour                52  1   3   3   4   1   4   11  1
+1059    Labour                37  0   3   4   4   2   2    8  0
+1060    Conservative          49  1   3   3   4   4   4   11  2
+1061    Labour                31  0   5   4   4   4   4    6  0
+1062    Labour                32  1   2   2   4   4   5    5  3
+1063    Labour                37  1   4   4   2   2   3   10  0
+1064    Labour                39  0   4   4   4   2   4    2  2
+1065    Labour                74  0   4   4   5   2   3   11  0
+1066    "Liberal Democrat"    89  1   3   5   4   2   2    1  0
+1067    "Liberal Democrat"    66  1   3   3   2   4   4    6  2
+1068    "Liberal Democrat"    83  1   4   5   5   2   4    3  2
+1069    "Liberal Democrat"    45  1   2   3   4   2   1    6  2
+1070    Conservative          71  1   3   3   4   4   2   11  2
+1071    Labour                53  1   3   3   4   1   5   11  2
+1072    Conservative          84  0   3   3   2   5   1   11  2
+1073    Labour                59  1   3   3   5   2   4    6  2
+1074    "Liberal Democrat"    69  0   4   4   4   5   4   11  2
+1075    "Liberal Democrat"    68  1   2   3   1   4   4   11  0
+1076    Labour                89  1   5   5   5   2   1    1  2
+1077    Conservative          72  1   3   3   4   4   2    8  3
+1078    Labour                83  0   4   3   4   3   4    8  0
+1079    Labour                64  1   4   3   2   1   5    4  2
+1080    Labour                47  0   3   4   4   2   2    2  2
+1081    Labour                61  1   4   4   5   1   4    1  2
+1082    Labour                43  1   4   4   2   3   3    5  0
+1083    "Liberal Democrat"    42  0   3   3   4   1   5    6  2
+1084    Labour                40  1   3   4   4   1   4    3  3
+1085    Conservative          68  1   3   1   4   5   2    9  0
+1086    Labour                24  0   4   1   2   2   3    7  0
+1087    "Liberal Democrat"    53  0   3   2   4   4   5    6  0
+1088    Conservative          36  0   3   3   2   4   4   10  2
+1089    Labour                76  0   4   4   5   2   2    1  0
+1090    Conservative          67  1   3   3   2   5   3    9  0
+1091    "Liberal Democrat"    58  1   2   2   4   2   4    4  3
+1092    Labour                70  1   3   3   1   5   5    3  2
+1093    Conservative          35  1   3   3   4   4   3   10  2
+1094    Labour                47  0   4   3   5   1   4    2  3
+1095    Conservative          42  1   4   3   4   4   3    5  0
+1096    Labour                40  0   4   4   4   2   2    2  2
+1097    "Liberal Democrat"    34  0   4   5   4   4   4    7  2
+1098    Labour                54  0   3   3   4   2   2    1  2
+1099    Conservative          39  0   3   2   4   4   2    9  2
+1100    Labour                60  1   3   3   4   1   3    6  0
+1101    "Liberal Democrat"    74  0   4   3   5   4   3   11  0
+1102    Conservative          62  1   3   3   2   5   3    8  0
+1103    Conservative          59  0   2   3   4   2   2    6  3
+1104    Labour                47  0   4   4   4   1   4    4  2
+1105    "Liberal Democrat"    49  1   4   3   4   2   4    8  2
+1106    Conservative          49  1   2   3   2   3   2   11  0
+1107    Labour                86  0   3   4   4   2   2    4  2
+1108    Conservative          67  0   4   4   4   4   4   11  2
+1109    Conservative          54  0   4   2   1   4   4   11  2
+1110    Conservative          85  0   2   3   2   2   4    8  2
+1111    "Liberal Democrat"    49  1   3   1   4   4   3    4  0
+1112    Conservative          55  0   3   3   4   4   3    3  0
+1113    "Liberal Democrat"    74  1   4   3   4   1   4    2  3
+1114    Conservative          70  1   2   2   1   2   2   11  2
+1115    Conservative          46  1   2   2   2   1   4    8  2
+1116    "Liberal Democrat"    29  0   4   5   4   4   2    8  0
+1117    "Liberal Democrat"    65  0   4   4   2   1   4    3  3
+1118    "Liberal Democrat"    49  0   3   2   4   2   4    2  2
+1119    Conservative          29  0   2   4   4   4   2    9  2
+1120    Conservative          37  0   3   3   4   4   2   10  2
+1121    Labour                45  1   4   4   4   2   5    9  3
+1122    Conservative          61  1   2   3   2   2   1    5  3
+1123    Labour                34  1   3   3   2   2   2    9  2
+1124    Labour                61  0   4   3   4   4   4    1  2
+1125    "Liberal Democrat"    38  0   3   2   1   5   3    5  0
+1126    Labour                37  1   3   3   4   2   4    6  2
+1127    Labour                28  0   4   4   4   2   4   10  0
+1128    Labour                61  0   3   3   4   2   3    6  0
+1129    "Liberal Democrat"    53  0   4   3   4   2   4   10  0
+1130    Labour                73  1   4   4   5   2   3    6  2
+1131    Labour                74  1   4   4   4   4   1    7  0
+1132    Labour                36  0   3   3   1   5   4    7  3
+1133    Labour                67  1   4   2   4   1   2    1  2
+1134    Conservative          55  0   4   3   4   5   2   11  2
+1135    Conservative          45  1   2   2   1   5   4    9  2
+1136    Labour                38  0   4   4   4   4   5    3  0
+1137    Conservative          52  0   3   3   2   4   4   11  3
+1138    Labour                70  1   3   3   4   2   2    4  2
+1139    "Liberal Democrat"    68  1   4   4   2   2   2    4  3
+1140    Labour                50  1   4   3   4   1   4    3  3
+1141    Labour                34  1   2   4   5   1   4    3  3
+1142    Labour                43  0   2   3   2   3   3   11  2
+1143    Conservative          93  0   4   4   5   5   2    6  2
+1144    Labour                82  0   3   5   5   2   3   11  0
+1145    Conservative          24  1   3   4   2   4   2   11  0
+1146    Labour                65  0   3   3   2   1   4    1  0
+1147    Labour                41  1   4   3   4   2   2    6  2
+1148    Labour                83  0   3   3   5   1   2    6  0
+1149    Labour                47  0   4   4   4   2   4    5  2
+1150    Labour                46  0   2   1   4   4   3    9  0
+1151    Labour                30  1   5   4   4   2   1    6  2
+1152    Labour                36  1   3   3   4   1   4    6  3
+1153    Conservative          44  1   2   2   2   2   5    7  2
+1154    Labour                57  0   2   3   4   2   3    6  2
+1155    Conservative          53  0   3   4   2   2   2    6  0
+1156    "Liberal Democrat"    64  0   3   3   4   2   4    6  0
+1157    Conservative          56  0   3   3   1   4   4    9  2
+1158    "Liberal Democrat"    49  0   2   3   2   4   4    6  2
+1159    Labour                87  0   5   3   5   4   3    4  0
+1160    "Liberal Democrat"    46  0   3   3   1   2   5   11  0
+1161    Labour                50  1   4   3   4   2   2    4  2
+1162    Labour                51  1   4   3   5   2   4    1  3
+1163    Labour                33  0   4   5   5   4   4    2  2
+1164    Conservative          77  1   2   3   2   4   1   11  2
+1165    Labour                48  0   4   3   4   2   4    6  3
+1166    Conservative          67  0   3   4   4   4   3   11  2
+1167    "Liberal Democrat"    27  1   3   4   4   4   4    2  3
+1168    Conservative          24  0   4   4   2   1   3    4  2
+1169    Labour                26  1   2   4   5   2   4    4  3
+1170    "Liberal Democrat"    46  0   4   3   4   2   4    5  2
+1171    "Liberal Democrat"    25  0   4   4   1   1   4    3  3
+1172    Labour                37  1   4   3   4   1   4    4  0
+1173    Conservative          24  1   4   5   4   4   2    6  0
+1174    Labour                32  0   4   4   2   2   2   11  0
+1175    Labour                54  1   3   3   1   2   2   11  0
+1176    Conservative          63  0   4   2   2   4   4   10  2
+1177    Conservative          59  0   4   3   2   4   2    8  2
+1178    Conservative          55  0   5   3   2   2   2    7  0
+1179    Conservative          36  1   3   4   4   4   4   10  3
+1180    "Liberal Democrat"    74  0   4   4   4   2   4    9  0
+1181    Labour                47  0   3   4   4   2   3    6  0
+1182    Labour                31  1   4   4   4   2   3   11  0
+1183    "Liberal Democrat"    71  0   1   2   2   3   3    9  0
+1184    Conservative          80  0   2   2   4   2   3   11  2
+1185    Conservative          61  0   3   3   4   2   1    6  0
+1186    Labour                42  0   3   3   4   4   3   10  2
+1187    Labour                39  0   4   4   4   1   2   11  0
+1188    "Liberal Democrat"    54  0   3   4   4   4   2    7  0
+1189    Labour                75  1   5   4   5   2   4    1  2
+1190    Labour                58  1   4   2   2   4   4   11  0
+1191    Labour                58  1   4   4   5   4   4    7  2
+1192    Labour                75  0   4   5   4   2   4    4  0
+1193    Labour                50  0   4   4   4   2   4    2  2
+1194    Conservative          38  0   4   2   1   4   3    9  2
+1195    Labour                34  1   3   3   2   4   5    9  2
+1196    Labour                39  1   3   4   4   2   2    6  3
+1197    Labour                46  0   3   4   5   2   1    3  2
+1198    "Liberal Democrat"    33  0   2   2   4   2   4    5  3
+1199    Conservative          71  0   4   2   2   4   3   11  2
+1200    Labour                49  1   4   3   4   2   2    4  2
+1201    Labour                63  1   5   2   5   2   4    1  2
+1202    Labour                57  0   4   4   4   3   3   11  1
+1203    Conservative          64  0   4   5   4   4   3   11  2
+1204    Labour                47  0   3   5   4   1   4    3  0
+1205    Conservative          63  1   3   3   2   4   2    9  2
+1206    Labour                52  1   4   4   4   2   4    1  2
+1207    Conservative          44  0   2   2   2   4   2    9  0
+1208    "Liberal Democrat"    64  0   3   3   4   2   3    4  2
+1209    Labour                45  0   4   4   4   2   4    6  0
+1210    Labour                36  0   3   3   2   2   4    6  2
+1211    Labour                47  0   4   5   4   2   4    2  3
+1212    Labour                37  1   5   5   5   2   1    4  0
+1213    Labour                57  1   3   3   4   2   5    3  0
+1214    Labour                54  1   3   2   4   2   2    7  2
+1215    Conservative          80  0   2   4   2   2   4   11  0
+1216    Labour                65  0   5   3   4   2   4    7  2
+1217    "Liberal Democrat"    56  1   3   3   2   4   4   11  2
+1218    "Liberal Democrat"    55  1   4   3   2   2   4    5  3
+1219    Conservative          66  1   4   4   4   4   4    9  0
+1220    Labour                71  1   3   3   4   2   2    2  2
+1221    "Liberal Democrat"    32  0   4   2   2   2   4    6  0
+1222    Conservative          72  1   2   2   1   4   1   11  2
+1223    Conservative          76  1   3   2   4   5   3   11  2
+1224    Conservative          71  1   1   1   2   4   4    9  0
+1225    "Liberal Democrat"    45  0   4   3   5   4   4    1  3
+1226    "Liberal Democrat"    65  0   3   3   4   2   4    3  0
+1227    Conservative          39  0   3   1   1   2   2    8  2
+1228    Labour                55  0   4   3   4   2   5    5  0
+1229    "Liberal Democrat"    62  1   3   3   2   2   2    8  2
+1230    Labour                70  1   3   3   2   2   2    5  3
+1231    "Liberal Democrat"    39  0   3   5   4   1   4    1  2
+1232    Labour                50  1   4   2   4   2   4    5  2
+1233    Labour                40  1   5   5   5   1   1    3  3
+1234    Labour                41  0   4   4   4   2   2    4  2
+1235    "Liberal Democrat"    40  1   2   2   4   4   5   11  3
+1236    Labour                71  0   3   4   5   4   4    1  2
+1237    "Liberal Democrat"    36  0   3   3   2   2   4    6  2
+1238    Labour                70  0   4   3   5   2   2    1  0
+1239    Labour                42  0   4   4   4   2   2    3  0
+1240    Conservative          69  0   4   3   4   4   1    8  2
+1241    "Liberal Democrat"    60  0   5   3   2   2   2    5  2
+1242    Labour                65  0   4   3   2   4   4   10  0
+1243    Labour                52  0   4   4   4   2   4    5  0
+1244    Labour                41  1   1   4   5   1   5   11  0
+1245    Labour                29  0   4   4   4   2   1    2  2
+1246    "Liberal Democrat"    45  0   3   4   4   2   5   10  0
+1247    Conservative          48  0   3   2   4   4   4   11  3
+1248    "Liberal Democrat"    55  0   2   4   4   2   4    3  2
+1249    Conservative          75  0   4   3   4   5   2    7  3
+1250    "Liberal Democrat"    80  0   4   2   2   3   4   11  0
+1251    "Liberal Democrat"    51  0   3   4   1   1   1    3  2
+1252    Labour                56  0   3   3   4   2   4    6  2
+1253    Labour                43  1   4   4   4   2   4   11  2
+1254    Labour                39  0   3   4   4   2   3    3  2
+1255    Conservative          59  1   4   3   2   4   1   11  0
+1256    Labour                34  0   4   4   2   2   4   11  2
+1257    "Liberal Democrat"    27  0   3   3   4   2   4    4  2
+1258    "Liberal Democrat"    50  1   3   2   4   4   1   11  2
+1259    Labour                47  1   4   4   4   2   4    1  2
+1260    Conservative          69  0   2   2   2   5   2   11  2
+1261    "Liberal Democrat"    77  0   4   4   2   2   2    1  2
+1262    Labour                74  1   4   4   2   4   4   11  2
+1263    Conservative          71  0   4   3   2   4   4   11  2
+1264    Conservative          63  0   4   4   4   4   3    3  2
+1265    Labour                49  1   4   4   4   2   2    3  2
+1266    Conservative          46  1   3   4   2   2   3   11  0
+1267    Conservative          43  0   3   2   1   4   4   11  3
+1268    Conservative          70  1   3   2   4   4   2   10  3
+1269    Labour                67  0   3   3   4   2   4    3  0
+1270    Labour                80  0   4   4   4   2   2   10  1
+1271    Conservative          54  1   2   2   2   5   2   11  2
+1272    "Liberal Democrat"    58  1   4   4   4   4   5   11  0
+1273    Labour                54  0   3   3   4   2   2    3  2
+1274    Labour                27  0   3   4   4   4   4    9  0
+1275    Labour                40  1   4   3   4   4   2    6  0
+1276    Labour                49  0   4   4   4   2   4    3  2
+1277    Labour                26  0   5   3   5   1   4    4  2
+1278    "Liberal Democrat"    51  0   2   2   4   4   3    8  0
+1279    "Liberal Democrat"    53  1   4   4   2   1   4   10  0
+1280    Labour                46  1   3   3   4   2   2    5  2
+1281    Labour                42  0   3   1   4   2   2    4  2
+1282    "Liberal Democrat"    35  1   4   2   4   2   4    3  2
+1283    Conservative          69  0   2   3   1   4   1   11  2
+1284    Labour                63  1   4   2   4   2   4    4  3
+1285    Labour                76  1   3   4   5   2   4    9  2
+1286    Labour                44  1   4   4   4   2   4    5  2
+1287    Conservative          66  1   2   2   2   4   3   11  3
+1288    Labour                85  1   2   3   4   2   4   11  3
+1289    Conservative          32  1   4   2   2   4   2    5  3
+1290    Labour                74  0   3   4   4   1   2   11  1
+1291    Conservative          28  1   3   4   4   4   2    8  2
+1292    Labour                91  1   4   3   4   4   3    2  3
+1293    Labour                60  1   5   2   5   2   2    1  2
+1294    Conservative          59  0   3   3   2   2   2    7  2
+1295    Labour                31  1   4   4   4   2   4    4  2
+1296    Labour                81  0   3   4   4   4   3    4  0
+1297    Labour                56  1   4   3   4   2   4    6  0
+1298    "Liberal Democrat"    28  1   2   4   4   4   2    7  0
+1299    Labour                69  0   3   3   4   2   3   11  2
+1300    "Liberal Democrat"    37  0   4   1   4   2   5   11  0
+1301    Labour                24  0   3   3   4   4   4    4  0
+1302    Labour                38  0   3   3   1   2   5    6  2
+1303    Labour                46  1   4   4   4   2   4    3  3
+1304    Labour                25  1   4   4   5   1   4    4  3
+1305    Labour                49  1   3   3   5   4   4   10  0
+1306    Labour                35  1   3   3   4   1   4    1  2
+1307    Labour                56  1   3   3   4   4   2    3  0
+1308    Labour                62  0   4   2   4   2   2    5  2
+1309    "Liberal Democrat"    57  1   4   1   2   2   4    3  2
+1310    Labour                48  0   3   4   4   1   2    6  0
+1311    Labour                80  0   4   4   4   2   2    5  2
+1312    "Liberal Democrat"    61  0   3   3   2   2   4    6  0
+1313    Conservative          52  1   3   3   2   4   2   10  3
+1314    Labour                32  1   3   3   2   4   3    6  2
+1315    "Liberal Democrat"    70  0   2   2   2   4   4   11  0
+1316    Labour                35  1   4   3   5   4   4    5  0
+1317    Labour                33  0   5   5   5   4   4   11  0
+1318    Labour                32  1   3   4   4   4   2    9  0
+1319    Labour                62  0   3   3   4   1   5   11  0
+1320    Conservative          30  0   3   4   2   5   2   11  2
+1321    Labour                60  0   3   4   2   2   4    9  2
+1322    "Liberal Democrat"    49  1   3   2   4   4   4    9  2
+1323    Labour                69  0   4   2   4   2   4   11  0
+1324    "Liberal Democrat"    67  1   4   3   1   4   5   11  0
+1325    Labour                39  1   4   3   4   2   2    8  0
+1326    Conservative          40  1   3   2   2   4   2   11  0
+1327    Labour                74  1   4   4   4   2   2    1  2
+1328    Labour                37  0   5   5   5   2   2   11  2
+1329    Labour                35  0   4   3   4   4   2    7  0
+1330    Labour                33  1   5   4   4   4   3    8  0
+1331    Conservative          54  1   3   2   2   5   2    9  3
+1332    "Liberal Democrat"    65  1   4   3   4   4   5    9  0
+1333    "Liberal Democrat"    49  1   3   4   2   4   4    7  2
+1334    Labour                72  0   3   3   4   2   2   11  0
+1335    Conservative          38  1   3   1   2   4   2    7  2
+1336    "Liberal Democrat"    67  0   4   2   2   2   4   10  1
+1337    Labour                47  1   3   3   5   2   4    1  2
+1338    "Liberal Democrat"    58  0   2   2   2   2   4    1  3
+1339    "Liberal Democrat"    31  1   3   5   4   2   4    3  3
+1340    Labour                34  0   4   5   4   1   3    6  0
+1341    Labour                42  0   3   3   2   2   3   11  0
+1342    Labour                67  1   3   3   4   2   4    6  2
+1343    "Liberal Democrat"    26  0   3   3   2   4   3    6  2
+1344    Labour                73  1   2   3   4   4   4    2  2
+1345    "Liberal Democrat"    46  0   2   4   4   4   1    6  2
+1346    Labour                69  0   3   3   2   4   5   11  2
+1347    Conservative          56  0   4   3   2   2   4    4  0
+1348    Conservative          66  1   3   5   1   5   4    8  3
+1349    Labour                54  1   4   4   4   2   4    1  1
+1350    Conservative          72  0   3   2   2   4   3    7  2
+1351    Labour                53  1   3   3   4   2   4    6  3
+1352    Labour                37  0   4   5   4   2   4    6  2
+1353    Conservative          47  0   4   3   4   5   2    8  0
+1354    "Liberal Democrat"    53  0   4   1   4   2   2    3  3
+1355    Conservative          69  0   3   3   4   4   4    9  2
+1356    "Liberal Democrat"    47  1   2   2   2   1   2    6  3
+1357    "Liberal Democrat"    46  0   4   2   2   1   4    5  2
+1358    "Liberal Democrat"    50  0   4   3   4   1   4    3  2
+1359    Conservative          65  0   4   4   1   4   1   11  2
+1360    Conservative          73  0   3   2   4   4   4    4  0
+1361    "Liberal Democrat"    47  1   3   2   4   2   4    3  3
+1362    Labour                30  1   3   4   4   4   2   11  0
+1363    Labour                50  0   3   3   4   4   2    6  0
+1364    Labour                53  0   5   5   4   4   3    2  2
+1365    Conservative          27  1   3   5   4   4   4    8  2
+1366    Conservative          65  0   3   3   4   5   3   11  2
+1367    Labour                39  0   4   4   4   4   2    7  0
+1368    Labour                69  1   3   3   4   2   2   11  2
+1369    Conservative          73  1   4   3   2   4   4    9  2
+1370    Labour                31  1   3   4   4   4   4    9  3
+1371    Conservative          62  0   2   2   2   4   2    6  2
+1372    "Liberal Democrat"    46  1   4   4   4   4   1    1  2
+1373    Labour                74  1   4   4   4   2   4    2  2
+1374    Conservative          50  0   3   2   2   2   3   11  0
+1375    Labour                51  1   4   4   4   2   4    6  3
+1376    Labour                50  0   4   3   4   1   3   11  0
+1377    Conservative          42  1   3   2   2   4   2   10  2
+1378    Labour                66  1   4   3   4   2   2    6  2
+1379    Labour                44  0   4   4   4   2   3   11  2
+1380    Conservative          62  1   3   3   2   4   2   11  2
+1381    Labour                72  0   4   4   4   2   3    6  0
+1382    Labour                71  1   4   4   2   4   4    6  0
+1383    Labour                75  1   5   5   5   2   4    1  2
+1384    Labour                35  0   5   4   2   2   3    4  0
+1385    "Liberal Democrat"    61  1   3   3   4   2   3   10  0
+1386    Labour                38  1   2   4   4   4   4   11  0
+1387    Labour                50  0   3   3   5   2   4    9  2
+1388    Conservative          53  0   3   2   2   1   4    4  0
+1389    Labour                84  0   4   5   5   2   4   11  0
+1390    Labour                57  0   4   4   2   2   4    6  0
+1391    Labour                69  1   3   3   4   2   4   10  3
+1392    Conservative          52  0   2   2   2   4   1   11  2
+1393    Labour                33  1   3   2   2   2   4    5  3
+1394    Conservative          72  1   2   2   2   5   2   11  2
+1395    Conservative          54  0   3   3   4   4   2   11  0
+1396    Labour                57  1   3   3   4   1   4    6  3
+1397    Labour                77  1   4   3   4   2   4    3  2
+1398    Conservative          58  1   2   1   2   4   4    4  0
+1399    Conservative          63  0   3   4   2   2   2   11  3
+1400    Conservative          49  1   3   1   2   5   4    9  3
+1401    Conservative          64  0   3   2   2   4   3   10  2
+1402    "Liberal Democrat"    55  0   3   3   4   2   2    3  3
+1403    Conservative          37  1   3   5   1   5   1   10  3
+1404    Conservative          48  0   3   3   2   4   1    2  2
+1405    "Liberal Democrat"    48  1   3   3   2   4   4    5  3
+1406    Labour                60  1   4   3   5   1   4    6  3
+1407    Labour                59  1   3   2   1   2   4    1  2
+1408    Conservative          67  0   4   3   4   2   3   11  0
+1409    Conservative          52  0   3   3   2   4   4    5  2
+1410    Labour                68  1   4   4   4   2   3   11  0
+1411    Labour                71  1   3   4   4   1   4   11  2
+1412    "Liberal Democrat"    54  0   3   3   2   1   4   11  0
+1413    Conservative          73  1   3   2   4   1   3    6  0
+1414    Labour                56  0   4   5   2   2   4    9  0
+1415    Labour                54  0   3   4   4   2   2    3  2
+1416    Conservative          63  1   2   3   4   4   2    6  2
+1417    Conservative          66  1   3   2   2   4   4    6  2
+1418    Labour                40  0   4   4   4   2   4    1  2
+1419    Labour                54  0   4   3   2   4   4    6  0
+1420    Labour                39  0   5   4   5   2   2    2  2
+1421    Labour                74  0   4   4   5   2   5    1  2
+1422    Conservative          61  1   3   2   2   4   3    2  0
+1423    Labour                45  0   4   4   4   1   4    8  2
+1424    Labour                72  1   4   4   5   1   4    1  2
+1425    Labour                46  1   3   3   2   1   2    4  3
+1426    "Liberal Democrat"    84  1   4   4   2   1   4    7  0
+1427    Labour                60  0   4   4   4   2   2    9  0
+1428    Labour                49  0   5   5   4   1   4    1  2
+1429    Labour                59  1   3   3   5   4   4    5  2
+1430    Labour                53  1   3   4   4   2   3   10  0
+1431    Labour                78  0   3   3   5   2   3    3  0
+1432    Labour                42  0   3   4   4   4   4    3  2
+1433    Labour                79  1   4   4   5   2   5    3  0
+1434    "Liberal Democrat"    59  1   4   3   4   1   4    8  1
+1435    Labour                66  1   4   4   5   4   2   11  0
+1436    Labour                54  1   5   3   4   2   4    8  2
+1437    Labour                62  1   4   1   1   1   3    1  0
+1438    Conservative          34  1   2   2   2   2   2    7  2
+1439    Labour                40  1   4   3   4   2   2    2  2
+1440    Labour                87  1   4   4   4   1   3   10  2
+1441    "Liberal Democrat"    34  0   3   3   2   2   4    8  2
+1442    Labour                48  1   3   3   5   2   3    6  2
+1443    Conservative          68  0   2   3   2   4   4   10  2
+1444    Labour                36  0   4   5   4   2   4    6  2
+1445    Labour                69  0   4   4   4   2   4   11  0
+1446    Labour                71  1   4   3   4   2   2   11  0
+1447    "Liberal Democrat"    75  0   4   4   4   2   4    4  2
+1448    "Liberal Democrat"    69  1   3   3   2   5   2   11  2
+1449    Labour                55  0   4   3   4   4   3    3  0
+1450    "Liberal Democrat"    47  0   4   4   4   2   4    5  0
+1451    Labour                43  0   4   4   4   2   3    5  0
+1452    Labour                73  1   4   3   4   2   2    1  3
+1453    Conservative          68  1   3   4   4   4   4   11  2
+1454    Labour                62  0   3   3   2   2   4   11  2
+1455    Conservative          42  1   2   2   4   5   4    9  2
+1456    Labour                86  1   2   4   2   3   3   11  1
+1457    Labour                44  1   4   3   4   1   4    4  2
+1458    Conservative          59  0   3   3   2   1   4   11  0
+1459    Labour                56  0   3   3   2   1   4    1  2
+1460    Labour                72  0   3   5   5   2   3    1  0
+1461    Labour                43  1   4   3   4   4   2    8  1
+1462    Labour                44  1   3   4   5   1   2    6  3
+1463    Labour                76  0   5   3   4   1   3   11  0
+1464    Labour                57  1   3   1   4   4   4    3  2
+1465    Labour                44  1   3   3   4   2   2    7  2
+1466    Labour                46  1   4   4   4   2   2   11  0
+1467    Labour                36  0   2   2   5   2   4   11  0
+1468    "Liberal Democrat"    58  0   3   2   4   2   2    6  2
+1469    Labour                41  1   3   4   4   2   4    6  2
+1470    Conservative          70  1   1   1   2   5   2   11  2
+1471    Labour                46  1   4   3   4   1   4    1  2
+1472    Labour                65  1   3   3   4   1   4    2  2
+1473    Labour                79  1   5   5   2   1   3    3  3
+1474    Labour                54  0   3   3   4   1   2    5  0
+1475    Labour                56  1   4   3   2   4   4    8  0
+1476    Labour                36  1   4   3   4   2   4    4  2
+1477    Labour                56  1   2   2   4   2   1    7  2
+1478    Labour                50  1   4   2   2   1   4    3  2
+1479    "Liberal Democrat"    42  0   3   3   4   2   4    4  2
+1480    Labour                79  1   4   4   5   1   3    3  3
+1481    "Liberal Democrat"    55  0   2   1   4   4   2    7  2
+1482    Conservative          50  0   3   2   2   4   4    9  2
+1483    Labour                56  0   2   3   4   4   2    5  2
+1484    Conservative          65  0   3   2   4   5   2    9  2
+1485    "Liberal Democrat"    48  1   4   2   2   4   4    3  3
+1486    Conservative          41  0   2   2   2   4   4   11  0
+1487    Labour                79  1   3   3   5   4   4    1  2
+1488    Labour                49  1   4   4   4   2   4    3  3
+1489    Labour                77  1   5   4   5   4   4    2  2
+1490    Conservative          60  0   4   3   2   4   1   10  0
+1491    Conservative          54  0   3   3   2   4   4    1  1
+1492    Labour                64  1   3   3   4   1   3   11  0
+1493    Conservative          50  0   2   3   2   4   4    6  2
+1494    "Liberal Democrat"    34  0   3   1   4   2   3    6  2
+1495    Conservative          78  0   3   3   2   2   1    6  2
+1496    "Liberal Democrat"    46  1   3   2   1   4   4    9  2
+1497    Labour                41  0   4   5   5   4   4    5  2
+1498    Labour                65  0   4   3   4   2   2    6  2
+1499    Labour                65  0   3   3   2   2   3    1  3
+1500    Conservative          79  0   2   2   2   4   4   11  0
+1501    Labour                67  0   2   3   4   2   3    4  0
+1502    Conservative          44  0   3   1   4   2   5    9  3
+1503    Labour                31  0   4   3   4   4   5    5  3
+1504    Conservative          54  0   5   2   4   2   4    6  2
+1505    "Liberal Democrat"    63  1   3   2   4   1   2    3  3
+1506    "Liberal Democrat"    75  1   3   2   4   4   4    6  2
+1507    Labour                62  1   3   3   4   1   1    6  2
+1508    Conservative          52  0   2   1   1   4   4    8  2
+1509    Conservative          70  1   2   2   4   2   4   11  2
+1510    Labour                67  0   3   3   5   2   3    4  2
+1511    Labour                73  1   4   3   4   2   1   11  0
+1512    Labour                63  0   3   3   4   2   2    8  2
+1513    Conservative          75  1   3   3   2   4   4    7  1
+1514    Labour                46  1   3   3   4   2   2    4  2
+1515    Labour                74  0   3   3   5   2   4   11  0
+1516    Conservative          82  0   2   2   2   1   4   11  2
+1517    Labour                30  1   3   4   4   2   2    4  2
+1518    Labour                76  1   4   3   2   2   3   11  2
+1519    Labour                50  1   3   4   4   2   3    5  2
+1520    Conservative          35  1   3   4   4   2   4    8  2
+1521    Conservative          67  1   5   3   2   4   4   11  3
+1522    Conservative          73  1   2   2   4   4   4    8  2
+1523    Labour                37  1   3   3   5   4   4    2  2
+1524    Conservative          61  1   3   3   1   4   1   11  2
+1525    Conservative          74  0   2   3   2   4   4   11  0

@@ -1,0 +1,1314 @@
+survived	age    passengerClass	sex
+"Allen, Miss Elisabeth Walton"	yes	29	1st	female
+"Allison, Miss Helen Loraine"	no	2	1st	female
+"Allison, Mr Hudson Joshua Creighton"	no	30	1st	male
+"Allison, Mrs Hudson J.C. (Bessie Waldo Daniels)"	no	25	1st	female
+"Allison, Master Hudson Trevor"	yes	0.9167	1st	male
+"Anderson, Mr Harry"	yes	47	1st	male
+"Andrews, Miss Kornelia Theodosia"	yes	63	1st	female
+"Andrews, Mr Thomas, jr"	no	39	1st	male
+"Appleton, Mrs Edward Dale (Charlotte Lamson)"	yes	58	1st	female
+"Artagaveytia, Mr Ramon"	no	71	1st	male
+"Astor, Colonel John Jacob"	no	47	1st	male
+"Astor, Mrs John Jacob (Madeleine Talmadge Force)"	yes	19	1st	female
+"Aubert, Mrs Leontine Pauline"	yes	NA	1st	female
+"Barkworth, Mr Algernon H."	yes	NA	1st	male
+"Baumann, Mr John D."	no	NA	1st	male
+"Baxter, Mrs James (Helene DeLaudeniere Chaput)"	yes	50	1st	female
+"Baxter, Mr Quigg Edmond"	no	24	1st	male
+"Beattie, Mr Thomson"	no	36	1st	male
+"Beckwith, Mr Richard Leonard"	yes	37	1st	male
+"Beckwith, Mrs Richard Leonard (Sallie Monypeny)"	yes	47	1st	female
+"Behr, Mr Karl Howell"	yes	26	1st	male
+"Birnbaum, Mr Jakob"	no	25	1st	male
+"Bishop, Mr Dickinson H."	yes	25	1st	male
+"Bishop, Mrs Dickinson H. (Helen Walton)"	yes	19	1st	female
+"Bjornstrm-Steffansson, Mr Mauritz Hakan"	yes	28	1st	male
+"Blackwell, Mr Stephen Weart"	no	45	1st	male
+"Blank, Mr Henry"	yes	39	1st	male
+"Bonnell, Miss Caroline"	yes	30	1st	female
+"Bonnell, Miss Elizabeth"	yes	58	1st	female
+"Borebank, Mr John James"	no	NA	1st	male
+"Bowen, Miss Grace Scott"	yes	45	1st	female
+"Bowerman, Miss Elsie Edith"	yes	22	1st	female
+"Bradley, Mr George"	yes	NA	1st	male
+"Brady, Mr John Bertram"	no	41	1st	male
+"Brandeis, Mr Emil"	no	48	1st	male
+"Brewe, Dr Arthur Jackson"	no	NA	1st	male
+"Brown, Mrs James Joseph (Margaret Molly Tobin)"	yes	44	1st	female
+"Brown, Mrs John Murray (Caroline Lane Lamson)"	yes	59	1st	female
+"Bucknell, Mrs William Robert (Emma Eliza Ward)"	yes	60	1st	female
+"Butt, Major Archibald Willingham"	no	45	1st	male
+"Calderhead, Mr Edward P."	yes	NA	1st	male
+"Candee, Mrs Edward (Helen Churchill Hungerford)"	yes	53	1st	female
+"Cardeza, Mrs James Warburton Martinez (Charlotte Wardle Drake)"	yes	58	1st	female
+"Cardeza, Mr Thomas Drake Martinez"	yes	36	1st	male
+"Carlsson, Mr Frans Olof"	no	33	1st	male
+"Carrau, Mr Francisco M."	no	NA	1st	male
+"Carrau, Mr Jose Pedro"	no	NA	1st	male
+"Carter, Mr William Ernest"	yes	36	1st	male
+"Carter, Mrs William Ernest (Lucile Polk)"	yes	36	1st	female
+"Carter, Miss Lucile Polk"	yes	14	1st	female
+"Carter, Master William T. II"	yes	11	1st	male
+"Case, Mr Howard Brown"	no	49	1st	male
+"Cassebeer, Mrs Henry Arthur jr (Genevieve Fosdick)"	yes	NA	1st	female
+"Cavendish, Mr Tyrell William"	no	36	1st	male
+"Cavendish, Mrs Tyrell William Julia Florence Siegel"	yes	NA	1st	female
+"Chaffee, Mr Herbert Fuller"	no	46	1st	male
+"Chaffee, Mrs Herbert Fuller (Carrie Constance Toogood)"	yes	47	1st	female
+"Chambers, Mr Norman Campbell"	yes	27	1st	male
+"Chambers, Mrs Norman Campbell (Bertha Griggs)"	yes	31	1st	female
+"Cherry, Miss Gladys"	yes	NA	1st	female
+"Chevre, Mr Paul"	yes	NA	1st	male
+"Chibnall (Bowerman), Mrs Edith Martha"	yes	NA	1st	female
+"Chisholm, Mr Roderick Robert"	no	NA	1st	male
+"Clark, Mr Walter Miller"	no	27	1st	male
+"Clark, Mrs Walter Miller (Virginia McDowell)"	yes	26	1st	female
+"Clifford, Mr George Quincy"	no	NA	1st	male
+"Colley, Mr Edward Pomeroy"	no	NA	1st	male
+"Compton, Mrs Alexander Taylor (Mary Eliza Ingersoll)"	yes	64	1st	female
+"Compton, Mr Alexander Taylor, Jr"	no	37	1st	male
+"Compton, Miss Sara Rebecca"	yes	39	1st	female
+"Cornell, Mrs Robert Clifford (Malvina Helen Lamson)"	yes	55	1st	female
+"Crafton, Mr John Bertram"	no	NA	1st	male
+"Crosby, Captain Edward Gifford"	no	70	1st	male
+"Crosby, Mrs Edward Gifford (Catherine Elizabeth Halstead)"	yes	69	1st	female
+"Crosby, Miss Harriet R."	yes	36	1st	female
+"Cumings, Mr John Bradley"	no	39	1st	male
+"Cumings, Mrs John Bradley (Florence Briggs Thayer)"	yes	38	1st	female
+"Daly, Mr Peter Denis "	yes	NA	1st	male
+"Daniel, Mr Robert Williams"	yes	27	1st	male
+"Davidson, Mr Thornton"	no	31	1st	male
+"Davidson, Mrs Thornton (Orian Hays)"	yes	27	1st	female
+"de Villiers, Madame Berthe"	yes	NA	1st	female
+"Dick, Mr Albert Adrian"	yes	31	1st	male
+"Dick, Mrs Albert Adrian Vera Gillespie"	yes	17	1st	female
+"Dodge, Dr. Washington"	yes	NA	1st	male
+"Dodge, Mrs Washington (Ruth Vidaver)"	yes	NA	1st	female
+"Dodge, Master Washington"	yes	4	1st	male
+"Douglas, Mrs Frederick Charles (Suzette Baxter)"	yes	27	1st	female
+"Douglas, Mr Walter Donald"	no	50	1st	male
+"Douglas, Mrs Walter Donald (Mahala Dutton)"	yes	48	1st	female
+"Duff Gordon, Sir Cosmo Edmund"	yes	49	1st	male
+"Duff Gordon, Lady (Lucille Wallace Sutherland)"	yes	48	1st	female
+"Dulles, Mr William Crothers"	no	39	1st	male
+"Earnshaw, Mrs Boulton (Olive Potter)"	yes	23	1st	female
+"Eustis, Miss Elizabeth Mussey"	yes	53	1st	female
+"Evans, Miss Edith Corse"	no	36	1st	female
+"Flegenheim, Mrs Alfred (Antoinette)"	yes	NA	1st	female
+"Flynn, Mr John Irving"	yes	NA	1st	male
+"Foreman, Mr Benjamin Laventall"	no	30	1st	male
+"Fortune, Miss Alice Elizabeth"	yes	24	1st	female
+"Fortune, Mr Charles Alexander"	no	19	1st	male
+"Fortune, Miss Ethel Flora"	yes	28	1st	female
+"Fortune, Miss Mabel"	yes	23	1st	female
+"Fortune, Mr Mark"	no	64	1st	male
+"Fortune, Mrs Mark (Mary McDougald)"	yes	60	1st	female
+"Franklin, Mr Thomas Parham"	no	NA	1st	male
+"Frauenthal, Dr Henry William"	yes	49	1st	male
+"Frauenthal, Mrs Henry William (Clara Heinsheimer)"	yes	NA	1st	female
+"Frauenthal, Mr Isaac Gerald"	yes	44	1st	male
+"Frolicher, Miss Marguerite"	yes	22	1st	female
+"Frolicher-Stehli, Mr Maxmillian"	yes	60	1st	male
+"Frolicher-Stehli, Mrs Maxmillian (Margaretha Emerentia Stehli)"	yes	48	1st	female
+"Futrelle, Mr Jacques"	no	37	1st	male
+"Futrelle, Mrs Jacques (May Peel)"	yes	35	1st	female
+"Gee, Mr Arthur H."	no	47	1st	male
+"Gibson, Miss Dorothy"	yes	22	1st	female
+"Gibson, Mrs Leonard (Pauline C. Boeson)"	yes	45	1st	female
+"Goldenberg, Mr Samuel L."	yes	49	1st	male
+"Goldenberg, Mrs Samuel L. (Edwiga Grabowsko)"	yes	NA	1st	female
+"Goldschmidt, Mr George B."	no	71	1st	male
+"Gracie, Colonel Archibald IV"	yes	54	1st	male
+"Graham, Mr George Edward"	no	38	1st	male
+"Graham, Miss Margaret Edith"	yes	19	1st	female
+"Graham, Mrs William Thompson (Edith Junkins)"	yes	58	1st	female
+"Greenfield, Mrs Leo David (Blanche Strouse)"	yes	45	1st	female
+"Greenfield, Mr William Bertram"	yes	23	1st	male
+"Guggenheim, Mr Benjamin"	no	46	1st	male
+"Harder, Mr George Achilles"	yes	25	1st	male
+"Harder, Mrs George Achilles (Dorothy Annan)"	yes	21	1st	female
+"Harper, Mr Henry Sleeper"	yes	48	1st	male
+"Harper, Mrs Henry Sleeper (Myna Haxtun)"	yes	49	1st	female
+"Harris, Mr Henry Birkhardt"	no	45	1st	male
+"Harris, Mrs Henry Birkhardt (Irene Wallach)"	yes	36	1st	female
+"Hawksford, Mr Walter James"	yes	NA	1st	male
+"Hays, Mr Charles Melville"	no	55	1st	male
+"Hays, Mrs Charles Melville (Clara Jennings Gregg)"	yes	52	1st	female
+"Hays, Miss Margaret Bechstein"	yes	24	1st	female
+"Head, Mr Christopher"	no	NA	1st	male
+"Hilliard, Mr Herbert Henry"	no	NA	1st	male
+"Hipkins, Mr William Edward"	no	NA	1st	male
+"Hippach, Miss Jean Gertrude"	yes	16	1st	female
+"Hippach, Mrs Louis Albert (Ida Sophia Fischer)"	yes	44	1st	female
+"Hogeboom, Mrs John C. (Anna Andrews)"	yes	51	1st	female
+"Holverson, Mr Alexander Oskar"	no	42	1st	male
+"Holverson, Mrs Alexander Oskar (Mary Aline Towner)"	yes	35	1st	female
+"Homer, Mr Harry"	yes	35	1st	male
+"Hoyt, Mr Frederick Maxfield"	yes	38	1st	male
+"Hoyt, Mrs Frederick Maxfield (Jane Anne Forby)"	yes	35	1st	female
+"Hoyt, Mr William F."	no	NA	1st	male
+"Isham, Miss Anne Elizabeth"	no	50	1st	female
+"Ismay, Mr Joseph Bruce"	yes	49	1st	male
+"Jones, Mr Charles Cresson"	no	46	1st	male
+"Julian, Mr Henry Forbes"	no	NA	1st	male
+"Kent, Mr Edward Austin"	no	58	1st	male
+"Kenyon, Mr Frederick R."	no	41	1st	male
+"Kenyon, Mrs Frederick R. (Marion)"	yes	NA	1st	female
+"Kimball, Mr Edwin Nelson Jr."	yes	42	1st	male
+"Kimball, Mrs Edwin Nelson Jr. (Gertrude Parsons)"	yes	40	1st	female
+"Klaber, Mr Herman"	no	NA	1st	male
+"Leader, Dr Alice Farnham"	yes	NA	1st	female
+"Lewy, Mr Ervin G."	no	NA	1st	male
+"Lindeberg-Lind, Mr Erik Gustaf"	no	42	1st	male
+"Lindstrom, Mrs Carl Johan (Sigrid Posse)"	yes	55	1st	female
+"Lines, Mrs Ernest H. (Elizabeth Lindsey James)"	yes	50	1st	female
+"Lines, Miss Mary Conover"	yes	16	1st	female
+"Lingrey, Mr Edward"	no	NA	1st	male
+"Long, Mr Milton Clyde"	no	29	1st	male
+"Longley, Miss Gretchen Fiske"	yes	21	1st	female
+"Loring, Mr Joseph Holland"	no	30	1st	male
+"Madill, Miss Georgette Alexandra"	yes	15	1st	female
+"Maguire, Mr John Edward"	no	30	1st	male
+"Marechal, Mr Pierre"	yes	NA	1st	male
+"Marvin, Mr Daniel Warner"	no	NA	1st	male
+"Marvin, Mrs Daniel Warner (Mary Graham Carmichael Farquarson)"	yes	NA	1st	female
+"McCaffry, Mr Thomas Francis"	no	46	1st	male
+"McCarthy, Mr Timothy J."	no	54	1st	male
+"McGough, Mr James R."	yes	36	1st	male
+"Meyer, Mr Edgar Joseph"	no	28	1st	male
+"Meyer, Mrs Edgar Joseph (Leila Saks)"	yes	NA	1st	female
+"Millet, Mr Francis Davis"	no	65	1st	male
+"Minahan, Miss Daisy E."	yes	33	1st	female
+"Minahan, Dr William Edward"	no	44	1st	male
+"Minahan, Mrs William Edward (Lillian E. Thorpe)"	yes	37	1st	female
+"Mock, Mr Philip E."	yes	NA	1st	male
+"Molson, Mr Harry Markland"	no	55	1st	male
+"Moore, Mr Clarence Bloomfield"	no	47	1st	male
+"Natsch, Mr Charles H."	no	36	1st	male
+"Newell, Mr Arthur Webster"	no	58	1st	male
+"Newell, Miss Madeleine"	yes	31	1st	female
+"Newell, Miss Marjorie"	yes	23	1st	female
+"Newsom, Miss Helen Monypeny"	yes	19	1st	female
+"Nicholson, Mr Arthur Ernest"	no	64	1st	male
+"Omont, Mr A. Fernand"	yes	NA	1st	male
+"Ostby, Mr Engelhart Cornelius"	no	64	1st	male
+"Ostby, Miss Helen Raghnild"	yes	22	1st	female
+"Ovies y Rodriguez, Mr Servando"	no	28	1st	male
+"Parr, Mr William Henry Marsh"	no	NA	1st	male
+"Partner, Mr Austin"	no	NA	1st	male
+"Payne, Mr Vivian Ponsonby"	no	22	1st	male
+"Pears, Mr Thomas"	no	NA	1st	male
+"Pears, Mrs Thomas (Edith)"	yes	NA	1st	female
+"Penasco, Mr Victor de Satode"	no	18	1st	male
+"Penasco, Mrs Victor de Satode (Josefa de Soto)"	yes	17	1st	female
+"Peuchen, Major Arthur Godfrey"	yes	52	1st	male
+"Porter, Mr Walter Chamberlain"	no	46	1st	male
+"Potter, Mrs Thomas, Jr. (Lily Alexenia Wilson)"	yes	56	1st	female
+"Reuchlin, Jonkheer John George"	no	NA	1st	male
+"Rheims, Mr George Lucien"	yes	NA	1st	male
+"Robert, Mrs Edward Scott (Elisabeth Walton McMillan)"	yes	43	1st	female
+"Roebling, Mr Washington Augustus 2nd"	no	31	1st	male
+"Romaine, Mr Charles Hallace"	yes	NA	1st	male
+"Rood, Mr Hugh R."	no	NA	1st	male
+"Rosenbaum (Russell), Miss Edith Louise"	yes	33	1st	female
+"Ross, Mr John Hugo"	no	NA	1st	male
+"Rothes, the Countess of (Noel Lucy Martha Dyer-Edwardes)"	yes	27	1st	female
+"Rothschild, Mr Martin"	no	55	1st	male
+"Rothschild, Mrs Martin (Elizabeth L. Barrett)"	yes	54	1st	female
+"Rowe, Mr Alfred G."	no	NA	1st	male
+"Ryerson, Mr Arthur Larned"	no	61	1st	male
+"Ryerson, Mrs Arthur Larned (Emily Maria Borie)"	yes	48	1st	female
+"Ryerson, Miss Emily Borie"	yes	18	1st	female
+"Ryerson, Master John Borie"	yes	13	1st	male
+"Ryerson, Miss Susan (Suzette) Parker"	yes	21	1st	female
+"Saalfeld, Mr Adolphe"	yes	NA	1st	male
+"Salomon, Mr Abraham L."	yes	NA	1st	male
+"Schabert, Mrs Paul (Emma Mock)"	yes	NA	1st	female
+"Seward, Mr Frederic Kimber"	yes	34	1st	male
+"Shutes, Miss Elizabeth W."	yes	40	1st	female
+"Silverthorne, Mr Spencer Victor"	yes	36	1st	male
+"Silvey, Mr William Baird"	no	50	1st	male
+"Silvey, Mrs William Baird (Alice Munger)"	yes	39	1st	female
+"Simonius-Blumer, Col Alfons"	yes	56	1st	male
+"Sloper, Mr William Thompson"	yes	28	1st	male
+"Smart, Mr John Montgomery"	no	56	1st	male
+"Smith, Mr James Clinch"	no	56	1st	male
+"Smith, Mr Lucien Philip"	no	24	1st	male
+"Smith, Mrs Lucien Philip (Mary Eloise Hughes"	yes	18	1st	female
+"Smith, Mr Richard William"	no	NA	1st	male
+"Snyder, Mr John Pillsbury"	yes	24	1st	male
+"Snyder, Mrs John Pillsbury (Nelle Stevenson)"	yes	23	1st	female
+"Spedden, Mr Frederick Oakley"	yes	45	1st	male
+"Spedden, Mrs Frederick Oakley (Margaretta Corning Stone)"	yes	40	1st	female
+"Spedden, Master Robert Douglas"	yes	6	1st	male
+"Spencer, Mr William Augustus"	no	57	1st	male
+"Spencer, Mrs William Augustus (Marie Eugenie)"	yes	NA	1st	female
+"Staehlin, Dr Max"	yes	32	1st	male
+"Stead, Mr William Thomas"	no	62	1st	male
+"Stengel, Mr Charles Emil Henry"	yes	54	1st	male
+"Stengel, Mrs Charles Emil Henry (Annie May Morris)"	yes	43	1st	female
+"Stephenson, Mrs Walter Bertram (Martha Eustis)"	yes	52	1st	female
+"Stewart, Mr Albert A."	no	NA	1st	male
+"Stone, Mrs George Nelson (Martha E.)"	yes	62	1st	female
+"Straus, Mr Isidor"	no	67	1st	male
+"Straus, Mrs Isidor (Ida Blun)"	no	63	1st	female
+"Sutton, Mr Frederick"	no	61	1st	male
+"Swift, Mrs Frederick Joel (Margaret Welles Barron)"	yes	46	1st	female
+"Taussig, Mr Emil"	no	52	1st	male
+"Taussig, Mrs Emil (Tillie Mandelbaum)"	yes	39	1st	female
+"Taussig, Miss Ruth"	yes	18	1st	female
+"Taylor, Mr Elmer Zebley"	yes	48	1st	male
+"Taylor, Mrs Elmer Zebley (Juliet Cummins Wright)"	yes	NA	1st	female
+"Thayer, Mr John Borland"	no	49	1st	male
+"Thayer, Mrs John Borland (Marian Longstreth Morris)"	yes	39	1st	female
+"Thayer, Mr John Borland, jr."	yes	17	1st	male
+"Thorne, Mr George (alias of: Mr George Rosenshine)"	no	46	1st	male
+"Thorne, Mrs Gertrude Maybelle"	yes	NA	1st	female
+"Tucker, Mr Gilbert Milligan, jr"	yes	31	1st	male
+"Uruchurtu, Mr Manuel E."	no	NA	1st	male
+"Van Derhoef, Mr Wyckoff"	no	61	1st	male
+"Walker, Mr William Anderson"	no	47	1st	male
+"Warren, Mr Frank Manley"	no	64	1st	male
+"Warren, Mrs Frank Manley (Anna S. Atkinson)"	yes	60	1st	female
+"Weir, Col John"	no	60	1st	male
+"White, Mrs J. Stuart (Ella Holmes)"	yes	55	1st	female
+"White, Mr Percival Wayland"	no	54	1st	male
+"White, Mr Richard Frasar"	no	21	1st	male
+"Wick, Mr George Dennick"	no	57	1st	male
+"Wick, Mrs George Dennick (Martha Hitchcock)"	yes	45	1st	female
+"Wick, Miss Mary Natalie"	yes	31	1st	female
+"Widener, Mr George Dunton"	no	50	1st	male
+"Widener, Mrs George Dunton (Eleanor Elkins)"	yes	50	1st	female
+"Widener, Mr Harry Elkins"	no	27	1st	male
+"Willard, Miss Constance"	yes	20	1st	female
+"Williams, Mr Charles Duane"	no	51	1st	male
+"Williams, Mr Fletcher Lambert"	no	NA	1st	male
+"Williams, Mr Richard Norris II"	yes	21	1st	male
+"Woolner, Mr Hugh"	yes	NA	1st	male
+"Wright, Mr George"	no	NA	1st	male
+"Young, Miss Marie Grice"	yes	36	1st	female
+"Barber, Ms "	yes	NA	1st	female
+"Bazzani, Ms Albina"	yes	NA	1st	female
+"Bidois, Miss Rosalie"	yes	NA	1st	female
+"Bird, Ms Ellen"	yes	NA	1st	female
+"Bissetti, Ms Amelia"	yes	NA	1st	female
+"Burns, Ms Elizabeth Margaret"	yes	NA	1st	female
+"Chaudanson, Ms 	Victorine"	yes	NA	1st	female
+"Cleaver, Ms Alice"	yes	NA	1st	female
+"Daniels, Ms Sarah"	yes	NA	1st	female
+"Endres, Miss Caroline Louise"	yes	NA	1st	female
+"Farthing, Mr John"	no	NA	1st	male
+"Fleming, Ms Margaret"	no	NA	1st	female
+"Francatelli, Ms Laura Mabel"	yes	NA	1st	female
+"Fry, Mr Richard"	no	NA	1st	male
+"Geiger, Miss Emily "	yes	NA	1st	female
+"Giglio, Mr Victor"	no	NA	1st	male
+"Harrington, Mr Charles"	no	NA	1st	male
+"Harrison, Mr William 	Henry"	no	40	1st	male
+"Hassah, Mr Hamad"	no	NA	1st	male
+"Icabad (Icabod), Ms"	yes	NA	1st	female
+"Keeping, Mr Edwin"	no	32	1st	male
+"Kenchen, Ms Amelia"	yes	NA	1st	female
+"LeRoy, Miss Berthe"	yes	NA	1st	female
+"Lesneur, Mr Gustave"	no	NA	1st	male
+"Maloney, Ms"	yes	NA	1st	female
+"Oliva, Mlle"	no	NA	1st	female
+"Pericault, Ms"	yes	NA	1st	female
+"Ringhini, Mr Sante"	no	33	1st	male
+"Robbins, Mr Victor"	no	NA	1st	male
+"Segesser, Mlle. Emma"	yes	NA	1st	female
+"Seredeca, Ms"	no	NA	1st	female
+"Ward, Ms Anna"	no	NA	1st	female
+"Wilson, Ms Helen"	yes	NA	1st	female
+"Abelson, Mr Samuel"	no	30	2nd	male
+"Abelson, Mrs Samuel (Anna)"	yes	28	2nd	female
+"Andrew, Mr Edgar Samuel"	no	18	2nd	male
+"Andrew, Mr Frank"	no	NA	2nd	male
+"Angle, Mr William A."	no	34	2nd	male
+"Angle, Mrs William A. (Florence)"	yes	32	2nd	female
+"Ashby, Mr John"	no	57	2nd	male
+"Bailey, Mr Percy Andrew"	no	18	2nd	male
+"Baimbrigge, Mr Charles R."	no	23	2nd	male
+"Balls, Mrs Ada E. Hall"	yes	36	2nd	female
+"Banfield, Mr Frederick J."	no	28	2nd	male
+"Bateman, Rev Robert James"	no	51	2nd	male
+"Beane, Mr Edward"	yes	32	2nd	male
+"Beane, Mrs Edward (Ethel Clarke)"	yes	19	2nd	female
+"Beauchamp, Mr Henry James"	no	28	2nd	male
+"Becker, Mrs Allen Oliver (Nellie E. Baumgardner)"	yes	36	2nd	female
+"Becker, Miss Marion Louise"	yes	4	2nd	female
+"Becker, Master Richard F."	yes	1	2nd	male
+"Becker, Miss Ruth Elizabeth"	yes	12	2nd	female
+"Beesley, Mr Lawrence"	yes	34	2nd	male
+"Bentham, Miss Lilian W."	yes	19	2nd	female
+"Berriman, Mr William S."	no	23	2nd	male
+"Botsford, Mr William Hull"	no	26	2nd	male
+"Bowenur, Mr Solomon"	no	NA	2nd	male
+"Bracken, Mr James H."	no	27	2nd	male
+"Brown, Miss Edith E."	yes	15	2nd	female
+"Brown, Mr Thomas William Solomon"	no	45	2nd	male
+"Brown, Mrs Thomas William Solomon (Elizabeth C.)"	yes	40	2nd	female
+"Bryhl, Miss Dagmar"	yes	20	2nd	female
+"Bryhl, Mr Kurt Arnold Gottfrid"	no	25	2nd	male
+"Buss, Miss Kate"	yes	36	2nd	female
+"Butler, Mr Reginald Fenton"	no	25	2nd	male
+"Byles, Rev. Thomas Roussel D."	no	NA	2nd	male
+"Bystrom, Mrs Carolina"	yes	42	2nd	female
+"Caldwell, Mr Albert Francis"	yes	26	2nd	male
+"Caldwell, Mrs Albert Francis (Sylvia Mae Harbaugh)"	yes	26	2nd	female
+"Caldwell, Master Alden Gates"	yes	0.8333	2nd	male
+"Cameron, Miss Clear"	yes	31	2nd	female
+"Campbell, Mr William"	no	NA	2nd	male
+"Carbines, Mr William"	no	19	2nd	male
+"Carter, Rev Ernest Courtenay"	no	54	2nd	male
+"Carter, Mrs Ernest Courtenay (Lillian Hughes)"	no	44	2nd	female
+"Chapman, Mr Charles Henry"	no	52	2nd	male
+"Chapman, Mr John Henry"	no	30	2nd	male
+"Chapman, Mrs John Henry (Elizabeth Lawry)"	no	30	2nd	female
+"Christy, Mrs Alice Frances"	yes	NA	2nd	female
+"Christy, Miss Julie"	yes	NA	2nd	female
+"Clarke, Mr Charles V."	no	29	2nd	male
+"Clarke, Mrs Charles V. (Ada Maria)"	yes	NA	2nd	female
+"Coleridge, Mr Reginald Charles"	no	29	2nd	male
+"Collander, Mr Erik"	no	27	2nd	male
+"Collett, Mr Sidney C. Stuart"	yes	24	2nd	male
+"Collyer, Mr Harvey"	no	35	2nd	male
+"Collyer, Mrs Harvey (Charlotte Tate)"	yes	31	2nd	female
+"Collyer, Miss Marjorie"	yes	8	2nd	female
+"Cook, Mrs Selena Rogers"	no	22	2nd	female
+"Corbett, Mrs Walter H. (Irene Colvin)"	no	30	2nd	female
+"Corey, Mrs Percy C. (Mary Phyllis Elizabeth Miller)"	no	NA	2nd	female
+"Cotterill, Mr Harry"	no	20	2nd	male
+"Cunningham, Mr Alfred Fleming"	no	NA	2nd	male
+"Davies, Mr Charles Henry"	no	21	2nd	male
+"Davis, Mrs Agnes"	yes	49	2nd	female
+"Davis, Master John Morgan"	yes	8	2nd	male
+"Davis, Miss Mary"	yes	28	2nd	female
+"Deacon, Mr Percy"	no	18	2nd	male
+"de Brito, Mr Jose Joaquim"	no	NA	2nd	male
+"del Carlo, Mr Sebastiano"	no	28	2nd	male
+"del Carlo, Mrs Sebastiano (Argenia Genovese)"	yes	22	2nd	female
+"Denbury, Mr Herbert"	no	25	2nd	male
+"Dibden, Mr William"	no	18	2nd	male
+"Doling, Mrs Ada"	yes	32	2nd	female
+"Doling, Miss Elsie"	yes	18	2nd	female
+"Downton (?Douton), Mr William James"	no	NA	2nd	male
+"Drew, Mr James Vivian"	no	42	2nd	male
+"Drew, Mrs James Vivian (Lulu Thorne Christian)"	yes	34	2nd	female
+"Drew, Master Marshall Brines"	yes	8	2nd	male
+"Duran y More, Miss Asuncion"	yes	NA	2nd	female
+"Duran y More, Miss Florentina"	yes	NA	2nd	female
+"Eitemiller, Mr George Floyd"	no	23	2nd	male
+"Enander, Mr Ingvar"	no	21	2nd	male
+"Fahlstrom, Mr Arne Jonas"	no	19	2nd	male
+"Faunthorpe, Mr Harry"	no	NA	2nd	male
+"Faunthorpe, Mrs Lizzie (see Wilkinson, E.)"	yes	NA	2nd	female
+"Fillbrook, Mr Charles"	no	NA	2nd	male
+"Fox, Mr Stanley H."	no	38	2nd	male
+"Frost, Mr Anthony (Archie) W."	no	NA	2nd	male
+"Funk, Miss Annie C."	no	38	2nd	female
+"Fynney, Mr Joseph J."	no	35	2nd	male
+"Gale, Mr Harry"	no	35	2nd	male
+"Gale, Mr Shadrach"	no	38	2nd	male
+"Garside, Miss Ethel"	yes	24	2nd	female
+"Gaskell, Mr Alfred"	no	16	2nd	male
+"Gavey, Mr Lawrence"	no	26	2nd	male
+"Gilbert, Mr William"	no	45	2nd	male
+"Giles, Mr Edgar"	no	24	2nd	male
+"Giles, Mr Frederick"	no	21	2nd	male
+"Giles, Mr Ralph"	no	22	2nd	male
+"Gill, Mr John W."	no	NA	2nd	male
+"Gillespie, Mr William"	no	34	2nd	male
+"Givard, Mr Hans Christensen"	no	30	2nd	male
+"Greenberg, Mr Samuel"	no	50	2nd	male
+"Hale, Mr Reginald"	no	30	2nd	male
+"Hamalainen, Mrs William (Anna)"	yes	23	2nd	female
+"Hamalainen, Master Viljo"	yes	1	2nd	male
+"Harbeck, Mr William H."	no	44	2nd	male
+"Harper, Rev John"	no	28	2nd	male
+"Harper, Miss Nina"	yes	6	2nd	female
+"Harris, Mr George"	yes	30	2nd	male
+"Harris, Mr Walter"	no	NA	2nd	male
+"Hart, Mr Benjamin"	no	43	2nd	male
+"Hart, Mrs Benjamin (Esther)"	yes	45	2nd	female
+"Hart, Miss Eva Miriam"	yes	7	2nd	female
+"Herman, Miss Alice"	yes	24	2nd	female
+"Herman, Miss Kate"	yes	24	2nd	female
+"Herman, Mr Samuel"	no	49	2nd	male
+"Herman, Mrs Samuel (Jane Laver)"	yes	48	2nd	female
+"Hewlett, Mrs Mary D."	yes	NA	2nd	female
+"Hickman, Mr Leonard Mark"	no	34	2nd	male
+"Hickman, Mr Lewis"	no	32	2nd	male
+"Hickman, Mr Stanley George"	no	21	2nd	male
+"Hiltunen, Miss Marta"	no	18	2nd	female
+"Hocking, Mrs Elizabeth"	yes	53	2nd	female
+"Hocking, Mr George"	no	23	2nd	male
+"Hocking, Miss Ellen (Nellie)"	yes	21	2nd	female
+"Hocking, Mr Samuel James"	no	NA	2nd	male
+"Hodges, Mr Henry Price"	no	52	2nd	male
+"Hold, Mr Stephen"	no	42	2nd	male
+"Hold, Mrs Stephen (Annie Margaret)"	yes	36	2nd	female
+"Hood, Mr Ambrose, Jr"	no	21	2nd	male
+"Hosono, Mr Masafumi"	yes	41	2nd	male
+"Howard, Mr Benjamin"	no	NA	2nd	male
+"Howard, Mrs Benjamin (Ellen Truelove)"	no	NA	2nd	female
+"Hunt, Mr George Henry"	no	33	2nd	male
+"Ilett, Miss Bertha"	yes	17	2nd	female
+"Jacobsohn Mr Sidney Samuel"	no	NA	2nd	male
+"Jacobsohn, Mrs Sidney Samuel (Amy Frances Christy)"	yes	NA	2nd	female
+"Jarvis, Mr John Denzil"	no	NA	2nd	male
+"Jefferys, Mr Clifford"	no	NA	2nd	male
+"Jefferys, Mr Ernest"	no	NA	2nd	male
+"Jenkin, Mr Stephen Curnow"	no	NA	2nd	male
+"Jerwan, Mrs Amin S. (Marie Thuillard)"	yes	23	2nd	female
+"Kantor, Mr Sinai"	no	34	2nd	male
+"Kantor, Mrs Sinai (Miriam Sternim)"	yes	NA	2nd	female
+"Karnes, Mrs J. Frank (Claire Bennett)"	no	22	2nd	female
+"Keane, Mr Daniel"	no	NA	2nd	male
+"Keane, Miss Nora A."	yes	NA	2nd	female
+"Kelly, Mrs Florence (Fannie)"	yes	45	2nd	female
+"Kirkland, Rev Charles Leonard"	no	NA	2nd	male
+"Knight, Mr Robert"	no	NA	2nd	male
+"Kvillner, Mr Johan Henrik Johannesson"	no	31	2nd	male
+"Lahtinen, Rev William"	no	30	2nd	male
+"Lahtinen, Mrs William (Anna Sylvan)"	no	26	2nd	female
+"Lamb, Mr John James"	no	NA	2nd	male
+"Lemore, Mrs Amelia"	yes	34	2nd	female
+"LaRoche, Mr Joseph"	no	26	2nd	male
+"LaRoche, Mrs Joseph (Juliet)"	yes	22	2nd	female
+"LaRoche, Miss Louise"	yes	1	2nd	female
+"LaRoche, Miss Simonne"	yes	3	2nd	female
+"Lehmann, Miss Bertha"	yes	NA	2nd	female
+"Leitch, Miss Jessie"	yes	NA	2nd	female
+"Levy, Mr Rene Jacques"	no	NA	2nd	male
+"Leyson, Mr Robert William Norman"	no	25	2nd	male
+"Lingan, Mr John"	no	NA	2nd	male
+"Louch, Mr Charles Alexander"	no	48	2nd	male
+"Louch, Mrs Charles Alexander (Alice Adelaide)"	yes	NA	2nd	female
+"Mack, Mrs Mary"	no	57	2nd	female
+"Malachard, Mr Noel"	no	NA	2nd	male
+"Mallet, Mr Albert"	no	NA	2nd	male
+"Mallet, Mrs Albert (Antoinette)"	yes	NA	2nd	female
+"Mallet, Master Andre"	yes	2	2nd	male
+"Mangiavacchi, Mr Serafino Emilio"	no	NA	2nd	male
+"Mantvila, Rev Joseph"	no	27	2nd	male
+"Marshall, Mrs Kate Louise Phillips"	yes	19	2nd	female
+"Matthews, Mr William John"	no	30	2nd	male
+"Maybery, Mr Frank H."	no	20	2nd	male
+"McCrae, Mr Arthur Gordon"	no	45	2nd	male
+"McCrie, Mr James Matthew"	no	NA	2nd	male
+"McKane, Mr Peter D."	no	46	2nd	male
+"Mellenger, Mrs Elizabeth Anne"	yes	41	2nd	female
+"Mellenger, Miss Madeleine Violet"	yes	13	2nd	female
+"Mellor, Mr William John"	yes	19	2nd	male
+"Meyer, Mr August"	no	30	2nd	male
+"Milling, Mr Jacob Christian"	no	48	2nd	male
+"Mitchell, Mr Henry Michael"	no	71	2nd	male
+"Moraweck, Dr Ernest"	no	54	2nd	male
+"Morley, Mr William"	no	NA	2nd	male
+"Mudd, Mr Thomas C."	no	NA	2nd	male
+"Myles, Mr Thomas Francis"	no	64	2nd	male
+"Nasser (Nasrallah), Mr Nicholas"	no	32	2nd	male
+"Nasser (Nasrallah), Mrs Nicholas"	yes	18	2nd	female
+"Navratil, Master Edmond Roger"	yes	2	2nd	male
+"Navratil, Mr Michel"	no	32	2nd	male
+"Navratil, Master Michel M."	yes	3	2nd	male
+"Nesson, Mr Israel"	no	26	2nd	male
+"Nicholls, Mr Joseph Charles"	no	19	2nd	male
+"Norman, Mr Robert Douglas"	no	NA	2nd	male
+"Nourney, Mr Alfred (aka Baron von Drachstedt)"	yes	20	2nd	male
+"Nye, Mrs Elizabeth Ramell"	yes	29	2nd	female
+"Otter, Mr Richard"	no	39	2nd	male
+"Oxenham, Mr Percy Thomas"	yes	22	2nd	male
+"Padro y Manent, Mr Julian"	yes	NA	2nd	male
+"Pain, Dr Alfred"	no	24	2nd	male
+"Pallas y Castello, Mr Emilio"	yes	NA	2nd	male
+"Parker, Mr Clifford R."	no	28	2nd	male
+"Parkes, Mr Francis (Frank)"	no	NA	2nd	male
+"Parrish, Mrs Lutie Davis"	yes	50	2nd	female
+"Pengelly, Mr Frederick"	no	20	2nd	male
+"Peruschitz, Rev. Joseph M."	no	40	2nd	male
+"Phillips, Miss Alice"	yes	42	2nd	female
+"Phillips, Mr Robert"	no	21	2nd	male
+"Pinsky, Miss Rosa"	yes	32	2nd	female
+"Ponesell, Mr Martin"	no	34	2nd	male
+"Portaluppi, Mr Emilio"	yes	NA	2nd	male
+"Pulbaum, Mr Frank"	no	NA	2nd	male
+"Quick, Mrs Frederick C. (Jane Richards)"	yes	33	2nd	female
+"Quick, Miss Phyllis May"	yes	2	2nd	female
+"Quick, Miss Winifred Vera"	yes	8	2nd	female
+"Reeves, Mr David"	no	36	2nd	male
+"Renouf, Mr Peter Henry"	no	34	2nd	male
+"Renouf, Mrs Peter Henry (Lillian Jefferys)"	yes	30	2nd	female
+"Reynaldo, Mrs Encarnacion"	yes	28	2nd	female
+"Richard, Mr Emil"	no	23	2nd	male
+"Richards, Master George Sidney"	yes	0.8333	2nd	male
+"Richards, Mrs Sidney (Emily Hocking)"	yes	25	2nd	female
+"Richards, Master William Rowe"	yes	3	2nd	male
+"Ridsdale, Miss Lucy"	yes	50	2nd	female
+"Rogers, Mr Harry"	no	NA	2nd	male
+"Rugg, Miss Emily"	yes	21	2nd	female
+"Sedgwick, Mr Charles Frederick Waddington"	no	NA	2nd	male
+"Sharp, Mr Percival"	no	NA	2nd	male
+"Shelley, Mrs William (Imanita)"	yes	25	2nd	female
+"Silven, Miss Lyyli"	yes	18	2nd	female
+"Sincock, Miss Maude"	yes	20	2nd	female
+"Siukonnen, Miss Anna"	yes	30	2nd	female
+"Sjostedt, Mr Ernst Adolf"	no	59	2nd	male
+"Slayter, Miss Hilda Mary"	yes	30	2nd	female
+"Slemen, Mr Richard James"	no	35	2nd	male
+"Smith (Schmidt), Mr Augustus"	no	22	2nd	male
+"Smith, Miss Marion"	yes	NA	2nd	female
+"Sobey, Mr Hayden"	no	25	2nd	male
+"Stanton, Mr Samuel Ward"	no	41	2nd	male
+"Stokes, Mr Philip Joseph"	no	25	2nd	male
+"Sweet, Mr George"	no	14	2nd	male
+"Toomey, Miss Ellen"	yes	50	2nd	female
+"Troupiansky, Mr Moses Aaron"	no	22	2nd	male
+"Trout, Mrs William H. (Jessie L.)"	yes	NA	2nd	female
+"Troutt, Miss Edwina Celia"	yes	27	2nd	female
+"Turpin, Mr William John"	no	29	2nd	male
+"Turpin, Mrs William John (Dorothy Anne Wonnacott)"	no	27	2nd	female
+"Veale, Mr James"	no	30	2nd	male
+"Waelens, Mr Achille"	no	22	2nd	male
+"Walcroft, Miss Nellie"	yes	35	2nd	female
+"Ware, Mr John James"	no	30	2nd	male
+"Ware, Mrs John James (Florence Louise Long)"	yes	28	2nd	female
+"Ware, Mr William J."	no	23	2nd	male
+"Watson, Mr Ennis Hastings"	no	NA	2nd	male
+"Watt, Miss Bertha"	yes	12	2nd	female
+"Watt, Mrs James (Bessie Inglis Milne)"	yes	40	2nd	female
+"Webber, Miss Susan"	yes	36	2nd	female
+"Weisz, Mr Leopold"	no	28	2nd	male
+"Weisz, Mrs Leopold (Mathilde)"	yes	32	2nd	female
+"Wells, Mrs Arthur H. (Addie Trevaskis)"	yes	29	2nd	female
+"Wells, Miss Joan"	yes	4	2nd	female
+"Wells, Master Ralph Lester"	yes	2	2nd	male
+"West, Miss Barbara J."	yes	NA	2nd	female
+"West, Miss Constance Mirium"	yes	NA	2nd	female
+"West, Mr Edwy Arthur"	no	36	2nd	male
+"West, Mrs Edwy Arthur (Ada Mary)"	yes	33	2nd	female
+"Wheadon, Mr Edward"	no	NA	2nd	male
+"Wheeler, Mr Edwin"	no	NA	2nd	male
+"Wheeler, Mr Frederick"	no	NA	2nd	male
+"Wilhelms, Mr Charles"	yes	32	2nd	male
+"Wilkinson, Mrs Elizabeth Anne"	yes	NA	2nd	female
+"Williams, Mr Charles Eugene"	yes	NA	2nd	male
+"Wright, Miss Marion"	yes	26	2nd	female
+"Yrois, Miss Henriette"	no	NA	2nd	female
+"Aldworth, Mr Charles Augustus"	no	30	2nd	male
+"Brown, Miss Mildred"	yes	24	2nd	female
+"Pernot, Mr Rene"	no	NA	2nd	male
+"Swane, Mr George"	no	18	2nd	male
+"Abbing, Mr Anthony"	no	42	3rd	male
+"Abbott, Master Eugene Joseph"	no	13	3rd	male
+"Abbott, Mr Rossmore Edward"	no	16	3rd	male
+"Abbott, Mrs Stanton (Rosa)"	yes	35	3rd	female
+"Abelseth, Miss Anna Karen"	yes	16	3rd	female
+"Abelseth, Mr Olaus"	yes	25	3rd	male
+"Abraham, Mrs Joseph (Sophie Easu)"	yes	18	3rd	female
+"Abrahamsson, Mr August"	yes	20	3rd	male
+"Adahl, Mr Mauritz Nils Martin"	no	30	3rd	male
+"Adams, Mr John"	no	26	3rd	male
+"Ahlin, Mrs Johanna Persdotter"	no	40	3rd	female
+"Ahmed, Mr Ali"	no	24	3rd	male
+"Aijo-Nirva, Mr Isak"	no	41	3rd	male
+"Aks, Mrs Sam (Leah Rosen)"	yes	18	3rd	female
+"Aks, Master Philip"	yes	0.8333	3rd	male
+"Alexander, Mr William"	no	23	3rd	male
+"Alhomaki, Mr Ilmari Rudolf"	no	20	3rd	male
+"Ali, Mr William"	no	25	3rd	male
+"Allen, Mr William Henry"	no	35	3rd	male
+"Allum, Mr Owen George"	no	17	3rd	male
+"Andersen, Mr Albert Karvin"	no	32	3rd	male
+"Andersen, Mr Thor Olsvigen"	no	20	3rd	male
+"Andersson, Mr Anders Johan"	no	39	3rd	male
+"Andersson, Mrs Anders Johan (Alfrida K. Brogren)"	no	39	3rd	female
+"Andersson, Miss Ebba Iris"	no	6	3rd	female
+"Andersson, Miss Ellis Anna Maria"	no	2	3rd	female
+"Andersson, Miss Erna"	yes	17	3rd	female
+"Andersson, Miss Ida Augusta Margareta"	no	38	3rd	female
+"Andersson, Miss Ingeborg Constancia"	no	9	3rd	female
+"Andersson, Mr Johan Samuel"	no	26	3rd	male
+"Andersson, Miss Sigrid Elizabeth"	no	11	3rd	female
+"Andersson, Master Sigvard Harald Elias"	no	4	3rd	male
+"Andreasson, Mr Paul Edvin"	no	20	3rd	male
+"Angheloff, Mr Minko"	no	26	3rd	male
+"Arnold, Mr Josef"	no	25	3rd	male
+"Arnold, Mrs Josef (Josephine Frank)"	no	18	3rd	female
+"Aronsson, Mr Ernst Axel Algot"	no	24	3rd	male
+"Asim, Mr Adola"	no	35	3rd	male
+"Asplund, Mr Carl Oscar Vilhelm Gustafsson"	no	40	3rd	male
+"Asplund, Mrs Carl Oscar (Selma Augusta Johansson)"	yes	38	3rd	female
+"Asplund, Master Carl Edgar"	no	5	3rd	male
+"Asplund, Master Clarence Gustaf Hugo"	no	9	3rd	male
+"Aspland, Master Edvin Rojj Felix"	yes	3	3rd	male
+"Asplund, Master Filip Oscar"	no	13	3rd	male
+"Asplund, Mr John Charles"	yes	23	3rd	male
+"Asplund, Miss Lillian Gertrud"	yes	5	3rd	female
+"Assaf, Mr Gerios"	no	NA	3rd	male
+"Assaf, Mrs Mariana"	yes	45	3rd	female
+"Assam, Mr Ali"	no	23	3rd	male
+"Attalah, Miss Malaka"	no	17	3rd	female
+"Attala (Kalil), Mr Solomon"	no	27	3rd	male
+"Augustsson, Mr Albert"	no	23	3rd	male
+"Baccos, Mr Rafoul"	no	20	3rd	male
+"Backstrom, Mr Karl Alfred"	no	32	3rd	male
+"Backstrom, Mrs Karl Alfred (Maria Mathilda Gustafsson)"	yes	33	3rd	female
+"Baclini, Miss Eugenie"	yes	3	3rd	female
+"Baclini, Miss Helene"	yes	NA	3rd	female
+"Baclini, Miss Maria"	yes	NA	3rd	female
+"Baclini, Mrs Solomon (Latifa)"	yes	NA	3rd	female
+"Badman, Miss Emily Louisa"	yes	18	3rd	female
+"Badt, Mr Mohamed"	no	40	3rd	male
+"Balkic, Mr Cerin"	no	26	3rd	male
+"Banoura, Miss Ayout"	yes	15	3rd	female
+"Barbara, Mrs Catherine"	no	45	3rd	female
+"Barbara, Miss Saude"	no	18	3rd	female
+"Barry, Miss Julia"	no	27	3rd	female
+"Barton Mr David"	no	22	3rd	male
+"Beavan, Mr William Thomas"	no	19	3rd	male
+"Bengtsson, Mr John Viktor"	no	26	3rd	male
+"Berglund. Mr Karl Ivar Sven"	no	22	3rd	male
+"Betros, Mr Tannous"	no	20	3rd	male
+"Bing, Mr Lee"	yes	32	3rd	male
+"Birkeland, Mr Hans"	no	21	3rd	male
+"Bjorklund, Ernst Herbert"	no	18	3rd	male
+"Bostandyeff, Mr Guentcho"	no	26	3rd	male
+"Boulos, Master Akar"	no	6	3rd	male
+"Boulos, Mr Hanna"	no	NA	3rd	male
+"Boulos, Mrs Joseph (Sultana)"	no	NA	3rd	female
+"Boulos, Miss Laura"	no	9	3rd	female
+"Bourke, Mr John"	no	40	3rd	male
+"Bourke, Mrs John (Catherine)"	no	32	3rd	female
+"Bourke, Miss Mary"	no	NA	3rd	female
+"Bowen, Mr David"	no	26	3rd	male
+"Bradley, Miss Bridget Delia"	yes	18	3rd	female
+"Braf, Miss Elin Ester Maria"	no	20	3rd	female
+"Brahim, Mr Youssef"	no	NA	3rd	male
+"Braund, Mr Lewis Richard"	no	29	3rd	male
+"Braund, Mr Owen Harris"	no	22	3rd	male
+"Brobek, Mr Karl Rudolf"	no	22	3rd	male
+"Brocklebank, Mr William Alfred"	no	35	3rd	male
+"Buckley, Mr Daniel"	yes	21	3rd	male
+"Buckley, Miss Katherine"	no	20	3rd	female
+"Burke, Mr Jeremiah"	no	19	3rd	male
+"Burns, Miss Mary Delia"	no	18	3rd	female
+"Cacic, Mr Grego"	no	18	3rd	male
+"Cacic, Mr Luka"	no	38	3rd	male
+"Cacic, Mr Manda"	no	NA	3rd	male
+"Connolly, Miss Kate (2)"	no	30	3rd	male
+"Calic, Mr Peter"	no	17	3rd	male
+"Canavan, Miss Mary"	no	21	3rd	female
+"Carlsson, Mr Frans Olof (1)"	no	21	3rd	male
+"Cann, Mr Ernest"	no	21	3rd	male
+"Caram (Kareem), Mr Joseph"	no	NA	3rd	male
+"Caram (Kareem), Mrs Joseph (Maria Elias)"	no	NA	3rd	female
+"Carlsson, Mr Carl Robert"	no	24	3rd	male
+"Carlsson, Mr Frans Olof (2)"	no	33	3rd	male
+"Carlsson, Mr Julius"	no	33	3rd	male
+"Carlsson, Mr August Sigfrid"	no	28	3rd	male
+"Carr, Miss Helen"	yes	16	3rd	female
+"Carr, Miss Jeannie"	no	37	3rd	female
+"Carver, Mr Alfred John"	no	28	3rd	male
+"Cassem, Mr Nassef Belmenly"	yes	NA	3rd	male
+"Celotti, Mr Francesco"	no	24	3rd	male
+"Chartens, Mr David"	no	21	3rd	male
+"Chebab, Mr Emir Farres"	no	NA	3rd	male
+"Chip, Mr Chang"	no	32	3rd	male
+"Christmann, Mr Emil"	no	29	3rd	male
+"Chronopoulos, Mr Apostolos"	no	26	3rd	male
+"Chronopoulos, Mr Demetrios"	no	18	3rd	male
+"Coelho, Mr Domingos Fernandes"	no	20	3rd	male
+"Cohen, Mr Gurshon (Gus)"	yes	19	3rd	male
+"Colbert, Mr Patrick"	no	24	3rd	male
+"Coleff, Mr Fotio"	no	24	3rd	male
+"Coleff, Mr Peyo"	no	36	3rd	male
+"Conlin, Mr Thomas Henry"	no	31	3rd	male
+"Connaghton, Mr Michael"	no	31	3rd	male
+"Connolly, Miss Kate (1)"	no	30	3rd	female
+"Connolly, Miss Kate"	yes	22	3rd	female
+"Connors, Mr Patrick"	no	NA	3rd	male
+"Cook, Mr Jacob"	no	43	3rd	male
+"Cor, Mr Bartol"	no	35	3rd	male
+"Cor, Mr Ivan"	no	27	3rd	male
+"Cor, Mr Ludovik"	no	19	3rd	male
+"Corn, Mr Harry"	no	30	3rd	male
+"Kelly, Mr James (2)"	yes	36	3rd	female
+"Coutts, Master Neville"	yes	3	3rd	male
+"Coutts, Master William Leslie"	yes	9	3rd	male
+"Coxon, Mr Daniel"	no	59	3rd	male
+"Crease, Mr Ernest James"	no	19	3rd	male
+"Cribb, Mr John Hatfield"	no	44	3rd	male
+"Cribb, Miss Laura Alice"	yes	17	3rd	female
+"Daher, Mr Tannous"	no	NA	3rd	male
+"Dahl, Mr Charles Edward"	yes	45	3rd	male
+"Dahlberg, Miss Gerda Ulrika"	no	22	3rd	female
+"Dakic, Mr Branko"	no	19	3rd	male
+"Daly, Mr Eugene"	yes	29	3rd	male
+"Daly, Miss Marcella"	yes	30	3rd	female
+"Danbom, Mr Ernst Gilbert"	no	34	3rd	male
+"Danbom, Mrs Ernst Gilbert (Anna Sigrid Maria Brogren)"	no	28	3rd	female
+"Danbom, Master Gilbert Sigvard Emanuel"	no	0.3333	3rd	male
+"Danoff, Mr Yoto"	no	27	3rd	male
+"Dantchoff, Mr Khristo"	no	25	3rd	male
+"Davies, Mr Alfred"	no	24	3rd	male
+"Davies, Mr Evan"	no	22	3rd	male
+"Davies, Mr John"	no	21	3rd	male
+"Davies, Mr Joseph"	no	17	3rd	male
+"Davison, Mr Thomas Henry"	no	NA	3rd	male
+"Davison, Mrs Thomas Henry (Mary Finck)"	yes	NA	3rd	female
+"Dean, Mr Bertram"	no	26	3rd	male
+"Dean, Mrs Bertram (Eva)"	yes	33	3rd	female
+"Dean, Master Bertram Vere"	yes	1	3rd	male
+"Dean, Miss Elizabeth Gladys (Millvena)"	yes	0.1667	3rd	female
+"Delalic, Mr Regyo"	no	25	3rd	male
+"De Messemaeker, Mr William Joseph"	yes	36	3rd	male
+"De Messemaeker, Mrs William Joseph (Anna)"	yes	36	3rd	female
+"De Mulder, Mr Theo"	yes	30	3rd	male
+"Denkoff, Mr Mito"	no	NA	3rd	male
+"Dennis, Mr Samuel"	no	23	3rd	male
+"Dennis, Mr William"	no	26	3rd	male
+"Devaney, Miss Margaret"	yes	19	3rd	female
+"Dewan, Mr Frank"	no	65	3rd	male
+"Dibo, Mr Elias"	no	NA	3rd	male
+"Dimic, Mr Jovan"	no	42	3rd	male
+"Dintcheff, Mr Valtcho"	no	43	3rd	male
+"Dooley, Mr Patrick"	no	32	3rd	male
+"Dorkings, Mr Edward Arthur"	yes	19	3rd	male
+"Dowdell, Miss Elizabeth"	yes	30	3rd	female
+"Doyle, Miss Elizabeth"	no	24	3rd	female
+"Drapkin, Miss Jennie"	yes	23	3rd	female
+"Drazonovic, Mr Josef"	no	NA	3rd	male
+"Driscoll, Miss Bridget"	yes	24	3rd	female
+"Duquemin, Mr Joseph"	yes	24	3rd	male
+"Dyker, Mr Adolf Fredrik"	no	23	3rd	male
+"Dyker, Mrs Adolf Fredrik (Anna Elizabeth Judith Andersson)"	yes	22	3rd	female
+"Econovic, Mr Joso"	no	NA	3rd	male
+"Edvardsson, Mr Gustaf Hjalmar"	no	18	3rd	male
+"Eklund, Mr Hans Linus"	no	16	3rd	male
+"Ekstrom, Mr Johan"	no	45	3rd	male
+"Elias, Mr Elias"	no	NA	3rd	male
+"Elias, Mr John"	no	NA	3rd	male
+"Elias, Mr Joseph"	no	NA	3rd	male
+"Elsbury, Mr James"	no	47	3rd	male
+"Emanuel, Miss Virginia Ethel"	yes	5	3rd	female
+"Emmeth, Mr Thomas"	no	NA	3rd	male
+"Everett, Thomas James"	no	NA	3rd	male
+"Farrell, Mr James"	no	NA	3rd	male
+"Finoli, Mr Luigi"	yes	NA	3rd	male
+"Fischer, Mr Eberhard Telander"	no	NA	3rd	male
+"Flynn, Mr James"	no	NA	3rd	male
+"Flynn, Mr John"	no	NA	3rd	male
+"Foley, Mr Joseph"	no	NA	3rd	male
+"Foley, Mr William"	no	NA	3rd	male
+"Foo, Mr Choong"	yes	NA	3rd	male
+"Ford, Mr Arthur"	no	NA	3rd	male
+"Ford, Miss Doolina Margaret"	no	21	3rd	female
+"Ford, Mr Edward Watson"	no	18	3rd	male
+"Ford, Miss Maggie"	no	9	3rd	female
+"Ford, Mrs Edward (Margaret Ann)"	no	48	3rd	female
+"Ford, Mr Neil Watson"	no	16	3rd	male
+"Fox, Mr Patrick"	no	NA	3rd	male
+"Franklin, Mr Charles"	no	NA	3rd	male
+"Gallagher, Mr Martin"	no	25	3rd	male
+"Garfirth, Mr John"	no	NA	3rd	male
+"Georges, Mrs Shahini Weappi"	yes	NA	3rd	female
+"Gilinski, Mr Leslie"	no	22	3rd	male
+"Gilnagh, Miss Katie"	yes	16	3rd	female
+"Glynn, Miss Mary Agatha"	yes	NA	3rd	female
+"Goldsmith, Mr Frank John"	no	33	3rd	male
+"Goldsmith, Mrs Frank John (Emily A. Brown)"	yes	NA	3rd	female
+"Goldsmith, Master Frank John William"	yes	9	3rd	male
+"Goldsmith, Mr Nathan"	no	41	3rd	male
+"Goncalves, Mr Manuel Estanslas"	no	38	3rd	male
+"Goodwin, Mr Frederick"	no	40	3rd	male
+"Goodwin, Mrs Frederick (Augusta)"	no	43	3rd	female
+"Goodwin, Mr Charles E."	no	14	3rd	male
+"Goodwin, Miss Lillian A."	no	16	3rd	female
+"Goodwin, Master Harold V."	no	9	3rd	male
+"Goodwin, Miss Jessie A."	no	10	3rd	female
+"Goodwin, Master Sidney L."	no	6	3rd	male
+"Goodwin, Master William F."	no	11	3rd	male
+"Green, Mr George"	no	40	3rd	male
+"Gronnestad, Mr Daniel Danielsen"	no	32	3rd	male
+"Guest, Mr Robert"	no	NA	3rd	male
+"Gustafsson, Mr Alfred Ossian"	no	20	3rd	male
+"Gustafsson, Mr Anders Vilhelm"	no	37	3rd	male
+"Gustafsson, Mr Johan Birger"	no	28	3rd	male
+"Gustafsson, Mr Karl Gideon"	no	19	3rd	male
+"Haas, Miss Aloisia"	no	NA	3rd	female
+"Hagardon, Miss Kate"	no	NA	3rd	female
+"Hagland, Mr Ingvald Olsen"	no	NA	3rd	male
+"Hagland, Mr Konrad Mathias Reiersen"	no	NA	3rd	male
+"Hakkarainen, Mr Pekko Pietari"	no	NA	3rd	male
+"Hakkarainen, Mrs Pekko Pietari"	yes	NA	3rd	female
+"Hampe, Mr Leon"	no	NA	3rd	male
+"Hansen, Mr Claus Peter"	no	NA	3rd	male
+"Hansen, Mrs Claus Peter"	yes	NA	3rd	female
+"Hansen, Mr Henrik Juul"	no	NA	3rd	male
+"Hansen, Mr Henry Damsgaard"	no	NA	3rd	male
+"Harknett, Miss Alice"	no	NA	3rd	female
+"Harmer, Mr Abraham"	no	NA	3rd	male
+"Hart, Mr Henry"	no	NA	3rd	male
+"Hassan, Mr M. Houssein"	no	NA	3rd	male
+"Healy, Miss Nora"	no	NA	3rd	female
+"Hedman, Mr Oscar"	yes	NA	3rd	male
+"Hee, Mr Ling"	no	NA	3rd	male
+"Hegarty, Miss Nora"	no	NA	3rd	female
+"Heikkinen, Miss Laina"	yes	NA	3rd	female
+"Heininen, Miss Wendla Maria"	no	NA	3rd	female
+"Hellstrom, Hilda Maria"	yes	NA	3rd	female
+"Hemming, Miss Nora"	no	NA	3rd	female
+"Hendekovic, Mr Ignaz"	no	NA	3rd	male
+"Henery, Delia"	no	NA	3rd	female
+"Henriksson, Jenny Lovisa"	no	NA	3rd	female
+"Hirvonen, Mrs Alexander"	yes	NA	3rd	female
+"Hirvonen, Miss Hildur E."	no	NA	3rd	female
+"Holm, Mr John Frederik Alexander"	no	NA	3rd	male
+"Holthen, Mr Johan Martin"	no	NA	3rd	male
+"Honkanen, Miss Eluna"	yes	NA	3rd	female
+"Horgan, Mr John"	no	NA	3rd	male
+"Howard, Miss May"	yes	NA	3rd	female
+"Humblin, Mr Adolf Mathias Nicolai Olsen"	no	NA	3rd	male
+"Hyman, Mr Abraham"	yes	NA	3rd	male
+"Ilieff, Mr Ylio"	no	NA	3rd	male
+"Ilmakangas, Miss Ida Livija"	no	NA	3rd	female
+"Ilmakangas, Miss Pieta Sofia"	no	NA	3rd	female
+"Ivanoff, Mr Konio"	no	NA	3rd	male
+"Jansen, Mr Carl Olof"	yes	NA	3rd	male
+"Jardin, Mr Jose Netto"	no	NA	3rd	male
+"Jensen, Miss Carla Christine"	yes	NA	3rd	female
+"Jensen, Mr Hans Peder"	no	NA	3rd	male
+"Jensen, Mr Niels Peder"	no	NA	3rd	male
+"Jensen, Mr Svend Lauritz"	no	NA	3rd	male
+"Jermyn, Miss Annie"	yes	NA	3rd	female
+"Johannesen-Bratthammer, Mr Bernt"	no	NA	3rd	male
+"Johanson, Mr Jakob Alfred"	no	NA	3rd	male
+"Johansson, Mr Erik"	no	NA	3rd	male
+"Johansson, Mr Gustaff Joel"	no	NA	3rd	male
+"Johansson, Mr Karl Johan"	yes	NA	3rd	male
+"Johansson, Mr Nils"	no	NA	3rd	male
+"Johansson, Oscar L."	yes	NA	3rd	male
+"Johnson, Mr Alfred"	no	NA	3rd	male
+"Johnson, Miss Eleanor Ileen"	yes	NA	3rd	female
+"Johnson, Mr Malkolm Joackim"	no	NA	3rd	male
+"Johnson, Master Harold Theodor"	yes	NA	3rd	male
+"Johnson, Mrs Oscar W."	no	NA	3rd	female
+"Johnson, Mr William Cahoone Jr."	no	NA	3rd	male
+"Johnston, Mr Andrew G."	no	NA	3rd	male
+"Johnston, Mrs Andrew G."	no	NA	3rd	female
+"Johnston, Miss Catherine H."	no	NA	3rd	female
+"Johnston, Master William A."	no	NA	3rd	male
+"Jonkoff, Mr Lazor"	no	NA	3rd	male
+"Jonsson, Mr Carl"	yes	NA	3rd	male
+"Jonsson, Nils Hilding"	no	NA	3rd	male
+"Jussila, Miss Aina Maria"	no	NA	3rd	female
+"Jussila, Mr Erik"	yes	NA	3rd	male
+"Jussila, Miss Katriina"	no	NA	3rd	female
+"Kallio, Mr Nikolai Erland"	no	NA	3rd	male
+"Kalvig, Mr Johannes K. Halverson"	no	NA	3rd	male
+"Karajic, Mr Milan"	no	NA	3rd	male
+"Karlsson, Mr Einar Gervasius"	yes	NA	3rd	male
+"Karlsson, Mr Julius Konrad Eugen"	no	NA	3rd	male
+"Karlsson, Mr Nils August"	no	NA	3rd	male
+"Karun, Miss Anna Mary"	yes	NA	3rd	female
+"Karun, Mr Franz"	no	NA	3rd	male
+"Kassem, Mr Fared"	no	NA	3rd	male
+"Keane, Mr Andrew"	no	NA	3rd	male
+"Keefe, Mr Arthur"	no	NA	3rd	male
+"Kekic, Mr Tido"	no	NA	3rd	male
+"Kelly, Miss Anna Kate"	yes	NA	3rd	female
+"Kelly, Mr James (1)"	no	NA	3rd	male
+"Kelly, Mr James"	no	NA	3rd	male
+"Kelly, Miss Mary"	yes	NA	3rd	female
+"Kennedy, Mr John"	no	NA	3rd	male
+"Khalil, Mr Betros"	no	NA	3rd	male
+"Khalil, Mrs Betros"	no	NA	3rd	female
+"Khalil, Mr Saad"	no	NA	3rd	male
+"Kiernan, Mr John"	no	NA	3rd	male
+"Kiernan, Mr Philip"	no	NA	3rd	male
+"Kilgannon, Mr Thomas"	no	NA	3rd	male
+"Kink, Mr Anton"	yes	NA	3rd	male
+"Kink, Mrs Anton (Louise Heilmann)"	no	NA	3rd	female
+"Kink, Miss Louise Gretchen"	yes	NA	3rd	female
+"Kink, Miss Maria"	no	NA	3rd	female
+"Kink, Mr Vincenz"	no	NA	3rd	male
+"Klasen, Miss Gertrud Emilia"	no	NA	3rd	female
+"Klasen, Mrs Hulda Kristina"	no	NA	3rd	female
+"Klasen, Mr Klas Albin"	no	NA	3rd	male
+"Kraeff, Mr Theodor"	no	NA	3rd	male
+"Krekorian, Mr Neshan"	yes	NA	3rd	male
+"Lahowd, Mr Sarkis"	no	NA	3rd	male
+"Laitinen, Miss Kritina Sofia"	no	NA	3rd	female
+"Laleff, Mr Kristo"	no	NA	3rd	male
+"Lam, Mr Ali"	yes	NA	3rd	male
+"Lam, Mr Len"	no	NA	3rd	male
+"Landegren, Miss Aurora Adelia"	yes	NA	3rd	female
+"Lane, Mr Patrick"	no	NA	3rd	male
+"Lang, Mr Fang"	yes	NA	3rd	male
+"Larsson, Mr August Viktor"	no	NA	3rd	male
+"Larsson, Mr Bengt Edvin"	no	NA	3rd	male
+"Larsson-Rondberg, Mr Edvard"	no	NA	3rd	male
+"Leeni, Mr Fahim"	yes	NA	3rd	male
+"Lefebre, Mrs Frank"	no	NA	3rd	female
+"Lefebre, Master Henry"	no	NA	3rd	male
+"Lefebre, Miss Ida"	no	NA	3rd	female
+"Lefebre, Miss Jeannie"	no	NA	3rd	female
+"Lefebre, Miss Mathilde"	no	NA	3rd	female
+"Leinonen, Mr Antti Gustaf"	no	NA	3rd	male
+"Lemberopolous, Mr Peter L."	no	NA	3rd	male
+"Lemom, Mr Denis"	no	NA	3rd	male
+"Lemon, Miss Mary"	no	NA	3rd	female
+"Leonard, Mr Lionel"	no	NA	3rd	male
+"Lester, Mr James"	no	NA	3rd	male
+"Lindahl, Miss Agda V."	no	NA	3rd	female
+"Lindblom, Miss Augusta Charlotta"	no	NA	3rd	female
+"Lindell, Mr Edvard Bengtsson"	no	NA	3rd	male
+"Lindell, Mrs Edvard Bengtsson"	no	NA	3rd	female
+"Lindqvist, Eino William"	yes	NA	3rd	male
+"Linehan, Mr Michael"	no	NA	3rd	male
+"Ling, Mr Lee"	no	NA	3rd	male
+"Lithman, Mr Simon"	no	NA	3rd	male
+"Lobb, Mr William Arthur"	no	NA	3rd	male
+"Lobb, Mrs William Arthur"	no	NA	3rd	female
+"Lockyer, Mr Edward"	no	NA	3rd	male
+"Lovell, Mr John"	no	NA	3rd	male
+"Lulich, Mr Nicola"	yes	NA	3rd	male
+"Lundahl, Mr Johan"	no	NA	3rd	male
+"Lundin, Miss Olga Elida"	yes	NA	3rd	female
+"Lundstrom, Mr Thure Edvin"	no	NA	3rd	male
+"Lyntakoff, Mr Stanko"	no	NA	3rd	male
+"MacKay, Mr George William"	no	NA	3rd	male
+"Madigan, Miss Margaret"	yes	NA	3rd	female
+"Madsen, Mr Frithiof"	no	NA	3rd	male
+"Maenpaa, Mr Matti Alexanteri"	no	NA	3rd	male
+"Mahon, Miss Delia"	no	NA	3rd	female
+"Maisner, Mr Simon"	no	NA	3rd	male
+"Makinen, Mr Kalle Edvard"	no	NA	3rd	male
+"Mamee, Mr Hanna"	yes	NA	3rd	male
+"Mangan, Miss Mary"	no	NA	3rd	female
+"Mannion, Miss Margareth"	yes	NA	3rd	female
+"Mansour, Mr Hanna"	no	NA	3rd	male
+"Mardirosian, Mr Sarkis"	no	NA	3rd	male
+"Marinko, Mr Dmitri"	no	NA	3rd	male
+"Markim, Mr Johann"	no	NA	3rd	male
+"Markoff, Mr Marin"	no	NA	3rd	male
+"Masselmany, Mrs Fatima"	yes	NA	3rd	female
+"Matinoff, Mr Nicola"	no	NA	3rd	male
+"McCarthy, Miss Katie"	yes	NA	3rd	female
+"McCormack, Mr Thomas J."	no	NA	3rd	male
+"McCoy, Miss Agnes"	no	NA	3rd	female
+"McCoy, Miss Alice"	no	NA	3rd	female
+"McCoy, Mr Bernard"	no	NA	3rd	male
+"McDermott, Miss Delia"	no	NA	3rd	female
+"McElroy, Mr Michael"	no	NA	3rd	male
+"McGovern, Mrs Hugh"	yes	NA	3rd	female
+"McGowan, Miss Anna"	no	NA	3rd	female
+"McGowan, Miss Katherine"	no	NA	3rd	female
+"McMahon, Mr Martin"	no	NA	3rd	male
+"McNamee, Mr Neal"	no	NA	3rd	male
+"McNamee, Mrs Neal"	no	NA	3rd	female
+"Meanwell, Miss Marion Ogden"	no	NA	3rd	female
+"Mechen, Mr John"	no	NA	3rd	male
+"Meek, Mrs Thomas"	no	NA	3rd	female
+"Melkebuk, Mrs Philemon"	no	NA	3rd	female
+"Meo, Mr Alfonso"	no	NA	3rd	male
+"Midtsjo, Mr Karl Albert"	yes	NA	3rd	male
+"Mihoff, Mr Stoytcho"	no	NA	3rd	male
+"Miles, Mr Frank"	no	NA	3rd	male
+"Mineff, Mr Ivan"	no	NA	3rd	male
+"Minkoff, Mr Lazar"	no	NA	3rd	male
+"Mirko, Mr Dika"	no	NA	3rd	male
+"Mitkoff, Mr Mito"	no	NA	3rd	male
+"Mocklare, Miss Helen Mary"	yes	NA	3rd	female
+"Moen, Mr Sigurd H."	no	NA	3rd	male
+"Moor, Mrs Beila"	yes	NA	3rd	female
+"Moor, Master Meier"	no	NA	3rd	male
+"Moore, Mr Leonard Charles"	no	NA	3rd	male
+"Moran, Miss Bertha"	yes	NA	3rd	female
+"Moran, Mr Daniel J."	no	NA	3rd	male
+"Moran, Mr James"	no	NA	3rd	male
+"Morley, Mr Henry Samuel"	no	NA	3rd	male
+"Morrow, Mr Thomas Rowan"	no	NA	3rd	male
+"Moubarek (Borak), Mr Hanna (John)"	yes	NA	3rd	male
+"Moubarek, Mrs George"	no	NA	3rd	female
+"Moubarek, Master George"	no	NA	3rd	male
+"Moubarek, Master William George"	no	NA	3rd	male
+"Moss, Albert Johan"	no	NA	3rd	male
+"Moussa, Mrs Mantoura Baloics"	no	NA	3rd	female
+"Moutal, Mr Rahamin"	no	NA	3rd	male
+"Mullins, Miss Katie"	yes	NA	3rd	female
+"Mulvihill, Miss Bertha E."	no	NA	3rd	female
+"Murdlin, Mr Joseph"	no	NA	3rd	male
+"Murphy, Miss Katherine"	no	NA	3rd	female
+"Murphy, Miss Margaret"	no	NA	3rd	female
+"Murphy, Miss Nora"	no	NA	3rd	female
+"Myhrman, Mr Pehr Fabian Oliver Malkolm"	no	NA	3rd	male
+"Nackid, Miss Maria"	yes	NA	3rd	female
+"Nackid, Mr Said"	no	NA	3rd	male
+"Nackid, Mrs Said"	no	NA	3rd	female
+"Nahill, Mr Toufik"	no	NA	3rd	male
+"Naidenoff, Mr Penko"	no	NA	3rd	male
+"Nancarrow, W. H."	no	NA	3rd	male
+"Niklasen, Sander"	no	NA	3rd	male
+"Nosworthy, Richard C."	no	NA	3rd	male
+"Najib, Miss Adele Kiamie"	yes	NA	3rd	female
+"Nancarrow, Mr William Henry"	no	NA	3rd	male
+"Nankoff, Mr Minko"	no	NA	3rd	male
+"Nasr, Mr Mustafa"	no	NA	3rd	male
+"Nassr, Mr Saade Jean"	no	NA	3rd	male
+"Naughton, Miss Hannah"	no	NA	3rd	female
+"Nemaugh, Mr Robert"	no	NA	3rd	male
+"Nenkoff, Mr Christo"	no	NA	3rd	male
+"Nicola-Yarred, Miss Jamila"	yes	NA	3rd	female
+"Nicola-Yarred, Master Elias"	no	NA	3rd	male
+"Nieminen, Miss Manta Josefina"	no	NA	3rd	female
+"Niklasson, Mr Samuel"	no	NA	3rd	male
+"Nilsson, Mr August Ferdinand"	no	NA	3rd	male
+"Nilsson, Miss Berta Olivia"	yes	NA	3rd	female
+"Nilsson, Miss Helmina Josefina"	no	NA	3rd	female
+"Niskanen, Mr Johan"	no	NA	3rd	male
+"Nosworthy, Mr Richard Cater"	no	NA	3rd	male
+"Novel, Mansouer"	yes	NA	3rd	male
+"Nysten, Miss Anna"	no	NA	3rd	female
+"Nysveen, Mr Johan H."	no	NA	3rd	male
+"O'Brien, Mr Denis"	no	NA	3rd	male
+"O'Brien, Mr Thomas"	no	NA	3rd	male
+"O'Brien, Mrs Thomas"	yes	NA	3rd	female
+"O'Connell, Mr Patrick D."	no	NA	3rd	male
+"O'Connor, Mr Maurice"	no	NA	3rd	male
+"O'Connor, Mr Patrick"	no	NA	3rd	male
+"Odahl, Mr Nils Martin"	yes	NA	3rd	male
+"O'Dwyer, Miss Nellie"	no	NA	3rd	female
+"Ohman, Miss Velin"	no	NA	3rd	female
+"O'Keefe, Mr Patrick"	no	NA	3rd	male
+"OLeary, Miss Norah"	no	NA	3rd	female
+"Olsen, Master Arthur"	no	NA	3rd	male
+"Olsen, Mr Charlie (Carl)"	no	NA	3rd	male
+"Olsen, Mr Henry Margido"	no	NA	3rd	male
+"Olsen, Mr Ole M."	no	NA	3rd	male
+"Olsson, Miss Elida"	no	NA	3rd	female
+"Olsson, Mr Nils Johan"	no	NA	3rd	male
+"Olsson, Mr Oscar Johansson"	yes	NA	3rd	male
+"O'Neill, Miss Bridget"	no	NA	3rd	female
+"Oreskovic, Mr Jeko"	no	NA	3rd	male
+"Oreskovic, Mr Luka"	no	NA	3rd	male
+"Oreskovic, Mr Maria"	no	NA	3rd	male
+"Osen, Mr Olof Elon"	no	NA	3rd	male
+"Osman, Miss Maria"	yes	NA	3rd	female
+"O'Sullivan, Miss Bridget"	no	NA	3rd	female
+"Panula, Mr Ernesti Arvid"	no	NA	3rd	male
+"Panula, Mr Jaako Arnold"	no	NA	3rd	male
+"Panula, Master Juha Niilo"	no	NA	3rd	male
+"Panula, Mrs John"	no	NA	3rd	female
+"Panula, Master Urho Abraham"	no	NA	3rd	male
+"Panula, Master William"	no	NA	3rd	male
+"Pasic, Mr Jakob"	no	NA	3rd	male
+"Paulner, Mr Uscher"	no	NA	3rd	male
+"Paulsson, Master Gosta Leonard"	no	NA	3rd	male
+"Paulsson, Mrs Nils"	no	NA	3rd	female
+"Paulsson, Master Paul Folke"	no	NA	3rd	male
+"Paulsson, Miss Stina Viola"	no	NA	3rd	female
+"Paulsson, Miss Torborg Danira"	no	NA	3rd	female
+"Pavlovic, Mr Stefo"	no	NA	3rd	male
+"Peacock, Master Alfred Edward"	no	NA	3rd	male
+"Peacock, Mrs Benjamin"	no	NA	3rd	female
+"Peacock, Miss Treasteall"	no	NA	3rd	female
+"Pearce, Mr Ernest"	no	NA	3rd	male
+"Pecruic, Mr Mate"	no	NA	3rd	male
+"Pecruic, Mr Tome"	no	NA	3rd	male
+"Pedersen, Mr Olaf"	no	NA	3rd	male
+"Peduzzi, Mr Joseph"	no	NA	3rd	male
+"Pekoniemi, Mr Edvard"	yes	NA	3rd	male
+"Peltomaki, Nikolai Johannes"	no	NA	3rd	male
+"Perkin, Mr John Henry"	no	NA	3rd	male
+"Persson, Mr Ernst Ulrik"	yes	NA	3rd	male
+"Peter (Joseph), Miss Mary"	no	NA	3rd	female
+"Peter (Joseph), Mrs Catherine"	no	NA	3rd	female
+"Peter (Joseph), Master Michael J."	no	NA	3rd	male
+"Peters, Miss Katie"	no	NA	3rd	female
+"Petersen, Mr Marius"	no	NA	3rd	male
+"Petranec, Miss Matilda"	no	NA	3rd	female
+"Petroff, Mr Nedeca"	no	NA	3rd	male
+"Petroff, Mr Pentcho"	no	NA	3rd	male
+"Pettersson, Miss Ellen Natalia"	no	NA	3rd	female
+"Peterson, Mr Johan Emil"	no	NA	3rd	male
+"Pickard (Trembisky), Mr Berk"	yes	NA	3rd	male
+"Plotcharsky, Mr Vasil"	no	NA	3rd	male
+"Potchett, Mr George"	no	NA	3rd	male
+"Radeff, Mr Alexander"	no	NA	3rd	male
+"Raibid, Mr Razi"	no	NA	3rd	male
+"Reed, Mr James George"	no	NA	3rd	male
+"Reynolds, Mr Harold"	no	NA	3rd	male
+"Rice, Master Albert"	no	NA	3rd	male
+"Rice, Master Arthur"	no	NA	3rd	male
+"Rice, Master George"	no	NA	3rd	male
+"Rice, Master Eric"	no	NA	3rd	male
+"Rice, Master Eugene"	no	NA	3rd	male
+"Rice, Mrs William"	no	NA	3rd	female
+"Riihiivouri, Miss Sanni"	no	NA	3rd	female
+"Rintamaki, Mr Matti"	no	NA	3rd	male
+"Riordan, Miss Hannah"	yes	NA	3rd	female
+"Risien, Mr Samuel"	no	NA	3rd	male
+"Risien, Mrs Samuel"	no	NA	3rd	female
+"Robins, Mr Alexander A."	no	NA	3rd	male
+"Robins, Mrs Alexander A."	no	NA	3rd	female
+"Rommetvedt, Mr Karl Kristian Knut"	no	NA	3rd	male
+"Rogers, Mr William John"	no	NA	3rd	male
+"Rosblom, Mrs Viktor"	no	NA	3rd	female
+"Rosblom, Miss Salli Helena"	no	NA	3rd	female
+"Rosblom, Mr Viktor Rickard"	no	NA	3rd	male
+"Roth, Miss Sarah"	yes	NA	3rd	female
+"Rouse, Mr Richard Henry"	no	NA	3rd	male
+"Rush, Mr Alfred George John"	no	NA	3rd	male
+"Ryan, Mr Edward Ryan"	yes	NA	3rd	male
+"Ryan, Mr Patrick"	no	NA	3rd	male
+"Saad, Mr Amin"	no	NA	3rd	male
+"Saad, Khalil"	yes	NA	3rd	male
+"Sadlier, Mr Matthew"	no	NA	3rd	male
+"Sadowitz, Mr Harry"	no	NA	3rd	male
+"Sage, Miss Ada"	no	NA	3rd	female
+"Sage, Miss Constance"	no	NA	3rd	female
+"Sage, Miss Dorothy"	no	NA	3rd	female
+"Sage, Mr Douglas"	no	NA	3rd	male
+"Sage, Mr Frederick"	no	NA	3rd	male
+"Sage, Mr George"	no	NA	3rd	male
+"Sage, Mr John"	no	NA	3rd	male
+"Sage, Mrs John"	no	NA	3rd	female
+"Sage, Miss Stella"	no	NA	3rd	female
+"Sage, Thomas (child)"	no	NA	3rd	male
+"Sage, Master William"	no	NA	3rd	male
+"Salander, Mr Karl Johan"	no	NA	3rd	male
+"Salkjelsvik, Miss Anna"	yes	NA	3rd	female
+"Salonen, Mr Johan Werner"	no	NA	3rd	male
+"Samaan, Mr Elias"	no	NA	3rd	male
+"Samaan, Mr Hanna"	no	NA	3rd	male
+"Samaan, Mr Youssef"	no	NA	3rd	male
+"Sandstrom, Miss Hjalmar"	yes	NA	3rd	female
+"Sandstrom, Miss Beatrice Irene"	no	NA	3rd	female
+"Sandstrom, Miss Marguerite Rut"	no	NA	3rd	female
+"Sather, Simon Sivertsen"	no	NA	3rd	male
+"Saundercock, William Henry"	no	NA	3rd	male
+"Sawyer, Mr Frederick"	no	NA	3rd	male
+"Scanlan, Mr James"	no	NA	3rd	male
+"Sdycoff, Mr Todor"	no	NA	3rd	male
+"Seman Master Betros"	no	NA	3rd	male
+"Serota, Mr Maurice"	no	NA	3rd	male
+"Shaughnesay, Mr Patrick"	no	NA	3rd	male
+"Shedid (Sitik), Mr Daher (Docart)"	no	NA	3rd	male
+"Sheerlinck, Mr Jean"	yes	NA	3rd	male
+"Shellard, Mr Frederick B."	no	NA	3rd	male
+"Shine, Miss Ellen"	yes	NA	3rd	female
+"Shorney, Mr Charles"	no	NA	3rd	male
+"Simmons, Mr John"	no	NA	3rd	male
+"Sirayanian, Mr Arsun"	no	NA	3rd	male
+"Sivic, Mr Husen"	no	NA	3rd	male
+"Sivola, Mr Antti"	no	NA	3rd	male
+"Sjoblom, Miss Anna Sofia"	yes	NA	3rd	female
+"Sholt, Mr Peter Andreas Lauritz Andersen"	no	NA	3rd	male
+"Skinner, Mr Henry John"	no	NA	3rd	male
+"Skoog, Master Harald"	no	NA	3rd	male
+"Skoog, Master Karl"	no	NA	3rd	male
+"Skoog, Miss Mabel"	no	NA	3rd	female
+"Skoog, Miss Margit"	no	NA	3rd	female
+"Skoog, Mr William"	no	NA	3rd	male
+"Skoog, Mrs William"	no	NA	3rd	female
+"Slabenoff, Mr Petco"	no	NA	3rd	male
+"Slocovski, Mr Selman"	no	NA	3rd	male
+"Smiljanovic, Mr Mile"	no	NA	3rd	male
+"Smyth, Miss Julia"	yes	NA	3rd	female
+"Solvang, Mrs Lena Jacobsen"	no	NA	3rd	female
+"Somerton, Mr Francis William"	no	NA	3rd	male
+"Sop, Mr Jules"	yes	NA	3rd	male
+"Spector, Mr Woolf"	no	NA	3rd	male
+"Staneff, Mr Ivan"	no	NA	3rd	male
+"Stankovic, Mr Jovan"	no	NA	3rd	male
+"Stanley, Miss Amy Zilla Elsie"	yes	NA	3rd	female
+"Stanley, Mr Edward Roland"	no	NA	3rd	male
+"Storey, Mr Thomas"	no	NA	3rd	male
+"Stoyehoff, Mr Ilia"	no	NA	3rd	male
+"Strandberg, Miss Ida Sofia"	no	NA	3rd	female
+"Stranden, Mr Juho"	yes	NA	3rd	male
+"Strilic, Mr Ivan"	no	NA	3rd	male
+"Strom, Mrs Wilhelm"	no	NA	3rd	female
+"Strom, Miss Telma (Selma) Matilda"	no	NA	3rd	female
+"Sunderland, Mr Victor Francis"	yes	NA	3rd	male
+"Sundman, Mr Johan Julian"	no	NA	3rd	male
+"Sutehall, Mr Henry, Jr"	no	NA	3rd	male
+"Svensson, Mr Johan"	no	NA	3rd	male
+"Svensson, Mr Johan Cervin"	yes	NA	3rd	male
+"Svensson, Mr Olof"	no	NA	3rd	male
+"Tannous, Mr Thomas"	no	NA	3rd	male
+"Tenglin, Mr Gunnar Isidor"	yes	NA	3rd	male
+"Theobald, Mr Thomas Leonard"	no	NA	3rd	male
+"Thomas, Mrs Alexander"	yes	NA	3rd	female
+"Thomas, Master Assad Alexander"	no	NA	3rd	male
+"Thomas, Mr Charles"	no	NA	3rd	male
+"Thomas, Mr John, Jr"	no	NA	3rd	male
+"Thomas, Mr John (? 1st/2nd class)"	no	NA	3rd	male
+"Thomson, Mr Alexander"	no	NA	3rd	male
+"Thorneycroft, Mr Percival"	no	NA	3rd	male
+"Thorneycroft, Mrs Percival"	yes	NA	3rd	female
+"Tikkanen, Mr Juho"	no	NA	3rd	male
+"Tobin, Mr Roger"	no	NA	3rd	male
+"Todoroff, Mr Lalio"	no	NA	3rd	male
+"Toerber, Mr Ernest William"	no	NA	3rd	male
+"Tomlin, Mr Ernest Portage"	no	NA	3rd	male
+"Torfa, Mr Assad"	no	NA	3rd	male
+"Tornquist, Mr William Henry"	yes	NA	3rd	male
+"Touma (Thomas), Mrs Darwin"	no	NA	3rd	female
+"Touma (Thomas), Master George"	no	NA	3rd	male
+"Touma (Thomas), Miss Hannah"	no	NA	3rd	female
+"Turcin, Mr Stefan"	no	NA	3rd	male
+"Turja, Miss Anna Sofia"	yes	NA	3rd	female
+"Turkula, Mrs Hedvig"	no	NA	3rd	female
+"Uzelas, Mr Joso"	no	NA	3rd	male
+"Van Billiard, Mr Austin Blyler"	no	NA	3rd	male
+"Van Billiard, Master James William"	no	NA	3rd	male
+"Van Billiard, Master Walter John"	no	NA	3rd	male
+"Van der Planke, Miss Augusta"	no	NA	3rd	female
+"Van der Planke, Mr Jules"	no	NA	3rd	male
+"Van der Planke, Mrs Jules"	no	NA	3rd	female
+"Van der Planke, Mr Leon"	no	NA	3rd	male
+"Van der Steen, Mr Leo Peter"	no	NA	3rd	male
+"Van de Velde, Mr John Joseph"	no	NA	3rd	male
+"Vandewalle, Mr Nestor Cyriel"	no	NA	3rd	male
+"Van Impe, Miss Catharine"	no	NA	3rd	female
+"Van Impe, Mr Jean Baptiste"	no	NA	3rd	male
+"Van Impe, Mrs Jean Baptiste"	no	NA	3rd	female
+"Vartunian, Mr David"	yes	NA	3rd	male
+"Vassilios, Mr Catavelas"	no	NA	3rd	male
+"Vendel, Mr Olof Wdvin"	no	NA	3rd	male
+"Vereruysse, Mr Victor"	no	NA	3rd	male
+"Vestrom, Miss Hulda Amanda Adolfina"	no	NA	3rd	female
+"Vonk, Mr Jenko"	no	NA	3rd	male
+"Ware, Mr Frederick"	no	NA	3rd	male
+"Warren, Mr Charles William"	no	NA	3rd	male
+"Wazli, Mr Yousif"	no	NA	3rd	male
+"Webber, Mr James"	no	NA	3rd	male
+"Wennerstrom, Mr August Edvard"	yes	NA	3rd	male
+"Wenzel, Mr Linhart"	no	NA	3rd	male
+"Widegren, Mr Charles Peter"	no	NA	3rd	male
+"Wiklund, Mr Jacob Alfred"	no	NA	3rd	male
+"Wilkes, Mrs Ellen"	yes	NA	3rd	female
+"Willer, Mr Aaron"	no	NA	3rd	male
+"Willey, Mr Edward"	no	NA	3rd	male
+"Williams, Mr Howard Hugh"	no	NA	3rd	male
+"Williams, Mr Leslie"	no	NA	3rd	male
+"Windelov, Mr Einar"	no	NA	3rd	male
+"Wirz, Mr Albert"	no	NA	3rd	male
+"Wiseman, Mr Phillippe"	no	NA	3rd	male
+"Wittevrongel, Mr Camiel"	no	NA	3rd	male
+"Yalsevac, Mr Ivan"	yes	NA	3rd	male
+"Yasbeck, Mr Antoni"	no	NA	3rd	male
+"Yasbeck, Mrs Antoni"	yes	NA	3rd	female
+"Youssef, Mr Gerios"	no	NA	3rd	male
+"Zabour, Miss Hileni"	no	NA	3rd	female
+"Zabour, Miss Tamini"	no	NA	3rd	female
+"Zakarian, Mr Artun"	no	NA	3rd	male
+"Zakarian, Mr Maprieder"	no	NA	3rd	male
+"Zenn, Mr Philip"	no	NA	3rd	male
+"Zievens, Rene"	no	NA	3rd	female
+"Zimmerman, Leo"	no	NA	3rd	male

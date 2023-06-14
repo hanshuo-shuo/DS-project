@@ -1,0 +1,10 @@
+density subject intruder yes count
+1 low  male    male   18 19
+2 low  male    female 15 23
+3 low  female  male   17 22
+4 low  female  female 12 19
+5 high male    male   13 19
+6 high male    female 16 20
+7 high female  male   10 19
+8 high female  female 14 20
+
