@@ -1,4 +1,4 @@
-# GLM
+# Generalized Linear Models
 
 ## INTRO 
 
@@ -28,3 +28,12 @@ GLM consists of three main components:
 
 - Quasi-Poisson Regression, which is similar to Poisson regression, but it relaxes the assumption that the mean and variance of the distribution are equal. This model is used when there is overdispersion in the count data (i.e., the variance is larger than the mean).
 - Inverse Gaussian Regression is another GLM that's used for non-negative continuous data, especially when the variance increases more quickly than the mean. It's less commonly used than the other models, but it can be useful in certain situations.
+
+# Nonlinear models
+
+Nonlinear models are used in statistics when the relationship between the dependent and independent variables is not linear. Nonlinear models can represent more complex relationships, and can be used in a wide variety of fields including economics, engineering, biology, and physics.
+
+- Polynomial Regression: This type of regression analysis models the relationship between the independent variable x and the dependent variable y as an nth degree polynomial. It can model relationships where the effect of the predictor variable does not increase or decrease linearly, but can increase at a decreasing rate, or even start to decrease after a certain point.
+
+- Generalized Additive Models (GAMs): These are a flexible class of models that can be used when you suspect that your response variable has a nonlinear relationship with some of your predictors. GAMs allow you to use linear regression where the response is linear in terms of the predictors, but also allow for nonlinear relationships.
+- Nonparametric regression : (Like loess, local-linear regression)refers to techniques that model the relationship between variables without making specific assumptions about the form or parameters of the function that relates the variables. This is in contrast to parametric regression techniques, like linear regression, which assumes that the relationship can be modeled by a specific form, such as a straight line.
