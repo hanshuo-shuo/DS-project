@@ -15,6 +15,8 @@ Random Forest, Neural Network, Transfer Learning
 Nlp, Recommender Systems
 - [Explainability](https://github.com/hanshuo-shuo/DS-project/tree/main/Explainability)
 CNN, LIME, Explain the model
+- [Casual Inference Modeling](https://github.com/hanshuo-shuo/DS-project/tree/main/casual%20inference%20modeling%20)
+Backdoor-do-calculus, Mate-Learning, IPW, Double Meching Learning
 # Useful links
 
 - [Data sceience interviews](https://github.com/alexeygrigorev/data-science-interviews/tree/master)
