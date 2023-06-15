@@ -2,10 +2,27 @@
 
 MLM is an acronym for Multilevel Modeling, also known as hierarchical linear modeling (HLM), mixed-effect modeling, or random coefficient modeling. These statistical models are used to analyze data that has a hierarchical or nested structure. For example, consider students nested within classrooms, which are nested within schools. In such cases, it's likely that students in the same classroom are more similar to each other than to students from different classrooms. Similarly, classrooms in the same school are more likely to be similar to each other than to classrooms from different schools. Multilevel models can take this clustering of data into account, allowing for residual components at each level in the data hierarchy.
 
-Fitting the mixed-effects model:
+Fitting the linear mixed-effects model:
 `model <- lmer(test ~ SES_c + IQ_c + (1 + SES_c + IQ_c | school), data = data)`
 
+FITTING generalized linear mixed-effects model:
+```{R}
+model <- glmer(high_pass ~ SES_c + IQ_c + (1 + SES_c + IQ_c | school), family = binomial, data = data)
+S(model)
+```
+
 Here, test is the outcome variable (possibly a test score), and SES_c and IQ_c are predictor variables (possibly socio-economic status and IQ score, centered). The 1 in the formula denotes the intercept. The | school indicates that the intercept and slopes for SES_c and IQ_c are allowed to vary across different schools, hence the mixed-effects model.
+
+# Longitudinal Data Modeling
+
+ - Mixed-Effects Models: Mixed-effects models (also known as multilevel models or hierarchical models) are a common choice for longitudinal data. They can account for the correlation between repeated measures on the same units by including random effects for the units. The lme4 and nlme packages in R can be used to fit mixed-effects models.
+- Generalized Estimating Equations (GEE): GEE models are another common choice for longitudinal data. GEE models are similar to mixed-effects models but they focus on estimating the average response over the population rather than the response for a specific individual. GEE models can be fitted in R using the geepack package.
+- Growth Curve Models: Growth curve models, which are a special type of mixed-effects model, are often used for longitudinal data. These models include fixed and random effects for time (or age), which allows for modeling individual growth trajectories. Growth curve models can be fitted using the nlme or lme4 packages.
+- Survival Analysis: If the longitudinal data includes time-to-event outcomes, survival analysis methods can be used. The survival package in R provides a variety of functions for survival analysis.
+```{R}
+library(survival)
+model <- coxph(Surv(time, event) ~ x, data = data)
+```
 
 # Generalized Linear Models
 
