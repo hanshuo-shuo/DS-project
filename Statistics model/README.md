@@ -74,7 +74,7 @@ summary(heck_long_model)
 
 ## Censored Regression
 
-(c) treat the missing values as censored and fit the Tobit model.
+Treat the missing values as censored and fit the Tobit model.
 
 ```{r, message=FALSE}
 # Load required package
@@ -87,6 +87,17 @@ long_phd_tobit_data$job[is.na(long_phd_tobit_data$job)] <- 1
 tobit_model <- censReg(job ~ gender + phd + mentor + fellowship + articles + citations, left = 1, right = Inf, data = long_phd_tobit_data)
 summary(tobit_model)
 ```
+# Model Selection
 
+- AIC (Akaike's Information Criterion) and BIC (Bayesian Information Criterion): These are both commonly used criteria for model selection. Lower AIC or BIC values indicate better fitting models. AIC and BIC are available for many models through the AIC() and BIC() functions in R.
 
+- Stepwise Regression: This method starts with a full or null model, and tries to add or remove predictors based on some criteria, such as the AIC or BIC. The step() function in R can be used for stepwise regression.
+
+- Cross-Validation: Cross-validation is a resampling method used to evaluate machine learning models on a limited data sample. The idea behind it is to divide the data into 'folds', train the model on a subset of the folds and test it on the remaining fold. Then, this is repeated so that each fold acts as the test set once. Model performance can be assessed using various metrics such as Mean Squared Error (MSE) for regression tasks or accuracy for classification tasks. R packages like caret and mlr provide functionality for cross-validation.
+
+- LASSO and Ridge Regression: These are techniques used for creating parsimonious models in the presence of a 'large' number of features. They work by penalizing the absolute size of the regression coefficients, which can lead to some coefficients being exactly zero. This effectively performs feature selection. These methods are implemented in the glmnet package in R.
+
+- Model selection based on the likelihood-ratio test: In R, this can be done using the anova() function, which compares the goodness of fit of two models to see if the more complicated one is significantly better than the simpler one.
+
+- Validation or Test set approach: In this method, the data is split into two parts: a training set and a validation (or test) set. The model is trained on the training set and its performance is evaluated on the validation set. The model with the best performance on the validation set is chosen. The function createDataPartition() from the caret package can be used to split the data.
 
