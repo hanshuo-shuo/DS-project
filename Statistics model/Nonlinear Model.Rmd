@@ -1,0 +1,285 @@
+---
+title: "Nonlinear Model"
+author: "Shuo Han"
+date: '2.8'
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Data analysis
+
+### **1. Polynomial Regression** 
+
+The data in `gin.txt` (collected by gin) were analyzed by Monette (1990). The data are for a group of 82 psychiatric patients hospitalized for depression. The response variable in the data set is the patient's score on the Beck scale, a widely used measure
+of depression. The explanatory variables are "simplicity" (measuring the degree to which the patient "sees the world in black and white") and "fatalism". (These three variables have been adjusted for other explanatory variables that can influence depression.)
+
+Using the full quadratic regression model
+$Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \beta_3X_1^2 + \beta_4X_2^2 + \beta_5X_1X_2 + \epsilon$
+regress the Beck-scale scores on simplicity and fatalism.
+
+(a) Are the quadratic and product terms needed here?
+
+```{r}
+data = read.table("data/Ginzberg.txt")
+gin = na.omit(data)
+fit1 <- lm(adjdepression~adjsimplicity+adjfatalism+I(adjsimplicity^2)+I(adjfatalism^2)+adjsimplicity*adjfatalism, data = gin)
+summary(fit1)
+```
+The summary shows that neither the quadratic terms nor the interaction term are significant. Hence, they are not necessary in this case.
+
+
+(b) If you have access to suitable software, graph the data and the fitted regression surface in three dimensions. Do you see any problems with the data?
+
+
+```{r}
+library(scatterplot3d)
+library(plotly)
+scatterplot3d(gin$adjsimplicity, gin$adjfatalism, gin$adjdepression,
+             main = "3D Scatter Plot of Regression Surface",
+             xlab = "adjsimplicity", ylab = "adjfatalism", zlab = "adjdepression")
+
+depression <- predict(fit1)
+
+plot_ly(x = ~gin$adjsimplicity, y = ~gin$adjfatalism, z = ~depression, type = "mesh3d")
+```
+
+From the scatter plot, there seems to have one influenced point located at the top, and we need to do more analysis on this finding.
+
+
+
+
+(c) What do standard regression diagnostics for influential observations show?
+
+```{r}
+library(car)
+influenceIndexPlot(fit1, vars = c("Cook","hat"))
+avPlots(fit1) # added variable plots
+# remove influential points
+compareCoefs(fit1, update(fit1, subset=-c(71)))
+```
+Observation 71 appears to be an influential point in the regression analysis, as indicated by its high Cook's distance and hat-values. These metrics are used to measure the impact of individual observations on the regression model. An observation with a high Cook's distance or hat-value has a significant influence on the regression coefficients. In this case, removing observation 71 has a noticeable effect on the coefficients, suggesting that it is an influential point.
+
+### **2. General nonparametric regression model and Generalized Additive Models** 
+
+For this analysis, use the `States.txt` data, which includes average SAT scores for each state as the outcome.
+
+(a) Put together a model with SAT math (`SATM`) as the outcome and `region`, `pop`, `percent`, `dollars`, and `pay` as the explanatory variables, each included as linear terms. Interpret the findings.
+
+```{r}
+data = read.table("data/States.txt")
+state = na.omit(data)
+fit2 = lm(satMath~region+population+percentTaking+teacherPay, state)
+summary(fit2)
+```
+The table suggests that among the continuous variables, only "percentTaking" has a significant association with the dependent variable. This conclusion is drawn from the p-values listed for each covariate.  Essentially, a low p-value signifies a statistically significant relationship between the covariate and the dependent variable. In light of the p-values, it appears that only "percentTaking" has a meaningful impact on the dependent variable.
+
+Additionally, "regionSA" is a significant categorical variable. The coefficient of "regionSA" shows that a change from the ENC region to the SA region, with no other changes, will result in a decrease of 2.544 points in the mean SAT Math score of high-school seniors. The coefficient of "percentTaking" implies that a 1% increase in the number of high-school seniors taking the SAT exam will result in a decrease of 1.088 points in the mean SAT Math score.
+
+(b) Now, instead approach building this model using the nonparametric-regression methods of this chapter. Fit a general nonparametric regression model *and* an additive-regression model, comparing the results to each other and to the linear least-squares fit to the data (in (a)).
+
+```{r}
+# Load the library
+fit_21 = loess(satMath~population+percentTaking+teacherPay, degree=1, data = state)
+summary(fit_21)
+
+# without population
+fit_22 = loess(satMath~percentTaking+teacherPay, degree=1, data = state)
+
+# without percentTaking
+fit_23 = loess(satMath~population+teacherPay, degree=1, data = state)
+
+#without teacherPay
+fit_24 = loess(satMath~population+percentTaking, degree=1, data = state)
+
+anova(fit_22,fit_21)
+anova(fit_23,fit_21)
+anova(fit_24,fit_21)
+
+# so only percenttaking is significant
+fit_2 = loess(satMath~percentTaking, degree=1, data = state)
+
+plot(satMath~percentTaking,data = state)
+x <- seq(min(state$percentTaking), max(state$percentTaking), length.out = 100)
+pred <- predict(fit_2, data.frame(percentTaking = x))
+lines(x, pred, col = "red", lwd = 2, lty = 1)
+lines(with(state, smooth.spline(percentTaking, satMath, df = 3.85), lwd = 2), col = "blue")
+abline(lm(satMath~percentTaking,state),col= "red")
+```
+
+```{r}
+library(mgcv)
+
+fit_gam <- gam(satMath ~ s(population) + s(percentTaking) + s(teacherPay), data = state)
+summary(fit_gam)
+plot(fit_gam)
+```
+
+For the non-parametric regression, we employed the loess regression model, which is appropriate as it only requires smoothing and can therefore only be applied to continuous variables such as population, percentTaking, and teacherPay. Through various lack-of-fit tests, we determined that only percentTaking has a significant effect, consistent with the conclusions drawn from the earlier analysis. From the plot, it can be observed that both the non-parametric regression model and the spline fit provide a better fit to the data compared to the linear least-square fit.
+
+Regarding the additive regression model, we utilized the gam model. The summary indicates that both percentTaking and teacherPay have significant parametric and non-parametric effects. The plot shows that both teacherPay and percentTaking exhibit some non-linearity, which can be addressed through the use of a gam model.
+
+(c) Can you handle the nonlinearity by a transformation or by another parametric regression model, such as a polynomial regression? Investigate and explain. What are the tradeoffs between these nonparametric and parametric approaches?
+
+```{r}
+pairs(state[,2:7])
+ix = sort(state$percentTaking, index.return = T)$ix
+model_paly <- lm(satMath ~ log(population) + log(percentTaking) + teacherPay, data= state)
+
+ix <- sort(state$percentTaking, index.return = T)$ix
+pred <- predict(lm(satMath ~ log(percentTaking), data = state))
+plot(satMath~ percentTaking, data = state)
+lines(state$percentTaking[ix], pred[ix], col = "red", lwd = 2)
+```
+
+Through a pairs analysis, we discovered a non-linear relationship between percentTaking and satMath. To address this issue, we applied a log transformation to percentTaking to create a new linear regression model. The regression plot suggests that the model after the log transformation provides a much better fit.
+
+There are several trade-offs between nonparametric and parametric approaches in regression analysis:
+Flexibility: Nonparametric regression models are more flexible and can better capture complex relationships between the independent and dependent variables. Computational complexity: Nonparametric regression models can be computationally intensive, especially when working with large datasets. Parametric regression models are computationally simpler and faster to fit, but they may not provide an accurate representation of the data if the relationship between the variables is more complex. Model assumptions: Parametric regression models make assumptions about the distribution of the errors and the form of the relationship between the variables. If these assumptions are not met, the results can be biased and unreliable. Nonparametric regression models make fewer assumptions, but they may be more sensitive to outliers and other sources of noise in the data. Interpretability: Parametric regression models are often easier to interpret, as the coefficients and other summary statistics provide a clear picture of the relationship between the variables. Nonparametric regression models may be more difficult to interpret, as the relationship between the variables is represented by a more complex function.
+
+
+### **3.GLM and GAM with bionomial**
+
+Return to the `chi.txt` dataset used in HW2. Reanalyze the data employing generalized nonparametric regression (including
+generalized additive) models.
+
+(a) What, if anything, do you learn about the data from
+the nonparametric regression?
+
+```{r}
+library(dplyr)
+data <- read.table("data/chile.txt")
+chi <- data %>% filter(vote == "Y" | vote =="N")
+chi <- na.omit(chi)
+chi$outcome <- ifelse(chi$vote=="Y",1,0)
+
+fit31 <- glm(outcome ~ statusquo + education + sex, 
+                     family = binomial(link = "logit"), data = chi)
+# GAM
+fit_32 = gam(outcome ~ region + sex + education + income + 
+                      s(population) + s(age) + s(statusquo), family = binomial, data = chi)
+summary(fit_32)
+plot(fit_32)
+
+
+# Status quo as a linear term
+fit_33 <- gam(outcome ~ region + sex + education + income + s(population)
+                         +s(age) + statusquo, family = binomial, data = chi)
+
+#compare
+anova(fit_33, fit_32, test = "Chisq")
+
+#Nonparametric 
+# loess
+fit_34 = loess(outcome ~ statusquo, degree = 1, data = chi)
+increment = with(chi, seq(min(statusquo), max(statusquo), len = 100))
+preds = predict(fit_34, data.frame(statusquo = increment))
+
+# regular logistic regression
+fit_35 = glm(outcome ~ statusquo, family = binomial, data = chi)
+predicted_data = data.frame(statusquo = seq(min(chi$statusquo), max(chi$statusquo),len = 100))
+predicted_data$outcome = predict(fit_35, predicted_data, type = "response")
+
+plot(outcome ~ statusquo, data = chi)
+lines(with(chi, smooth.spline(statusquo, outcome, df = 3.85), lwd = 2),col = "blue")
+lines(outcome ~ statusquo, predicted_data, lwd = 2, col = "red")
+```
+
+I fit a Generalized Additive Model (GAM) to the Chile dataset. The results show that only two variables, "sex" and "education," have p-values less than 0.05 and are considered statistically significant in the parametric coefficients. In terms of the approximate significance of the smooth terms, only the "statusquo" variable has a p-value less than 0.05 and is considered statistically significant.
+
+The plot of the smooth curve for "statusquo" appears to be linear, suggesting that there may not be any non-linearity between "statusquo" and the dependent variable "vote." An ANOVA chi-square test between the model with the smooth term for "statusquo" and the model without it shows a p-value of 0.2117, which indicates that we do not reject the null hypothesis and that the model with a linear term for "statusquo" fits the data better. As a result, it seems that nonparametric regression does not provide much additional insight.
+
+For the local linear regression model, only the significant continuous variable "statusquo" was included. Additionally, we fit a parametric logistic regression model. The plots show that the fitted line of the logistic regression model (red) is steeper than the local linear regression model (blue), suggesting that the logistic regression model may fit the data better.
+
+
+
+
+
+(b) If the results appear to be substantially nonlinear, can you deal with the nonlinearity in a suitably respecified generalized linear model (e.g., by transforming one or more explanatory variables)?
+
+```{r}
+hist(chi$statusquo)
+
+new_log <- glm(outcome~log(statusquo+2),family=binomial,data=chi)
+new_sqrt <- glm(outcome~sqrt(statusquo+2),family=binomial,data=chi)
+new_poly<- glm(outcome~I(statusquo^2),family=binomial,data=chi)
+
+summary(new_log)
+summary(new_sqrt)
+summary(new_poly)
+
+log_pred_data <- data.frame(statusquo=seq(min(chi$statusquo),max(chi$statusquo),len=100))
+sqrt_pred_data <- data.frame(statusquo=seq(min(chi$statusquo),max(chi$statusquo),len=100))
+sq_pred_data <- data.frame(statusquo=seq(min(chi$statusquo),max(chi$statusquo),len=100))
+
+log_pred_data$outcome <- predict(new_log,log_pred_data,type="response")
+sqrt_pred_data$outcome <- predict(new_sqrt,sqrt_pred_data,type="response")
+sq_pred_data$outcome <- predict(new_poly,sq_pred_data,type="response")
+
+plot(outcome~statusquo,data=chi)
+lines(outcome~statusquo,predicted_data,lwd=2,col="red")
+lines(outcome~statusquo,log_pred_data,lwd=2,col="blue")
+lines(outcome~statusquo,sqrt_pred_data,lwd=2,col="green")
+lines(outcome~statusquo,sq_pred_data,lwd=2,col="purple")
+```
+
+Additionally, the histogram of "statusquo" shows that it is a continuous variable that is skewed to the right. To fit the logistic regression model, we tried three types of transformations: log, square root, and square. The plot shows that the fitted curve of the square method (purple) does not seem to be a sigmoid curve and does not fit the data well. On the other hand, the fitted curves of the square root method (green) and log transformation method (blue) show only a small difference compared to the linear logistic regression model.
+
+Therefore, it can be concluded that the transformations do not result in a significant improvement in fitting the data.
+
+### **4. local-linear regression and polynomial**
+
+For this analysis, use the `Duncan.txt` data. Here we are interested in the outcome `prestige` and the explanatory variable `income`.
+
+(a) Fit the local-linear regression of prestige on income with span $s = 0.6$ (see Figure 18.7 in the book). This has 5.006 equivalent degrees of freedom, very close to the number of degrees of freedom for a fourth order polynomial.
+
+```{r}
+# Load the Duncan data
+Duncan = read.table("data/Duncan.txt")
+# Fit the local linear regression model
+fit <- loess(prestige ~ income, data = Duncan, span = 0.6, degree = 1)
+
+income = with(Duncan, seq(min(income), max(income), len = 100))
+
+# Predict the prestige values for a grid of income values
+pred <- predict(fit, data.frame(income = income))
+
+# Plot the original data and the fitted model
+plot(prestige~income, data = Duncan)
+lines(income, pred, lty = 2, lwd = 2)
+```
+The plot of "prestige" and "income" in the local linear regression model shows a fairly linear pattern. This observation suggests that there is no need to use local regression to fit the data.
+
+
+(b) Fit a fourth order polynomial of the data and compare the resulting regression curve with the local-linear regression.
+
+```{r}
+# Fit the fourth-order polynomial regression model
+fit_poly <- lm(prestige ~ poly(income, 4), data = Duncan)
+
+# Predict the prestige values for a grid of income values
+income_grid <- seq(min(Duncan$income), max(Duncan$income), length.out = 100)
+pred_poly <- predict(fit_poly, newdata = data.frame(income = income_grid))
+
+# Fit the local linear regression model
+fit_loess <- loess(prestige ~ income, data = Duncan, span = 0.6)
+pred_loess <- predict(fit_loess, newdata = data.frame(income = income_grid))
+
+# Plot the original data and the fitted models
+plot(Duncan$income, Duncan$prestige, pch = 20, col = "blue", xlab = "Income", ylab = "Prestige")
+lines(income_grid, pred_poly, col = "red", lwd = 2, lty = 1,
+      main = "Fourth-Order Polynomial Regression vs. local linear Regression",
+      xlab = "Income", ylab = "Prestige")
+lines(income_grid, pred_loess, col = "green", lwd = 2, lty = 2,
+      xlab = "Income", ylab = "Prestige")
+legend("bottomright", legend=c("Fourth-Order Polynomial Regression", "local linear regression", "Original Data"), 
+       col=c("red", "green", "blue"), lty=c(1, 2, NA), pch = c(NA, NA, 20))
+```
+
+Additionally, by adding a fourth polynomial term of "income" to the model, the fitted curve of the fourth polynomial model appears to fit the data slightly better than the fitted curve of the local linear regression model. This is because the fourth polynomial curve is closer to the actual sample points.
