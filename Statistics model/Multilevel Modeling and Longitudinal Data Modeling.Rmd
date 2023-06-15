@@ -1,0 +1,444 @@
+---
+title: 'Multilevel Modeling and Longitudinal Data Modeling'
+author: "Shuo Han"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Data analysis
+
+### **1. MLM**
+
+The file `Snijders.txt` contains data on 4106 grade-8 students (who are approximately 11 years old) in 216 primary schools in the Netherlands. The data are used for several examples, somewhat different from the analysis that we will pursue below, by Snijders and Boskers in Multilevel Analysis, 2nd Edition (Sage, 2012).
+
+The data set includes the following variables: • `school`: a (non-consecutive) ID number indicating which school the student attends. • `iq`: the student's verbal IQ score, ranging from 4 to 18.5 (i.e., not traditionally scaled to a population mean of 100 and standard deviation of 15). • `test`: the student's score on an end-of-year language test, with scores ranging from 8 to 58. • `ses`: the socioeconomic status of the student's family, with scores ranging from 10 to 50. • `class.size`: the number of students in the student's class, ranging from 10 to 42; this variable is constant within schools, apparently reflecting the fact that all of the students in each school were in the same class. • `meanses`: the mean SES in the student's school, calculated from the data; the original data set included the school-mean SES, but this differed from the values that I computed directly from the data, possibly it was based on all of the students in the school. • `meaniq`: the mean IQ in the student's school, calculated (for the same reason) from the data.
+
+There are some missing data, and I suggest that you begin by removing cases with missing data. How many students are lost when missing data are removed in this manner? Then create and add the following two variables to the data set:
+
+-   `SES_c` : school-centred SES, computed as the difference between each student's SES and the mean of his or her school; and
+
+-   `IQ_c` : school-centred IQ.
+
+```{r,message=FALSE}
+# load package
+library(car)
+library(effects)
+library(ggplot2)
+library(tidyverse)
+library(lmerTest)
+```
+
+
+(a) Examine scatterplots of students' test scores by centered SES and centred IQ for each of 20 randomly sampled schools. Do the relationships in the scatterplots seem reasonable linear? *Hint: In interpreting these scatterplots, take into account the small number of students in each school, ranging from 4 to 34 in the full data set.*
+
+```{r}
+data <- read.table("data/Snijders.txt", header = TRUE)
+data <- na.omit(data)
+num_rows <- nrow(data)
+print(num_rows)
+
+data$SES_c <- data$ses - mean(data$ses)
+data$IQ_c <- data$iq - mean(data$iq)
+```
+
+```{r}
+# Set random seed for reproducibility
+set.seed(123)
+# Randomly sample 20 schools
+schools <- sample(unique(data$school), 20)
+# Loop over schools and plot test scores vs. SES_c and IQ_c
+par(mfrow = c(5, 4), mar = c(2.5, 2.5, 1, 1))
+for (i in 1:length(schools)) {
+  school_data <- data[data$school == schools[i], ]
+  plot(school_data$SES_c, school_data$test, main = paste("School", schools[i]), 
+       xlab = "SES_c", ylab = "Test Score")
+  abline(lm(test ~ SES_c, data = school_data))
+  plot(school_data$IQ_c, school_data$test, main = paste("School", schools[i]), 
+       xlab = "IQ_c", ylab = "Test Score")
+  abline(lm(test ~ IQ_c, data = school_data))
+}
+```
+The initial plot displays scatterplots depicting the relationship between test scores and centered SES for 20 randomly chosen schools, while the second plot illustrates the same relationship using centered IQ.
+
+Due to the limited number of students in each school, it is challenging to draw definitive conclusions regarding linearity in these scatterplots. However, it seems that the links between test scores and SES or IQ are either weakly linear or nonlinear. While some scatterplots demonstrate clear linear relationships, others show no recognizable trend or exhibit a nonlinear association. In general, the connections appear to vary depending on the school.
+
+(b) Regress the students' test scores on centred SES and centred IQ within schools for the full dataset -- that is, compute a separate regression for each school. Then plot each set of coefficients (starting with the intercepts) against the schools' mean SES, mean IQ, and class size. Do the coefficients appear to vary systematically by the schools' characteristics (i.e., by the Level 2 explanatory variables centred SES, centred IQ, and class size)?
+
+```{r,warning=FALSE, message=FALSE}
+library(lme4)
+
+## Fit a linear mixed-effects model with test scores as the outcome variable
+model <- lmer(test ~ SES_c + IQ_c + (1 + SES_c + IQ_c | school), data = data)
+coefs <- coef(model)$school
+
+## Create scatterplots
+plot(data$meanses[match(unique(data$school), data$school)], coefs$`(Intercept)`, xlab = "Mean SES", ylab = "Intercept")
+plot(data$meaniq[match(unique(data$school), data$school)], coefs$`(Intercept)`, xlab = "Mean IQ", ylab = "Intercept")
+plot(data$class.size[match(unique(data$school), data$school)], coefs$`(Intercept)`, xlab = "Class Size", ylab = "Intercept")
+plot(data$meaniq[match(unique(data$school), data$school)], coefs$SES_c, xlab = "Mean IQ", ylab = "Slope for IQ_c")
+plot(data$meanses[match(unique(data$school), data$school)], coefs$SES_c, xlab = "Mean SES", ylab = "Slope for SES_c")
+plot(data$meaniq[match(unique(data$school), data$school)], coefs$IQ_c, xlab = "Mean IQ", ylab = "Slope for IQ_c")
+plot(data$meanses[match(unique(data$school), data$school)], coefs$IQ_c, xlab = "Mean SES", ylab = "Slope for SES_c")
+plot(data$class.size[match(unique(data$school), data$school)], coefs$SES_c, xlab = "Class Size", ylab = "Slope for SES_c")
+plot(data$class.size[match(unique(data$school), data$school)], coefs$IQ_c, xlab = "Class Size", ylab = "Slope for IQ_c")
+```
+Upon examining the intercepts, it becomes apparent that there is a positive relationship between the mean SES or mean IQ of a school and the estimated intercept. However, there is no discernible pattern between the intercept coefficient and class size. Conversely, when analyzing the coefficient estimate for centered SES and centered IQ, there are no clear trends evident in their scatter plots of mean SES, mean IQ, and class size. This suggests that a random intercept model may be necessary.
+
+
+(c) Fit linear mixed-effects models to the Snijders and Boskers data, proceeding as follows:
+
+-   Begin with a one-way random-effects ANOVA of test scores by schools. What proportion of the total variation in test scores among students is between schools (i.e., what is the intra-class correlation)?
+
+```{r}
+# Fit the one-way random-effects ANOVA
+model <- lmer(test ~ (1 | school), data = data)
+
+# Compute the intra-class correlation
+icc <- as.numeric(VarCorr(model)$school) / (as.numeric(VarCorr(model)$school) + attr(VarCorr(model), "sc")^2)
+icc
+```
+
+After fitting the one-way random-effects ANOVA, we can see that the computed intra-class correlation is 0.226. This indicates that approximately 22.6% of the total variation in test scores among students is due to differences between schools. This suggests that there is considerable variation in test scores across schools that cannot be accounted for by individual-level variables such as SES and IQ.
+
+-   Fit a random-coefficients regression of test scores on the students' centered SES and centered IQ. Initially include random effects for the intercept and both explanatory variables. Test whether each of these random effects is needed, and eliminate from the model those that are not (if any are not). How, if at all, are test scores related to the explanatory variables? *Note: You may obtain a convergence warning in fitting one or more of the null models that remove variance and covariance components; this warning should not prevent you from performing the likelihood-ratio test for the corresponding random effects.*
+
+```{r}
+model <- lmer(test ~ SES_c + IQ_c + (1 + SES_c + IQ_c | school), data = data)
+summary(model)
+```
+
+We can test whether each of the random effects is needed using likelihood ratio tests. We first fit a null model without any random effects:
+```{r}
+# fits a linear mixed-effects model with test scores as the outcome 
+null_model <- lmer(test ~ SES_c + IQ_c + (1 | school), data = data)
+anova(null_model, model)
+```
+The likelihood ratio test indicates that the model with both random intercept and random slope for centered SES provides a significantly better fit than the model with only a random intercept. Therefore, we can conclude that both random intercept and random slope for centered SES are necessary in the model.
+
+```{r}
+## compares two models using the likelihood ratio test
+null_model = lmer(test ~ SES_c+IQ_c + (1 + IQ_c| school), data = data)
+anova(null_model, model)
+```
+
+```{r, message=FALSE}
+#compares two models using the likelihood ratio test
+null_model = lmer(test ~ SES_c + IQ_c + (1 + SES_c| school), data = data)
+anova(null_model, model)
+```
+Based on the results of the likelihood ratio test between the null model null_model and the full model model, we can conclude that the addition of the random slope for centered SES did not significantly improve the model fit (p-value = 0.4547). Therefore, we can simplify the model by removing the random slope for centered SES.
+
+The final random coefficients model is:
+```{r,message=FALSE}
+# The output of the summary function applied to the final_model
+final_model = lmer(test ~ SES_c + IQ_c + (1 + IQ_c| school), data = data)
+summary(final_model)
+```
+The findings suggest that both the IQ of the family and the individual are positively associated with test performance. The model's random intercepts and slopes for centered IQ reveal that these effects differ across schools.
+
+
+-   Introduce mean school SES, mean school IQ, and class size as Level 2 explanatory variable, but only for the Level 1 coefficients that were found to vary significantly among schools in the random-coefficients model. *Hint: Recall that modeling variation in Level 1 coefficients by Level 2 explanatory variables implies the inclusion of cross-level interactions in the model; and don't forget that the intercepts are Level 1 coefficients that may depend on Level 2 explanatory variables. It may well help to write down the mixed-effects model first in hierarchical form and then in Laird-Ware form.* Test whether the random effects that you retained in the random-coefficients model are still required now that there are Level 2 predictors in the model. *Note: Again, you may obtain a convergence warning.*
+
+
+
+```{r,warning=FALSE,message=FALSE}
+full_model <- lmer(test ~ SES_c + IQ_c + meanses + meaniq + class.size + meanses:IQ_c + meaniq:IQ_c + class.size:IQ_c + (1 + IQ_c| school), data = data)
+
+no_iq_model <- lmer(test ~ SES_c + IQ_c + meanses + meaniq + class.size + meanses:IQ_c + meaniq:IQ_c + class.size:IQ_c + (1 | school), data = data)
+
+anova(no_iq_model, full_model)
+
+no_int_model <- lmer(test ~ SES_c + IQ_c + meanses + meaniq + class.size + meanses:IQ_c + meaniq:IQ_c + class.size:IQ_c + (0 + IQ_c| school), data = data)
+
+anova(no_int_model, full_model)
+S(full_model)
+```
+
+Retaining the random effects in the random-coefficients model is necessary due to the presence of Level 2 predictors. The ANOVA likelihood ratios test results indicate that we should keep the random effects of IQ_c (p-value of 8.32e-06) and the intercept (p-value of 2.2e-16). The model summary is available above.
+
+-   Compute tests of the various main effects and interactions in the coefficients-as-outcomes model. Then simplify the model by removing any fixed-effects terms that are nonsignificant. Finally, interpret the results obtained for the simplified model. If your final model includes interactions, you may wish to construct effect displays to visualize the interactions.
+
+
+```{r,warning=FALSE}
+full_model <- lmer(test ~ SES_c + IQ_c + meanses + meaniq + class.size + meanses:IQ_c + meaniq:IQ_c + class.size:IQ_c + (1 + IQ_c| school), data = data)
+
+Anova(full_model)
+
+final_model <- lmer(test ~ meaniq + IQ_c + SES_c + (1 + IQ_c| school), data = data)
+summary(final_model)
+```
+Based on the ANOVA test, only ‘SES_c’, ‘IQ_c’, and ‘meaniq’ have p-values less than 0.05, indicating their statistical significance. Therefore, the final model should include these variables, along with the random effects of the intercepts and slopes for IQ_c for each school.
+
+To interpret the LMM in the Laird-Ware form, we have:
+
+$$y = X\beta + Z_1\gamma_1 + Z_2\gamma_2 + \epsilon$$
+
+where $y$ is the vector of test scores for all students, $X$ is the design matrix for the fixed effects (intercept, mean IQ, school-centred IQ, and school-centred SES), $\beta$ is the vector of fixed effect coefficients, $Z_1$ is the design matrix for the random intercept, $\gamma_1$ is the random intercept, $Z_2$ is the design matrix for the random slope of school-centred IQ, $\gamma_2$ is the random slope of school-centred IQ, and $\epsilon$ is the vector of residuals.
+
+The coefficients and SE for both random and fixed effects models are presented above.
+
+Regarding the fixed effects, the intercept represents the average test score when the mean IQ, school-centred IQ, and school-centred SES are all zero. The slope of Mean IQ denotes the effect of a one-unit increase in the mean IQ of the school on the test score, assuming school-centred IQ and school-centred SES are constant. The slope of School-centred IQ represents the effect of a one-unit increase in a student’s IQ relative to the mean IQ of their school on the test score, holding mean IQ and school-centred SES constant. The slope of School-centred SES represents the effect of a one-unit increase in a student’s SES relative to the mean SES of their school on the test score, controlling mean IQ and school-centred IQ.
+
+Regarding the random effects, the random intercept accounts for the variability in the test score due to unobserved factors that vary between schools. The random slope of school-centred IQ shows the extent to which the effect of school-centred IQ on the test score varies across schools.
+
+
+
+### **2. Binary version**
+
+Repeat Problem (1) but now, instead of using `test` as the outcome, you will use a dichotomized version. To do so, create a new variable called `high_pass` that indicates if a student receives a score of 90% or above.
+
+Par particular attention to interpretation and to how your results compare with those based on the continuous version. Are your results similar or do they differ? Explain why or why not.
+#### A
+```{r}
+data$high_pass <- ifelse(data$test > 52, 1, 0)
+set.seed(123)
+# Randomly sample 20 schools
+schools <- sample(unique(data$school), 20)
+# Loop over schools and plot test scores vs. SES_c and IQ_c
+par(mfrow = c(5, 4), mar = c(2.5, 2.5, 1, 1))
+for (i in 1:length(schools)) {
+  school_data <- data[data$school == schools[i], ]
+  plot(school_data$SES_c, school_data$high_pass, main = paste("School", schools[i]), 
+       xlab = "SES_c", ylab = "high_pass Score")
+  abline(lm(high_pass ~ SES_c, data = school_data))
+  plot(school_data$IQ_c, school_data$high_pass, main = paste("School", schools[i]), 
+       xlab = "IQ_c", ylab = "high_pass Score")
+  abline(lm(high_pass ~ IQ_c, data = school_data))
+}
+```
+
+
+```{r}
+data$high_pass <- ifelse(data$test > 52, 1, 0)
+# Fit the one-way random-effects ANOVA
+model <- lmer(high_pass ~ 1 + (1 | school), data = data)
+# Compute the intra-class correlation
+icc <- as.numeric(VarCorr(model)$school) / (as.numeric(VarCorr(model)$school) + attr(VarCorr(model), "sc")^2)
+icc
+```
+
+The computed intra-class correlation of 0.056 indicates that approximately 5.6% of the total variation in test scores among students is between schools, indicating that some variation in test scores across schools remains unexplained by individual-level variables such as SES and IQ. Although this variation is relatively small, we have still explored linear mixed-effects models to examine potential relationships.
+
+#### B
+```{r,warning=FALSE}
+lm.list <- lmList(high_pass ~ SES_c + IQ_c | school, data = data)
+coef.list <- coef(lm.list)
+
+#get list of coefficients
+intercept_list <- coef.list$'(Intercept)'
+SES_c_list <- coef.list$SES_c
+IQ_c_list <- coef.list$SES_c
+
+# Get meanses, meaniq, class.size for each school
+class_size_list <- c()
+meaniq_list <- c()
+meanses_list <- c()
+for (sch in unique(data$school)){
+  temp_data <- data[data$school == sch, ]
+  meanses <- unique(temp_data$meanses)
+  meaniq <- unique(temp_data$meaniq)
+  class_size <- unique(temp_data$meaniq)
+  class_size_list <- append(class_size_list, class_size)
+  meaniq_list <- append(meaniq_list, meaniq)
+  meanses_list <-append(meanses_list, meanses)
+}
+
+#Intercept
+plot(intercept_list ~ meanses_list)
+plot(intercept_list ~ meaniq_list)
+plot(intercept_list ~ class_size_list)
+
+#Class size 
+
+intercept_list <- c()
+ses_list <- c()
+iq_list <- c()
+mean_ses_list <- c()
+mean_iq_list <-c()
+class_size_list <- c()
+for (sch in unique(data$school)){
+  temp_data <- data[data$school == sch, ]
+    if(sch == 182){
+    intercept <- NA
+    ses <- NA
+    iq <- NA
+    intercept_list <- append(intercept_list, intercept)
+    ses_list <- append(ses_list, ses)
+    iq_list <- append(iq_list, iq)
+    mean_ses <- unique(temp_data$meanses)
+    mean_iq <- unique(temp_data$meaniq)
+    class_size <- unique(temp_data$class.size)
+    mean_ses_list <- append(mean_ses_list, mean_ses)
+    mean_iq_list <- append(mean_iq_list, mean_iq)
+    class_size_list <- append(class_size_list, class_size)
+    next
+  }
+  model <- glm(high_pass ~ SES_c + IQ_c, family = binomial, temp_data)
+  output <- summary(model)
+  intercept <- output$coefficients[1, 1]
+  ses <- output$coefficients[2, 1]
+  iq <- output$coefficients[3, 1]
+  intercept_list <- append(intercept_list, intercept)
+  ses_list <- append(ses_list, ses)
+  iq_list <- append(iq_list, iq)
+  mean_ses <- unique(temp_data$meanses)
+  mean_iq <- unique(temp_data$meaniq)
+  class_size <- unique(temp_data$class.size)
+  mean_ses_list <- append(mean_ses_list, mean_ses)
+  mean_iq_list <- append(mean_iq_list, mean_iq)
+  class_size_list <- append(class_size_list, class_size)
+}
+
+plotting_data <- as.data.frame(cbind(intercept_list, ses_list, iq_list, mean_ses_list, mean_iq_list, class_size_list))
+
+#Plot
+plot(intercept_list ~ mean_ses_list, data = plotting_data)
+plot(intercept_list ~ mean_iq_list, data = plotting_data)
+plot(intercept_list ~ class_size_list, data = plotting_data)
+plot(ses_list ~ mean_ses_list, data = plotting_data)
+plot(ses_list ~ mean_iq_list, data = plotting_data)
+plot(ses_list ~ class_size_list, data = plotting_data)
+plot(iq_list ~ mean_ses_list, data = plotting_data)
+plot(iq_list ~ mean_iq_list, data = plotting_data)
+plot(iq_list ~ class_size_list, data = plotting_data)
+```
+It appears that incorporating random effects may not be necessary, but we must exercise caution in our interpretation due to the unreliability of the models. The models have not been fitted well due to small sample sizes and separation issues.
+
+
+#### C
+```{r, warning=FALSE, message=FALSE}
+# Define a generalized linear mixed-effects model with a binary outcome (high_pass) 
+model <- glmer(high_pass ~ SES_c + IQ_c + (1 + SES_c + IQ_c | school), family = binomial, data = data)
+# Print summary output for the model
+S(model)
+# Define a null model with only fixed effects for SES_c and IQ_c, and random effects for the intercept
+null_model <- glmer(high_pass ~ SES_c + IQ_c + (1 | school), family = binomial, data = data)
+# Compare the model with the null model using likelihood ratio test
+anova(model, null_model)
+# Define a model with fixed effects for SES_c, IQ_c, meanses, meaniq, class.size, and random effects for the intercept
+with_leve_two <- glmer(high_pass ~ SES_c + IQ_c + meanses + meaniq + class.size + (1 | school), data = data, family = binomial)
+# Define a null model with fixed effects for SES_c, IQ_c, meanses, and meaniq, but no random effects, 
+# to compare with the model with level two covariates
+null_model = glm(high_pass ~ SES_c + IQ_c + meanses + meaniq + class.size, family = binomial, data = data)
+# Compare the model with level two covariates with the null model using likelihood ratio test
+anova(with_leve_two, null_model)
+# Print summary output for the model with level two covariates
+S(with_leve_two)
+# Define a reduced model with fixed effects for SES_c, IQ_c, and meaniq, and random effects for the intercept, 
+# with grouping by school
+reduced = glmer(high_pass ~ SES_c + IQ_c + meaniq + 
+                              (1 | school), family = binomial, data = data)
+# Compare the reduced model with the model with level two covariates using likelihood ratio test
+anova(reduced, with_leve_two)
+# Define the final model with fixed effects for SES_c, IQ_c, and meaniq, and random effects for the intercep
+final_model = glmer(high_pass ~ SES_c + IQ_c + meaniq + 
+                              (1 | school),family = binomial,  data = data)
+# Print summary output for the final model
+S(final_model)
+```
+
+After adding the Level 1 variables, we find that the model is statistically significant. Next, we perform likelihood ratio tests to determine whether each of the random effects is necessary. We find that only the random intercepts are required, and we can remove the random effects for SES_c and IQ_c.
+We then introduce Level 2 covariates and find that we still need the random intercepts. We perform further tests to determine if meanses and class.size are necessary, and we observe that neither of them is significant.
+
+In the final model, we only include SES_c, IQ_c, meaniq, and random intercepts. Notably, we no longer require the random effect for IQ_c that was present in the previous model.
+
+According to the fixed effects estimates, the three predictor variables demonstrate a significant correlation with high_pass (p < .001). Specifically, increasing SES by one unit corresponds to a 1.057 increase in the odds of high_pass, increasing IQ by one unit corresponds to a 1.753 increase in the odds of high_pass, and increasing mean IQ by one unit corresponds to a 2.343 increase in the odds of high_pass. The intercept (-13.449) represents the expected log odds of high_pass when all predictor variables are zero.
+The estimate for random effects indicates a significant variation in the intercept of high_pass across schools. The random intercept variance is 0.76, suggesting that there is a substantial unexplained variation in high_pass across schools, which is not accounted for by the fixed effects.
+
+Overall, the model suggests that SES, IQ, and mean IQ are crucial predictors of high_pass, and there is unexplained variation in high_pass across schools. However, caution must be exercised when interpreting the results as model convergence may not be stable.
+
+
+
+### **3. Longitudinal data in Mixed Effects model**
+
+Laird and Fitzmaurice ("Longitudinal Data Modeling," in Scott, Simonoff, and Marx, eds., The SAGE Handbook of Multilevel Modeling, Sage, 2013) analyze longitudinal data from the MIT Growth and Development Study on the change over time of percent body fat in 162 girls before and after menarch (age at first mentruation). The data are in the file `Phillips.txt`
+
+-   `subject`: subject ID number, 1---162.
+
+-   `age`: age (in years) at the time of measurement; the girls are measured at different ages, and although the measurements are approximately taken annually, the ages are not generally whole numbers.
+
+-   `menarche`: age at menarch (constant within subjects).
+
+-   `age.adjusted`: age − age at menarch.
+
+-   `body.fat`: percentage body fat at the time of measurement.
+
+Laird and Fitzmaurice fit a linear mixed-effects model to the data,
+
+$$
+Y_{ij} = \beta_1 +\beta_2 t_{ij-}+\beta _3 t_{ij+}+\delta _{1i}+\delta _{2i}t_{ij-}+\delta _{3i}t_{ij+}+\epsilon _{ij}  
+$$
+
+where
+
+• $Y_{ij}$ is the body-fat measurement for girl $i$ on occasion $j$;
+
+• $t_{ij-}$ is adjusted age prior to menarche and 0 thereafter;
+
+• $t_{ij+}$ is adjusted age after menarche and 0 before;
+
+• $\beta_1, \beta_2, \beta_3$ are fixed effects; and
+
+• $\delta_{1i}, \delta_{2i}, \delta_{3i}$ are subject-specific random effects.
+
+(a) Examine the data by plotting body fat versus adjusted age for all of the girls simultaneously; following Laird and Fitzmaurice, add a lowess smooth to the scatterplot. Now randomly select a subset (say, 30) of the girls and plot body fat versus adjusted age separately for each of the selected girls. What can you say about the apparent relationship between body fat and age before and after menarche? Is Laird and Fitzmaurice's model reasonable given your exploration of the data? Explain what each fixed-effect and random-effect coefficient in the model represents.
+
+```{r, warning=FALSE}
+phillips <- read.table("data/Phillips.txt", header=TRUE)
+
+# Create a scatterplot of body fat over adjusted age for all girls, with a loess curve
+ggplot(phillips, aes(x=age.adjusted, y=body.fat, group=subject)) + geom_line() + theme_classic()
+
+## with smooth 
+ggplot(phillips, aes(x=age.adjusted, y=body.fat, group=subject))+geom_smooth(method="loess")+theme_classic()
+
+# Sample 30 girls, plot 30 separate graphs
+set.seed(123) # set seed for reproducibility
+my_sample <- sample(unique(phillips$subject), 30)
+for (girl in my_sample) {
+temp_data <- phillips[phillips$subject == girl,]
+plot(body.fat ~ age.adjusted, data=temp_data, type='l')
+}
+```
+In general, it appears that body fat increases after menarche, while before menarche, the relationship is less clear or body fat is more stable.
+
+Regarding fixed effects, the intercept denotes the average percentage body fat at the time of measurement, assuming that both adjusted age prior to menarche and adjusted age after menarche are zero. $\beta_2$ represents the expected change in body fat percentage for each unit increase in adjusted age before menarche, holding other factors constant, while $\beta_3$ represents the expected change in body fat percentage for each unit increase in adjusted age after menarche, holding other factors constant.
+
+Concerning random effects, the random intercept $\delta_{1i}$ reflects the variability of expected change in body fat percentage due to unobserved factors that differ among individual girls. The random slopes $\delta_{2i}$ and $\delta_{3i}$ for adjusted age before and after menarche, respectively, capture the extent to which the expected impact of body fat percentage varies among individual girls.
+
+In my opinion, incorporating subject-specific random effects for both the general intercept and the slopes for adjusted age before and after menarche makes sense. Each girl's body is unique, so it is reasonable to assume that they will have different models for their body fat. Having distinct adjusted age variables before and after menarche allows for two slopes for the relationship between age and body fat, which provides the model with greater flexibility.
+
+(b) Fit the mixed-effects model as specified by Laird and Fitzmaurice. What do you conclude? Consider the possibility of dropping each of the random effects from the model.
+
+```{r}
+phillips$t_plus <- ifelse(phillips$age.adjusted >= 0, 1, 0) * phillips$age.adjusted
+phillips$t_minus <- ifelse(phillips$age.adjusted < 0, 1, 0) * phillips$age.adjusted
+
+model <- lmer(body.fat ~ t_minus + t_plus + (1 + t_minus + t_plus | subject), data = phillips)
+S(model)
+# without t_minus
+model1 <- lmer(body.fat ~ t_minus + t_plus + (1 + t_plus | subject), data = phillips)
+anova(model, model1)
+```
+We can reject the null hypothesis that ‘t_minus’ of random effects has no significant effect since the p-value from the ANOVA test (3.033e-10) is less than the significance level of 0.05. Therefore, we conclude that ‘t_minus’ should not be dropped from the model's random effects.
+```{r}
+# without t_plus
+model2 <- lmer(body.fat ~ t_minus + t_plus + (1 + t_minus| subject), data = phillips)
+anova(model, model2)
+```
+Based on the ANOVA test results, which yielded a p-value of 2.333e-08, we reject the null hypothesis and conclude that the ‘t_plus’ of random effects should not be dropped from the model, as it has a significant effect.
+
+```{r,warning=FALSE}
+# without random intercept
+model2 <- lmer(body.fat ~ t_minus + t_plus + (0 + t_minus + t_plus| subject), data = phillips)
+```
+
+```{r}
+anova(model, model2)
+```
+The ANOVA test yielded a p-value of 2.2e-16, which is less than the significance level of 0.05. Thus, we reject the null hypothesis and conclude that the random intercepts should not be dropped from the model. Consequently, the model with both the random intercept and the random slopes of ‘t_plus’ and ‘t_minus’ is more appropriate.
