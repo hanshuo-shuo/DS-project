@@ -1,3 +1,12 @@
+# Multilevel Modeling
+
+MLM is an acronym for Multilevel Modeling, also known as hierarchical linear modeling (HLM), mixed-effect modeling, or random coefficient modeling. These statistical models are used to analyze data that has a hierarchical or nested structure. For example, consider students nested within classrooms, which are nested within schools. In such cases, it's likely that students in the same classroom are more similar to each other than to students from different classrooms. Similarly, classrooms in the same school are more likely to be similar to each other than to classrooms from different schools. Multilevel models can take this clustering of data into account, allowing for residual components at each level in the data hierarchy.
+
+Fitting the mixed-effects model:
+`model <- lmer(test ~ SES_c + IQ_c + (1 + SES_c + IQ_c | school), data = data)`
+
+Here, test is the outcome variable (possibly a test score), and SES_c and IQ_c are predictor variables (possibly socio-economic status and IQ score, centered). The 1 in the formula denotes the intercept. The | school indicates that the intercept and slopes for SES_c and IQ_c are allowed to vary across different schools, hence the mixed-effects model.
+
 # Generalized Linear Models
 
 ## INTRO 
