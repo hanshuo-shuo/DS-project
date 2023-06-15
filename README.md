@@ -1,3 +1,6 @@
+# [Advanced Statistical Model](/Statistics\nmodel)
+
+
 # Useful links
 
 - [Data sceience interviews](https://github.com/alexeygrigorev/data-science-interviews/tree/master)
