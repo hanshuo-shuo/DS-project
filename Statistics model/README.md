@@ -37,3 +37,56 @@ Nonlinear models are used in statistics when the relationship between the depend
 
 - Generalized Additive Models (GAMs): These are a flexible class of models that can be used when you suspect that your response variable has a nonlinear relationship with some of your predictors. GAMs allow you to use linear regression where the response is linear in terms of the predictors, but also allow for nonlinear relationships.
 - Nonparametric regression : (Like loess, local-linear regression)refers to techniques that model the relationship between variables without making specific assumptions about the form or parameters of the function that relates the variables. This is in contrast to parametric regression techniques, like linear regression, which assumes that the relationship can be modeled by a specific form, such as a straight line.
+
+# Missing Value
+
+## SINGLE IMPUTATION METHODS
+- Mean substitution: When a value is missing, substitute that variables mean value. 
+- Conditional mean substitution: When a value is missing, predict it using a MR model.
+- Hot deck imputation: non-respondents are matched to resembling respondents and the missing value is imputed with the score of that similar respondent
+- EM ALGORITHM can be used to do single imputation
+
+## Multiple Imputation
+Multiple Imputation is a statistical technique used to handle missing data in a dataset. The idea behind multiple imputation is that, rather than filling in a single value for each missing value, it's better to recognize the uncertainty around what value should be imputed by imputing multiple values and creating multiple "complete" datasets.
+
+Multiple Imputation using Chained Equations (MICE) in R. 
+
+## Truncated
+Treat the missing values as truncated at 1.00 and employ Heckmanís selection-regression model;
+
+```{R}
+# Load required packages
+library(tidyverse)
+library(sampleSelection)
+# Create a copy of the dataset
+long_phd_heck_data <- long_phd
+# Create a new column "lfp" and assign 1 if job > 1 else 0
+long_phd_heck_data <- long_phd_heck_data %>%
+  mutate(lfp = if_else(job > 1, "1", "0"))
+# Replace missing values in the "lfp" column with 0
+long_phd_heck_data$lfp[is.na(long_phd_heck_data$lfp)] <- 0
+# Fit Heckman selection model to the data
+heck_long_model <- selection(lfp ~ gender + phd + mentor + fellowship + articles + citations,
+                              job ~ gender + phd + mentor + fellowship + articles + citations, data = long_phd_heck_data)
+# Display the summary of the Heckman selection model
+summary(heck_long_model)
+```
+
+## Censored Regression
+
+(c) treat the missing values as censored and fit the Tobit model.
+
+```{r, message=FALSE}
+# Load required package
+library(censReg)
+# Create a copy of the dataset
+long_phd_tobit_data <- long_phd
+# Replace missing values in the "job" column with 1
+long_phd_tobit_data$job[is.na(long_phd_tobit_data$job)] <- 1
+# Fit Tobit regression model to the data
+tobit_model <- censReg(job ~ gender + phd + mentor + fellowship + articles + citations, left = 1, right = Inf, data = long_phd_tobit_data)
+summary(tobit_model)
+```
+
+
+
