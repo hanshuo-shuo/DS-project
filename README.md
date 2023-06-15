@@ -5,6 +5,11 @@
 -  These techniques have a wide application in dealing with practical data scenarios, including missing values and non-linear relationships. 
 -  Model selection methods such as AIC, BIC, stepwise regression, and cross-validation aid in determining the most suitable model for a given dataset.
 
+Data Science Proj
+- [Credit Card Fraud Data Wrangling and EDA](https://github.com/hanshuo-shuo/DS-project/tree/main/Credit%20Card%20Fraud%20Data%20Wrangling%20and%20EDA)
+- [Predictive Modeling](https://github.com/hanshuo-shuo/DS-project/tree/main/Predictive%20Modeling)
+- [Recommender Systems](https://github.com/hanshuo-shuo/DS-project/tree/main/Recommender%20Systems)
+- [Explainability](https://github.com/hanshuo-shuo/DS-project/tree/main/Explainability)
 # Useful links
 
 - [Data sceience interviews](https://github.com/alexeygrigorev/data-science-interviews/tree/master)
