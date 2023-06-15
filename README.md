@@ -1,4 +1,4 @@
-# [Advanced Statistical Model](/Statistics\nmodel)
+# [Advanced Statistical Model](https://github.com/hanshuo-shuo/DS-project/tree/main/Statistics%20model)
 
 
 # Useful links
