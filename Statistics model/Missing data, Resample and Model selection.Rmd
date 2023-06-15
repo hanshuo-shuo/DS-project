@@ -1,0 +1,267 @@
+---
+title: 'Missing data, Resample and Model selection'
+author: "Shuo Han"
+output: html_document
+warning: FALSE
+message: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Data analysis
+
+### **1.MI**
+
+Using the United Nations social-indicators data (in `UnitedNations.txt`), develop a regression model for the response variable female expectation of life. Feel free to use whatever explanatory variables in the data set make sense to you, and to employ variable transformations, methods of fitting the model other than least-squares regression (e.g., nonparametric), etc.
+
+(a) Work initially with complete cases, and once you have an apparently satisfactory model,obtain estimates and standard errors of the regression coefficients.
+
+```{r}
+library(car)
+library(boot)
+UN <- read.table("data/UnitedNations.txt")
+# Subset the data to only include complete cases
+complete_UN <- na.omit(UN)
+# EDA
+scatterplotMatrix(complete_UN[,-1])
+# From the plot above GDP appears to need a log transformation
+model11 <- lm(lifeFemale~. -GDPperCapita-lifeMale+log(GDPperCapita), data=complete_UN)
+# Check LR test for significant variables
+Anova(model11)
+# Based on the P-value we have our Refined model
+model12 <- lm(lifeFemale~region+tfr+infantMortality+economicActivityFemale, data=complete_UN)
+S(model12)
+# Diagnostics
+crPlots(model12)
+outlierTest(model12)
+residualPlots(model12)
+```
+After examining the scatter matrix plot, we observed that performing a log transformation on `GDPperCapita` may be appropriate. Additionally, we noted a correlation between the response variables `lifeFemale` and `lifeMale`. Therefore, the initial model includes all variables except `lifeMale` and performs a log transformation on `GDPperCapita`.
+
+Based on the likelihood ratio test in the ANOVA, variables `region`, `tfr`, `infantMortality`, and `economicActivityFemale` have p-values less than 0.05, indicating they are statistically significant. Thus, these variables are included in the new model.
+
+The new regression model is $\hat{Y}=0.4752+0.96X_1+2.59X_2+0.73X_3$. The estimates and standard errors are displayed above. The intercept $\beta_0=81.6638$, which means that when `region` is Africa and all other variables are 0, the expected female life expectancy at birth is 81.6638 years with a standard error of 2.8497. For coefficients $X_1$ to $X_4$ representing levels 1 to 4, holding all other variables constant, $\hat{\beta_i}$ is the average difference in expected female life expectancy at birth when `region` is at level $i$ compared to when it is not at level $i$. The model has 5 levels for `region`: Africa, America, Asia, Europe, and Oceania. The baseline for the model is Africa. $\hat{\beta_5}=−1.4428$ represents the difference in expected female life expectancy at birth for each one-unit increase in `tfr` (total fertility rate, number of children per woman), holding all other variables constant, with a standard error of 0.8078. $\hat{\beta_6}=−0.1717$ represents the difference in expected female life expectancy at birth for each one-unit increase in `infantMortality` (infant deaths per 1000 live births), holding all other variables constant, with a standard error of 0.0333. $\hat{\beta_7}=−0.0856$ represents the difference in expected female life expectancy at birth for each one-unit increase in `economicActivityFemale` (percentage of women who are economically active), holding all other variables constant, with a standard error of 0.0274.
+
+
+(b) Now redo your analysis in (a) but use multiple imputation.
+
+```{r,message=FALSE, warning=FALSE}
+# Load the UN dataset
+UN <- read.table("data/UnitedNations.txt", header = TRUE)
+# Load the "mice" package for multiple imputations
+library(mice)
+# Set the number of imputations and seed for reproducibility
+m <- 5
+seed <- 123
+# Perform multiple imputations using "mice"
+UN_imputed <- mice(UN, m = m, seed = seed, maxit=20, printFlage=FALSE)
+
+# Fit a linear regression model with selected predictor variables to each imputed dataset
+models <- with(UN_imputed, {
+  lm(lifeFemale ~ region + tfr + contraception + educationMale +
+     educationFemale + infantMortality + log(GDPperCapita) + 
+     economicActivityMale + economicActivityFemale +
+     illiteracyMale + illiteracyFemale)
+})
+
+# Pool the results from the imputed datasets
+pooled_model <- pool(models)
+# Print the summary of the pooled model
+summary(pooled_model)
+## refine the model
+refined_imputed_models <- with(UN_imputed, {
+  lm(lifeFemale~region+tfr+infantMortality+economicActivityFemale)
+})
+# Pool the results from the refined model
+refined_pooled_models <- pool(refined_imputed_models)
+# Print the summary of the refined model
+summary(refined_pooled_models)
+```
+I fit and pool two linear regression models using multiple imputations, one with a larger set of predictor variables and one with a refined set of predictor variables. And the estimate and the std.error are listed above.
+
+The variables `region`, `tfr`, `log(GDPperCapita)`, `infantMortality`, and `economicActivityFemale` from the initial multiple imputation model have p-values less than 0.05, indicating their statistical significance. To ensure a fair comparison with the initial model, the new model in section a) includes all these significant variables except `log(GDPperCapita)`.
+
+
+(c) Compare these results to those from the complete-case analysis. What do you conclude?
+
+```{r}
+summary(model12)
+summary(refined_pooled_models)
+```
+From the summary results of the two models, the estimates from the complete case model are similar to those of the multiple imputation model, but the former has larger standard errors than the latter. Furthermore, all variables in the multiple imputation model are statistically significant, while `tfr` in the complete case model is not statistically significant. The complete case model only has a small sample size, while the multiple imputation model can increase precision by utilizing all available data and accounting for the uncertainty in the imputed values. Based on these findings, the multiple imputation model is preferred over the complete case model, as it can provide more accurate and unbiased estimates.
+
+### **2. Truncated and Censored Regression**
+
+Long (1997) reports a regression in which the response variable is the prestige of the academic departments where PhDs in biochemistry find their first jobs. The data are in the file `Long-PhDs.txt`.
+
+Prestige is measured on a scale that runs from 1.00 to 5.00, and is unavailable for departments without graduate programs and for departments with ratings below 1.00. The explanatory variables
+include a dummy regressor for gender; the prestige of the department in which the individual obtained his or her PhD; the number of citations received by the individualís mentor; a dummy regressor coding whether or not the individual held a fellowship; the number of articles published by the individual; and the number of citations received by the individual.
+
+Estimate the regression of prestige of first job on the other variables in three ways:
+
+(a) code all of the missing values as 1.00 and perform an OLS regression;
+
+```{r}
+# Load required package
+library(car)
+# Read in the dataset
+long_phd <- read.table("data/Long-PhDs.txt", header = TRUE)
+# Create a copy of the dataset
+long_phd_ols_data <- long_phd
+# Replace missing values in the "job" column with 1
+long_phd_ols_data$job[is.na(long_phd_ols_data$job)] <- 1.00
+# Fit OLS model to the data
+long_phd_ols_model <- lm(job ~ gender + phd + mentor + fellowship + articles + citations, data = long_phd_ols_data)
+# Display the summary of the OLS model
+summary(long_phd_ols_model)
+```
+According to the output, only three variables `phd`, `fellowship`, and `citations` are statistically significant.
+
+```{r}
+reduced_model = lm(job ~ phd + fellowship + citations, data = long_phd_ols_data)
+anova(reduced_model, long_phd_ols_model)
+```
+
+As the p-value is bigger than 0.05, we do not reject the null hypothesis.
+
+```{r}
+long_phd_ols_model = reduced_model
+summary(long_phd_ols_model)
+```
+
+(b) treat the missing values as truncated at 1.00 and employ Heckmanís selection-regression model;
+
+```{r,warning=FALSE,message=FALSE}
+# Load required packages
+library(tidyverse)
+library(sampleSelection)
+# Create a copy of the dataset
+long_phd_heck_data <- long_phd
+# Create a new column "lfp" and assign 1 if job > 1 else 0
+long_phd_heck_data <- long_phd_heck_data %>%
+  mutate(lfp = if_else(job > 1, "1", "0"))
+# Replace missing values in the "lfp" column with 0
+long_phd_heck_data$lfp[is.na(long_phd_heck_data$lfp)] <- 0
+# Fit Heckman selection model to the data
+heck_long_model <- selection(lfp ~ gender + phd + mentor + fellowship + articles + citations,
+                              job ~ gender + phd + mentor + fellowship + articles + citations, data = long_phd_heck_data)
+# Display the summary of the Heckman selection model
+summary(heck_long_model)
+```
+
+(c) treat the missing values as censored and fit the Tobit model.
+
+```{r, message=FALSE}
+# Load required package
+library(censReg)
+# Create a copy of the dataset
+long_phd_tobit_data <- long_phd
+# Replace missing values in the "job" column with 1
+long_phd_tobit_data$job[is.na(long_phd_tobit_data$job)] <- 1
+# Fit Tobit regression model to the data
+tobit_model <- censReg(job ~ gender + phd + mentor + fellowship + articles + citations, left = 1, right = Inf, data = long_phd_tobit_data)
+summary(tobit_model)
+```
+
+(d) Compare the estimates and coefficient standard errors obtained by the three approaches. Which of these approaches makes the most substantive sense?
+```{r, warning=FALSE}
+compareCoefs(tobit_model, heck_long_model, long_phd_ols_model)
+```
+Based on the output, it can be concluded that among the three approaches, the OLS approach consistently produces the smallest standard error for each variable. Additionally, there are notable differences in the coefficient estimates for `gendermale` and `fellowshpyes` between the three approaches.
+
+### **3. Bootstrap**
+
+We will now consider the `Boston` housing dataset from the `MASS` package.
+
+```{r boston}
+data(Boston, package = "MASS")
+??Boston
+```
+
+(a) Provide an estimate of the population mean of `medv`. Call this estimate $\hat{\mu}$.
+
+```{r}
+mu_hat <- mean(Boston$medv)
+mu_hat
+```
+I estimated the population mean of 'medv' from the Boston dataset using the sample mean, and the result shows that the estimate is $\hat{\mu}=22.53281$. It is important to note that this is only an estimate and there is a level of uncertainty associated with it.
+
+(b) What is the formula for the standard error of an estimate of the mean? Use this to provide an estimate of the standard error of $\hat{\mu}$ in (a).
+```{r}
+n<-sum(!is.na(Boston$medv))
+medv_sd <- sd(Boston$medv)
+medv_se <- medv_sd/(sqrt(n))
+medv_se
+```
+Since I used the sample mean to estimate the population mean, denoted by $\hat{\mu} = \frac{1}{n}\sum X_{i}$, where $X_{i}$'s are the sample 'medv' values, we make the assumption that the $X_{i}$'s are independent and identically distributed (i.i.d.) with a mean of the population mean $\mu$ and a variance of the population variance $\sigma^2$. Therefore, the standard error of the sample mean can be calculated as $\frac{\sigma}{\sqrt{n}}$. However, since we don't know the population variance, we substitute it with the sample variance $s^2$. The estimate of the standard error of $\hat{\mu}$ can be calculated as $\frac{s}{\sqrt{n}}$ = $\frac{9.197104}{\sqrt{506}} = 0.4088611$. Based on the result, the estimated standard error of $\hat{\mu}$ is 0.4088611.
+
+(c) Estimate this standard error using the bootstrap. How does this compare to the answer from (b)?
+```{r}
+sample_mean <- function(data, index) {
+  mean(data$medv[index])
+}
+boot_medv <- boot(Boston, sample_mean, R = 100000)
+boot_se <- sd(boot_medv$t)
+boot_se
+```
+They are quite close.
+
+(d) Provide an estimate of $\hat{\mu}_{med}$, the  median value of `medv` in the population.
+```{r}
+medv_median <- median(Boston$medv)
+medv_median
+```
+
+
+(e) Estimate the standard error of $\hat{\mu}_{med}$. Notice that there is no simple formula to do this, so instead use the bootstrap. Comment on your findings.
+```{r}
+mu_median <- function(data, index) {
+  median(data[index,]$medv)
+}
+boot_median <- boot(Boston, mu_median, R = 100000)
+median_se <- sd(boot_median$t)
+median_se
+```
+Based on the result, the estimated standard error of our estimator is approximately 0.3783192. The small value of the estimated standard error indicates that our estimator is relatively accurate.
+
+### **4. Model Selection**
+
+The data file `BaseballPitchers.txt` contains salary and performance data for major-league baseball pitchers at the start of the 1987 season. The data are analogous to those for baseball hitters used as an example in the chapter. Be sure to explore the data and think about variables to use as predictors before specifying candidate models.
+
+(a) Employing one or more of the methods of model selection described in the text, develop a regression model to predict pitchers' salaries.
+
+```{r}
+baseball<-read.table("data/BaseballPitchers.txt",header=TRUE)
+baseball<-baseball[complete.cases(baseball),]
+full<-lm(salary~.-firstName - lastName,baseball)
+base<-lm(salary~1,baseball)
+step(base,scope=list(upper=full,lower=base),direction="both",trace=TRUE)
+selected<-step(base,scope=list(upper=full,lower=base),direction="both",trace=FALSE)
+summary(selected)
+```
+Here I applied the both-side stepwise, and `years`, `careerERA`,`IP86`, `careerSV`and`league87` are chosen.
+
+(b) How successful is the model in predicting salaries? Does the model make substantive sense?
+
+```{r, warning=FALSE}
+#full model
+pred1<-predict(full,baseball)
+sse1<-mean((baseball$salary-pred1)^2)
+sqrt(sse1)
+#selected model
+pred<-predict(selected,baseball)
+sse<-mean((baseball$salary-pred)^2)
+sqrt(sse)
+```
+The model obtained using forward selection has an RMSE of approximately 243.2621, which is higher than the full model. 
+
+This indicates that the model is not very effective in predicting salaries. The final model that I am considering includes the variables `years`, `careerERA`,`IP86`, `careerSV`and`league87`. 
+
+This model appears to be reasonable since the type of league can significantly influence salaries, while the length of the career (years) and other significant variables can also play a crucial role in determining salaries. Beacuse the data is many year's ago, so it won't make any sense in predicting today's price.
+
+
+
+
