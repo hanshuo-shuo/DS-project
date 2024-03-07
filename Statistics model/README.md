@@ -127,3 +127,5 @@ summary(tobit_model)
 
 - Validation or Test set approach: In this method, the data is split into two parts: a training set and a validation (or test) set. The model is trained on the training set and its performance is evaluated on the validation set. The model with the best performance on the validation set is chosen. The function createDataPartition() from the caret package can be used to split the data.
 
+# reference
+Class and projects by Prof. Elizabeth Tipton from Northwestern.
